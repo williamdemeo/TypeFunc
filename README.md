@@ -2,21 +2,21 @@ HoTT
 ====
 This repository collects some resources for learning about type theory and connections between topology to computing.
 
-Online Resources
-================
+Online resources
+----------------
 + [The HoTT Book][] -- textbook on informal homotopy type theory; part of the Univalent Foundations of Mathematics Project which took place at the Institute for Advanced Study in 2012--2013.
 
-+ [2013 course at CMU][] -- a graduate research seminar, with [recorded lectures][].
++ [2013 course at CMU][] -- a graduate research seminar with [recorded lectures][].
 
 + [2011 Course on Type Theory and COQ][] -- Radboud University, NL.
 
-+ [2010 Oregon Programming Languages Summer School][] -- on Logic, Languages, Compilation, and Verification
-http://www.cs.uoregon.edu/research/summerschool/summer10/curriculum.html
++ [2010 Oregon Programming Languages Summer School][] -- on Logic, Languages, Compilation, and Verification.
+
 
 + [A short course on Type Theory and Programming][] -- Chalmers, Göteborg Sweeden.
 
-Referenced Links
-================
+Links referenced above
+----------------------
 1. [The HoTT Book][]  
 2. [2013 course at CMU][]  
 3. [recorded lectures][]  
