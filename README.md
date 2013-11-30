@@ -2,8 +2,8 @@ HoTT
 ====
 This repository collects some resources for learning about type theory and connections between topology to computing.
 
-Online resources
-----------------
+Links to online resources
+-------------------------
 + [The HoTT Book][] -- textbook on informal homotopy type theory; part of the Univalent Foundations of Mathematics Project which took place at the Institute for Advanced Study in 2012--2013.
 
 + [2013 course at CMU][] -- a graduate research seminar with [recorded lectures][].
@@ -12,9 +12,9 @@ Online resources
 
 + [2010 Oregon Programming Languages Summer School][] -- on Logic, Languages, Compilation, and Verification.
 
-
 + [A short course on Type Theory and Programming][] -- Chalmers, Göteborg Sweeden.
 
++ [Functional Programming Principles in Scala][] -- Coursera course by Martin Odersky.
 
 [The HoTT Book]: https://github.com/HoTT/book
 [2013 course at CMU]: http://www.cs.cmu.edu/~rwh/courses/hott/
@@ -22,3 +22,4 @@ Online resources
 [2011 Course on Type Theory and COQ]: http://www.cs.ru.nl/~freek/courses/tt-2011/
 [2010 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer10/curriculum.html
 [A short course on Type Theory and Programming]: http://www.cse.chalmers.se/~bengt/course/typetheory-oneweek.html
+[Functional Programming Principles in Scala]: https://www.coursera.org/course/progfun
