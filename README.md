@@ -15,14 +15,6 @@ Online resources
 
 + [A short course on Type Theory and Programming][] -- Chalmers, Göteborg Sweeden.
 
-Links referenced above
-----------------------
-1. [The HoTT Book][]  
-2. [2013 course at CMU][]  
-3. [recorded lectures][]  
-4. [2011 Course on Type Theory and COQ][]  
-5. [2010 Oregon Programming Languages Summer School][]  
-6. [A short course on Type Theory and Programming][]  
 
 [The HoTT Book]: https://github.com/HoTT/book
 [2013 course at CMU]: http://www.cs.cmu.edu/~rwh/courses/hott/
