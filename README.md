@@ -4,7 +4,7 @@ This repository collects some links and resources for studying type theory, func
 
 Links to online resources
 -------------------------
-+ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT); part of the Univalent Foundations of Mathematics Project which took place at the Institute for Advanced Study in 2012--2013.
++ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT); part of the Univalent Foundations of Mathematics Project of the Institute for Advanced Study (2012--2013); see also [homotopytypetheory.org](http://homotopytypetheory.org/) and [github.com/HoTT](https://github.com/HoTT/book).
 
 + [2013 course at CMU on HoTT][] -- a graduate research seminar by Robert Harper with [recorded lectures][].
 
@@ -21,7 +21,8 @@ Links to online resources
 + [2008 course "Introduction to Type Theory"][] -- Alfa Lernet Summer school.
 
 
-[The HoTT Book]: https://github.com/HoTT/book
+
+[The HoTT Book]: http://homotopytypetheory.org/book/
 [2013 course at CMU on HoTT]: http://www.cs.cmu.edu/~rwh/courses/hott/
 [recorded lectures]: http://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID="07756bb0-b872-4a4a-95b1-b77ad206dab3"
 [2011 Course on Type Theory and COQ]: http://www.cs.ru.nl/~freek/courses/tt-2011/
