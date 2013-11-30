@@ -1,6 +1,6 @@
 HoTT
 ====
-This repository collects some resources for learning about homotopy type theory.
+This repository collects some resources for learning about type theory and connections between topology to computing.
 
 Online Resources
 ================
