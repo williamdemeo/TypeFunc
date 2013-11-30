@@ -26,8 +26,8 @@ Links to online resources
 [recorded lectures]: http://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID="07756bb0-b872-4a4a-95b1-b77ad206dab3"
 [2011 Course on Type Theory and COQ]: http://www.cs.ru.nl/~freek/courses/tt-2011/
 [2010 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer10/curriculum.html
-[A short course on Type Theory and Programming]: http://www.cse.chalmers.se/~bengt/course/typetheory-oneweek.html
-[2013 course "Functional programming principles in Scala"][]: https://www.coursera.org/course/progfun
+[Short course on type theory and programming]: http://www.cse.chalmers.se/~bengt/course/typetheory-oneweek.html
+[2013 course "Functional programming principles in Scala"]: https://www.coursera.org/course/progfun
 [2012 course on topology for functional programming]: http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/
 [2008 course "Introduction to Type Theory"]: http://www.cs.ru.nl/~herman/Uruguay2008SummerSchool.html
 
