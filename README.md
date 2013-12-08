@@ -4,9 +4,14 @@ This repository collects some links and resources for studying type theory, func
 
 Links to online resources
 -------------------------
-+ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT); part of the Univalent Foundations of Mathematics Project of the Institute for Advanced Study (2012--2013); see also [homotopytypetheory.org](http://homotopytypetheory.org/) and [github.com/HoTT](https://github.com/HoTT/book).
++ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT); 
+  part of the Univalent Foundations of Mathematics Project of the Institute for Advanced Study (2012--2013); 
+  see also [homotopytypetheory.org](http://homotopytypetheory.org/) and [github.com/HoTT](https://github.com/HoTT/book).
 
-+ [2013 course at CMU on HoTT][] -- a graduate research seminar by Robert Harper with [recorded lectures][].
++ [2013 course at CMU on HoTT][] -- a graduate research seminar by Robert Harper with [recorded lectures][].  
+
++ [Notes from CMU HoTT course][] -- I put compiled pdf versions of these notes in the [notes directory][] 
+  of this repository, but please visit [the main repository] for the latest tex files.
 
 + [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
 
@@ -31,4 +36,6 @@ Links to online resources
 [2013 course "Functional programming principles in Scala"]: https://www.coursera.org/course/progfun
 [2012 course on topology for functional programming]: http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/
 [2008 course "Introduction to Type Theory"]: http://www.cs.ru.nl/~herman/Uruguay2008SummerSchool.html
+[Notes from CMU HoTT course]: https://github.com/favonia/hott-notes
+[notes directory]: https://github.com/williamdemeo/TypeFunc/tree/master/notes
 
