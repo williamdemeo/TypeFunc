@@ -11,7 +11,7 @@ Links to online resources
 + [2013 course at CMU on HoTT][] -- a graduate research seminar by Robert Harper with [recorded lectures][].  
 
 + [Notes from CMU HoTT course][] -- I put compiled pdf versions of these notes in the [notes directory][] 
-  of this repository, but please visit [the main repository] for the latest tex files.
+  of this repository, but please visit [the main repository][] for the latest tex files.
 
 + [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
 
@@ -38,4 +38,4 @@ Links to online resources
 [2008 course "Introduction to Type Theory"]: http://www.cs.ru.nl/~herman/Uruguay2008SummerSchool.html
 [Notes from CMU HoTT course]: https://github.com/favonia/hott-notes
 [notes directory]: https://github.com/williamdemeo/TypeFunc/tree/master/notes
-
+[the main repository]: https://github.com/favonia/hott-notes
