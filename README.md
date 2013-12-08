@@ -10,9 +10,6 @@ Links to online resources
 
 + [2013 course at CMU on HoTT][] -- a graduate research seminar by Robert Harper with [recorded lectures][].  
 
-+ [Notes from CMU HoTT course][] -- I put compiled pdf versions of these notes in the [notes directory][] 
-  of this repository, but please visit [the main repository][] for the latest tex files.
-
 + [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
 
 + [2012 course on topology for functional programming][] -- by Martin Escardo.
