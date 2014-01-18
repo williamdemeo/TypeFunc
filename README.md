@@ -37,7 +37,7 @@ Programming
 
 [Scala]: http://www.scala-lang.org/
 [Agda]: http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage
-[Cog]: http://coq.inria.fr/
+[Coq]: http://coq.inria.fr/
 [The HoTT Book]: http://homotopytypetheory.org/book/
 [2013 course at CMU on HoTT]: http://www.cs.cmu.edu/~rwh/courses/hott/
 [recorded lectures]: http://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID="07756bb0-b872-4a4a-95b1-b77ad206dab3"
