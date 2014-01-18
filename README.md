@@ -11,7 +11,7 @@ Books
 
 Courses
 -------
-+ [2013 course at CMU on HoTT][] -- a graduate research seminar by Robert Harper with [recorded lectures][].  
++ [2013 course at CMU on HoTT][] -- a seminar by Robert Harper with [recorded lectures][].  
 
 + [2012 course on topology for functional programming][] -- by Martin Escardo.
 
