@@ -32,7 +32,7 @@ Programming
     - [Interactive Theorem Proving for Agda Users][] -- Swansea University, UK.  
 
 + [Coq][]  
-    -[2011 Course on Type Theory and Coq][]
+    - [2011 Course on Type Theory and Coq][]
 
 
 [Scala]: http://www.scala-lang.org/
