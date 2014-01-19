@@ -7,7 +7,7 @@ Books
 + [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT);  
   see also [homotopytypetheory.org][] and [github.com/HoTT][].  
 
-+ [Awody, Category Theory][]
++ [Awodey, Category Theory][]
 
 Courses
 -------
@@ -19,9 +19,9 @@ Courses
 
 + [2010 Oregon programming languages summer school][] -- on Logic, Languages, Compilation, and Verification.
 
-+ [Short course on type theory and programming][] -- Chalmers, Göteborg Sweeden.
-
 + [2008 course "Introduction to Type Theory"][] -- Alfa Lernet Summer school.
+
++ [Short course on type theory and programming][] -- Chalmers, Göteborg Sweeden.
 
 Programming
 -----------
@@ -35,6 +35,12 @@ Programming
     - [2011 Course on Type Theory and Coq][]
 
 
+Miscellaneous
+-------------
++ [types project][]
+
+
+[types project]: http://www.cse.chalmers.se/research/group/logic/Types/index.html
 [Scala]: http://www.scala-lang.org/
 [Agda]: http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage
 [Coq]: http://coq.inria.fr/
@@ -53,4 +59,4 @@ Programming
 [Interactive Theorem Proving for Agda Users]: http://www.cs.swan.ac.uk/~csetzer/lectures/intertheo/07/interactiveTheoremProvingForAgdaUsers.html
 [github.com/HoTT]: https://github.com/HoTT/book
 [homotopytypetheory.org]: http://homotopytypetheory.org/
-[Awody, Category Theory]: http://carlossicoli.free.fr/A/Awodey_S.-Category_theory-Oxford_University_Press,_USA(2010).pdf
+[Awodey, Category Theory]: http://carlossicoli.free.fr/A/Awodey_S.-Category_theory-Oxford_University_Press,_USA(2010).pdf
