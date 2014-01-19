@@ -1,13 +1,6 @@
 TypeFunc
 ========
-This repository collects some links and resources for studying type theory, functional programming, and connections between topology to computing.
-
-Books
------
-+ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT);  
-  see also [homotopytypetheory.org][] and [github.com/HoTT][].  
-
-+ [Awodey, Category Theory][]
+This repository collects some links and resources for learning about type theory, functional programming, and connections between topology to computing.
 
 Courses
 -------
@@ -22,6 +15,13 @@ Courses
 + [2008 course "Introduction to Type Theory"][] -- Alfa Lernet Summer school.
 
 + [Short course on type theory and programming][] -- Chalmers, Göteborg Sweeden.
+
+Books
+-----
++ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT);  
+  see also [homotopytypetheory.org][] and [github.com/HoTT][].  
+
++ [Awodey, Category Theory][]
 
 Programming
 -----------
