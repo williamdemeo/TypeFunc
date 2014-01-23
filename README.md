@@ -10,7 +10,6 @@ Courses
 + [2011 course on type theory and Coq][] -- at Radboud University, NL.
 + [2010 Oregon summer school][] -- on logic, languages, compilation, and verification.
 + [2010 CMU course on classical and intuitionistic modal logic][] -- by Frank Pfenning and André Platzer.
-+ [2008 course "Introduction to Type Theory"][] -- Alfa Lernet Summer school.
 + [Short course on type theory and programming][] -- Chalmers, Göteborg Sweeden.
 
 Books
