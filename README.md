@@ -8,11 +8,13 @@ Courses
 
 + [2012 course on topology for functional programming][] -- by Martin Escardo.
 
++ [2012 CMU graduate course on linear logic][] -- by Frank Pfenning.
+
 + [2011 course on type theory and Coq][] -- at Radboud University, NL.
 
-+ [2010 CMU course on classical and intuitionistic modal logic][] -- by Frank Pfenning and André Platzer.
-
 + [2010 Oregon programming languages summer school][] -- on Logic, Languages, Compilation, and Verification.
+
++ [2010 CMU course on classical and intuitionistic modal logic][] -- by Frank Pfenning and André Platzer.
 
 + [2008 course "Introduction to Type Theory"][] -- Alfa Lernet Summer school.
 
@@ -41,6 +43,7 @@ Miscellaneous
 -------------
 + [types project][]
 
+[2012 CMU graduate course on linear logic]: http://www.cs.cmu.edu/~fp/courses/15816-s12/
 [2010 CMU course on classical and intuitionistic modal logic]: http://www.cs.cmu.edu/~fp/courses/15816-s10/index.html
 [types project]: http://www.cse.chalmers.se/research/group/logic/Types/index.html
 [Scala]: http://www.scala-lang.org/
