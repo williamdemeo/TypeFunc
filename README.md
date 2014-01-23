@@ -4,11 +4,13 @@ This repository collects some links and resources for learning about type theory
 
 Courses
 -------
-+ [2013 course at CMU on HoTT][] -- a seminar by Robert Harper with [recorded lectures][].  
++ [2013 CMU graduate seminar on HoTT][] -- by Robert Harper with [recorded lectures][].  
 
 + [2012 course on topology for functional programming][] -- by Martin Escardo.
 
-+ [2011 Course on Type Theory and Coq][] -- Radboud University, NL.
++ [2011 course on type theory and Coq][] -- at Radboud University, NL.
+
++ [2010 CMU course on classical and intuitionistic modal logic][] -- by Frank Pfenning and André Platzer.
 
 + [2010 Oregon programming languages summer school][] -- on Logic, Languages, Compilation, and Verification.
 
@@ -39,7 +41,7 @@ Miscellaneous
 -------------
 + [types project][]
 
-
+[2010 CMU course on classical and intuitionistic modal logic]: http://www.cs.cmu.edu/~fp/courses/15816-s10/index.html
 [types project]: http://www.cse.chalmers.se/research/group/logic/Types/index.html
 [Scala]: http://www.scala-lang.org/
 [Agda]: http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage
