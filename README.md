@@ -17,18 +17,16 @@ Books
 + [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT);  
   see also [homotopytypetheory.org][] and [github.com/HoTT][].  
 
-+ [Awodey, Category Theory][]
++ [Category Theory][], Awodey 
 
-+ [Pierce, et al, Software Fondations][]
++ [Software Fondations][], Pierce, et al
 
 Programming
 -----------
 + [Scala][]  
     - [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
-
 + [Agda][]  
     - [Interactive Theorem Proving for Agda Users][] -- Swansea University, UK.  
-
 + [Coq][]  
 	- [Software Foundations in Coq][] -- tips from OPLSS
     - [2011 Course on Type Theory and Coq][]
@@ -38,7 +36,7 @@ Miscellaneous
 + [types project][]
 
 [Software Foundations in Coq]: http://web.cecs.pdx.edu/~apt/coq_hints.html
-[Pierce, et al, Software Fondations]: http://www.cis.upenn.edu/~bcpierce/sf/
+[Software Fondations]: http://www.cis.upenn.edu/~bcpierce/sf/
 [2012 CMU graduate course on linear logic]: http://www.cs.cmu.edu/~fp/courses/15816-s12/
 [2010 CMU course on classical and intuitionistic modal logic]: http://www.cs.cmu.edu/~fp/courses/15816-s10/index.html
 [types project]: http://www.cse.chalmers.se/research/group/logic/Types/index.html
@@ -63,4 +61,4 @@ Miscellaneous
 [Interactive Theorem Proving for Agda Users]: http://www.cs.swan.ac.uk/~csetzer/lectures/intertheo/07/interactiveTheoremProvingForAgdaUsers.html
 [github.com/HoTT]: https://github.com/HoTT/book
 [homotopytypetheory.org]: http://homotopytypetheory.org/
-[Awodey, Category Theory]: http://carlossicoli.free.fr/A/Awodey_S.-Category_theory-Oxford_University_Press,_USA(2010).pdf
+[Category Theory]: http://carlossicoli.free.fr/A/Awodey_S.-Category_theory-Oxford_University_Press,_USA(2010).pdf
