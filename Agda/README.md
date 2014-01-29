@@ -1,6 +1,7 @@
 ## Installing Agda on Ubuntu 13.04
 
-1.  Put the directory $HOME/.cabal/bin in your path:
+1.  Put the directory $HOME/.cabal/bin in your path; e.g., put the following
+    line in your $HOME/.profile file:
 
         export PATH=$PATH:$HOME/.cabal/bin
 

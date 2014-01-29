@@ -5,21 +5,22 @@ This repository collects some links and resources for learning about type theory
 Courses
 -------
 + [2013 CMU graduate seminar on HoTT][] -- by Robert Harper with [recorded lectures][].  
-+ [2013 Oregon summer school][] -- on types, logic, and verification.
-+ [2012 Oregon summer school][] -- on logic, languages, compilation, and verification.
++ [2013 Oregon Programming Languages Summer School][] -- on types, logic, and verification.
++ [2012 Oregon Programming Languages Summer School][] -- on logic, languages, compilation, and verification.
 + [2012 course on topology for functional programming][] -- by Martin Escardo.  
 + [2012 CMU graduate course on linear logic][] -- by Frank Pfenning.
 + [2011 course on type theory and Coq][] -- at Radboud University, NL.
 + [2010 CMU course on classical and intuitionistic modal logic][] -- by Frank Pfenning and André Platzer.
 
-Books
------
-+ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT);  
-  see also [homotopytypetheory.org][] and [github.com/HoTT][].  
-
-+ [Category Theory][], Awodey 
-
-+ [Software Fondations][], Pierce, et al
+Books and Papers
+----------------
++ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT); see
+also [homotopytypetheory.org][] and [github.com/HoTT][].  
++ [Category Theory][], Awodey.  
++ [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
++ [Software Fondations][], Pierce, et al. (topics: logic, computer-assisted
+theorem proving, Coq, functional programming, operational semantics, Hoare
+logic, and static type systems.)
 
 Programming
 -----------
@@ -35,6 +36,7 @@ Miscellaneous
 -------------
 + [types project][]
 
+[Experimental library of univalent formalization of mathematics]: http://arxiv.org/abs/1401.0053
 [Software Foundations in Coq]: http://web.cecs.pdx.edu/~apt/coq_hints.html
 [Software Fondations]: http://www.cis.upenn.edu/~bcpierce/sf/
 [2012 CMU graduate course on linear logic]: http://www.cs.cmu.edu/~fp/courses/15816-s12/
