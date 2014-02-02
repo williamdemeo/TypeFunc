@@ -31,3 +31,4 @@ Print frobenius.
     When a proof requires classical reasoning, Coq will not do it automatically.  
     Coq does intuitionistic logic automatically, but not classical logic.
 *)
+
