@@ -2,7 +2,7 @@
 
 ------------------------------------------------------------------------
 ## Feb 7: Diaconescu's Theorem
-([Fran&#199;ois Dorais][] has [a better blog post on this topic][].)
+([Fran&#199;ois Dorais][] has [a better blog post][]  on this topic.)
 
 + **Law of the Excluded Middle**
   The *Law of the Excluded Middle* (LEM) states that for any proposition P
@@ -13,7 +13,7 @@
   then there is a choice function f that can be used to select an element from
   each set in S.
 
-+ **Diaconescu's Theorem:** The AC implies the LEM.
++ **Diaconescu's Theorem:** AC implies LEM.
   
   *Proof:*  Assume AC.  Let P be any proposition.  We will show that either P=0
   or P=1.  Define **2** = {0, 1}.  Define two sets A and B as follows:
@@ -36,4 +36,4 @@
   ...to be continued...
 
 [Fran&#199;ois Dorais]: http://dorais.org
-[a much better blog post on this topic]: http://dorais.org/archives/1031
+[a better blog post]: http://dorais.org/archives/1031
