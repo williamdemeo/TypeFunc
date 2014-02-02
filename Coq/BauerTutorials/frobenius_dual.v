@@ -2,7 +2,6 @@
     From Andrej Bauer's YouTube tutorial:
     http://www.youtube.com/watch?v=tZRAFKIv6Js&feature=share&list=PLDD40A96C2ED54E99&index=4
 
-    firstorder doesn't work because implication from left to right requires lem.
 *)
 Definition lem := forall p, p \/ ~p.
 Definition frobenius := forall (A : Set) (p : A -> Prop) (q : Prop),
@@ -12,7 +11,8 @@ Theorem lem_to_frobenius : lem -> frobenius.
 Proof.
   unfold lem, frobenius.
   firstorder.
-  destruct (H q).
+  assert (G := H q).
+  destruct G.
   left.
   assumption.
   right.
@@ -25,3 +25,9 @@ Qed.
 
 Check frobenius.
 Print frobenius.
+
+(**
+    `firstorder` doesn't work because the implication from left to right in this case requires lem.
+    When a proof requires classical reasoning, Coq will not do it automatically.  
+    Coq does intuitionistic logic automatically, but not classical logic.
+*)
