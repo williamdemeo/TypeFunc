@@ -15,7 +15,7 @@ Courses
 Books and Papers
 ----------------
 + [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT); see
-also [homotopytypetheory.org][] and [github.com/HoTT][].  
+also [homotopytypetheory.org][] and [github.com/HoTT][].   
 + [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
 + [Category Theory][], Steve Awodey.  
 + [Software Fondations][], Pierce, et al. (topics: logic, computer-assisted
@@ -53,6 +53,10 @@ Miscellaneous
 [2013 CMU graduate seminar on HoTT]: http://www.cs.cmu.edu/~rwh/courses/hott/
 [recorded lectures]: http://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID="07756bb0-b872-4a4a-95b1-b77ad206dab3"
 [2011 Course on Type Theory and Coq]: http://www.cs.ru.nl/~freek/courses/tt-2011/
+[2013 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer13/
+[2012 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer12/
+[2011 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer11/
+[2010 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer10/
 [Short course on type theory and programming]: http://www.cse.chalmers.se/~bengt/course/typetheory-oneweek.html
 [2013 course "Functional programming principles in Scala"]: https://www.coursera.org/course/progfun
 [2012 course on topology for functional programming]: http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/
@@ -64,7 +68,3 @@ Miscellaneous
 [github.com/HoTT]: https://github.com/HoTT/book
 [homotopytypetheory.org]: http://homotopytypetheory.org/
 [Category Theory]: http://carlossicoli.free.fr/A/Awodey_S.-Category_theory-Oxford_University_Press,_USA(2010).pdf
-[2013 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer13/
-[2012 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer12/
-[2011 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer11/
-[2010 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer10/
