@@ -4,12 +4,15 @@
 In Ubuntu (version 13.10, and probably others) Coq and Proof General are easily
 installed with the Synaptic package manager.
 
-## Andrej Bauer's YouTube tutorial
+## Andrej Bauer's YouTube tutorials
 Andrej Bauer provides a series of short YouTube tutorials.
 For example, in [How to use Coq with Proof General][], he shows how to use Coq
 to prove that Pierce's law is equivalent to the Law of Excluded Middle.  
 
-Here is a rough transcript of the commands used:
+The Coq programs in the directory Bauer are based on Andrej's tutorials.
+
+
+Below is a rough transcript of the commands used.
 
 1.  Open a file in emacs called pierce_lem.v  Proof General should automatically
     load. 
