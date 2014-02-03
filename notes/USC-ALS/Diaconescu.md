@@ -34,4 +34,4 @@ These are very rough notes for my own reference.  Please see
 
   ...to be continued...
 
-[Fran&#199;ois Dorais' blog post]: http://dorais.org/archives/1031
+[Fran&#231;ois Dorais' blog post]: http://dorais.org/archives/1031
