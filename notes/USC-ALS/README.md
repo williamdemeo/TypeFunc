@@ -1,6 +1,6 @@
 # Algebra and Logic Seminar: Spring 2014
 
----------------------------------------------------------------------------------
+
 ## Feb 7: Intuitionistic type theory and paranormal programs.
 
 **Abstract:**
@@ -19,15 +19,15 @@ proof of Diaconescu's Theorem that the Axiom of Choice implies the Law
 of Excluded Middle.
 
 
+---------------------------------------------------------------------------------
+
 ## Diaconescu's Theorem
 ([Fran&#199;ois Dorais][] has [a better blog post][]  on this topic.)
 
-+ **Law of the Excluded Middle**
-  The *Law of the Excluded Middle* (LEM) states that for any proposition P
++ **Law of the Excluded Middle** (LEM) states that for any proposition P
   either P or &not;P holds.
 
-+ **The Axiom of Choice**
-  The *Axiom of Choice* (AC) states that if S is a collection of nonempty sets,
++ **The Axiom of Choice** (AC) states that if S is a collection of nonempty sets,
   then there is a choice function f that can be used to select an element from
   each set in S.
 
