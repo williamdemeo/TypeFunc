@@ -1,7 +1,9 @@
 ---------------------------------------------------------------------------------
 
 ## Diaconescu's Theorem
-([Fran&#199;ois Dorais][] has [a better blog post][]  on this topic.)
+
+These are very rough notes for my own reference.  Please see
+[Fran&#199;ois Dorais' blog post][] for a nice discussion of this topic.
 
 + **Law of the Excluded Middle** (LEM) states that for any proposition P
   either P or &not;P holds.
@@ -32,5 +34,4 @@
 
   ...to be continued...
 
-[Fran&#199;ois Dorais]: http://dorais.org
-[a better blog post]: http://dorais.org/archives/1031
+[Fran&#199;ois Dorais' blog post]: http://dorais.org/archives/1031
