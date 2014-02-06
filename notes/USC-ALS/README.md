@@ -3,6 +3,8 @@
 
 ## Feb 7: Intuitionistic type theory and paranormal programs.
 
+Please visit http://williamdemeo.github.io for more information.
+
 **Abstract:**
 
 Can we write a computer program that takes as input two functions
