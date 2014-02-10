@@ -16,8 +16,8 @@ Courses
 
 Books and Papers
 ----------------
-+ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT); see
-also [homotopytypetheory.org][] and [github.com/HoTT][].   
++ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT);  
+  see also [homotopytypetheory.org][] and [github.com/HoTT][].   
 + [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
 + [Category Theory][], Steve Awodey.  
 + [Software Fondations][], Pierce, et al. (topics: logic, computer-assisted
