@@ -4,15 +4,15 @@ This repository collects some links and resources for learning about type theory
 
 Courses
 -------
-+ [2014 Oregon Programming Languages Summer School][] -- on types, logic, semantics, and verification.  
-+ [Midlands Workshop in Foundations of CS](http://www.cs.nott.ac.uk/~txa/mgs.2014/)  
-+ [2013 CMU graduate seminar on HoTT][] -- by Robert Harper with [recorded lectures][].  
-+ [2012 course on topology for functional programming][] -- by Martin Escardo.  
-+ [2013 Oregon Programming Languages Summer School][] -- on types, logic, and verification.  
-+ [2012 Oregon Programming Languages Summer School][] -- on logic, languages, compilation, and verification.
-+ [2012 CMU graduate course on linear logic][] -- by Frank Pfenning.
-+ [2011 course on type theory and Coq][] -- at Radboud University, NL.
-+ [2010 CMU course on classical and intuitionistic modal logic][] -- by Frank Pfenning and André Platzer.
++ [2014 Oregon Programming Languages Summer School][]  on types, logic, semantics, and verification.  
++ [2014 Midlands Workshop in Foundations of CS][]  at University of Nottingham, UK.
++ [2013 CMU graduate seminar on HoTT][]  by Robert Harper with [recorded lectures][].  
++ [2012 course on topology for functional programming][]  by Martin Escardo.  
++ [2013 Oregon Programming Languages Summer School][]  on types, logic, and verification.  
++ [2012 Oregon Programming Languages Summer School][]  on logic, languages, compilation, and verification.
++ [2012 CMU graduate course on linear logic][]  by Frank Pfenning.
++ [2011 course on type theory and Coq][]  at Radboud University, NL.
++ [2010 CMU course on classical and intuitionistic modal logic][]  by Frank Pfenning and André Platzer.
 
 Books and Papers
 ----------------
@@ -45,6 +45,7 @@ Miscellaneous
 + [types project][]
 
 
+[2014 Midlands Workshop in Foundations of CS]: http://www.cs.nott.ac.uk/~txa/mgs.2014/
 [types-forum]: http://lists.seas.upenn.edu/mailman/listinfo/types-list
 [types-announce]: http://lists.seas.upenn.edu/mailman/listinfo/types-announce
 [Experimental library of univalent formalization of mathematics]: http://arxiv.org/abs/1401.0053
