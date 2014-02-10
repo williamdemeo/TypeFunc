@@ -4,10 +4,12 @@ This repository collects some links and resources for learning about type theory
 
 Courses
 -------
++ [2014 Oregon Programming Languages Summer School][] -- on types, logic, semantics, and verification.  
++ [Midlands Workshop in Foundations of CS](http://www.cs.nott.ac.uk/~txa/mgs.2014/)  
 + [2013 CMU graduate seminar on HoTT][] -- by Robert Harper with [recorded lectures][].  
-+ [2013 Oregon Programming Languages Summer School][] -- on types, logic, and verification.
-+ [2012 Oregon Programming Languages Summer School][] -- on logic, languages, compilation, and verification.
 + [2012 course on topology for functional programming][] -- by Martin Escardo.  
++ [2013 Oregon Programming Languages Summer School][] -- on types, logic, and verification.  
++ [2012 Oregon Programming Languages Summer School][] -- on logic, languages, compilation, and verification.
 + [2012 CMU graduate course on linear logic][] -- by Frank Pfenning.
 + [2011 course on type theory and Coq][] -- at Radboud University, NL.
 + [2010 CMU course on classical and intuitionistic modal logic][] -- by Frank Pfenning and André Platzer.
@@ -27,10 +29,15 @@ Programming
 + [Scala][]  
     - [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
 + [Agda][]  
-    - [Interactive Theorem Proving for Agda Users][] -- Swansea University, UK.  
+    - [Learn you an agda](https://github.com/williamdemeo/learn-you-an-agda)   
+    - [Interactive Theorem Proving for Agda Users][] -- Swansea University, UK.    
 + [Coq][]  
-	- [Software Foundations in Coq][] -- tips from OPLSS
-    - [2011 Course on Type Theory and Coq][]
+    - [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/cpdt.pdf) (book)  
+    - [Software Fondations][] (book)  
+    - [Software Foundations in Coq][] -- tips from OPLSS  
+    - [2011 Course on Type Theory and Coq][]  
+    - [How to use Coq with Proof General](http://youtu.be/l6zqLJQCnzo) (YouTube)  
+    - [Nine short YouTube tutorials](http://www.youtube.com/watch?v=COe0VTNF2EA&list=PLDD40A96C2ED54E99&feature=share) (YouTube), by Andrej Bauer.
 
 Miscellaneous
 -------------
@@ -53,6 +60,7 @@ Miscellaneous
 [2013 CMU graduate seminar on HoTT]: http://www.cs.cmu.edu/~rwh/courses/hott/
 [recorded lectures]: http://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID="07756bb0-b872-4a4a-95b1-b77ad206dab3"
 [2011 Course on Type Theory and Coq]: http://www.cs.ru.nl/~freek/courses/tt-2011/
+[2014 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer14/index.html
 [2013 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer13/
 [2012 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer12/
 [2011 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer11/
