@@ -29,7 +29,7 @@ Programming
 + [Scala][]  
     - [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
 + [Agda][]  
-    - [Learn you an agda](https://github.com/williamdemeo/learn-you-an-agda)   
+    - [Learn you an agda](https://github.com/williamdemeo/learn-you-an-agda) -- fork of Liam O'Connor's repo with fixed links.  
     - [Interactive Theorem Proving for Agda Users][] -- Swansea University, UK.    
 + [Coq][]  
     - [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/cpdt.pdf) (book)  
