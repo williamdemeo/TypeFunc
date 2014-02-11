@@ -7,8 +7,8 @@ Courses
 + [2014 Oregon Programming Languages Summer School][]  on types, logic, semantics, and verification.  
 + [2014 Midlands Workshop in Foundations of CS][]  at University of Nottingham, UK.
 + [2013 CMU graduate seminar on HoTT][]  by Robert Harper with [recorded lectures][].  
-+ [2012 course on topology for functional programming][]  by Martin Escardo.  
 + [2013 Oregon Programming Languages Summer School][]  on types, logic, and verification.  
++ [2012 course on topology for functional programming][]  by Martin Escardo.  
 + [2012 Oregon Programming Languages Summer School][]  on logic, languages, compilation, and verification.
 + [2012 CMU graduate course on linear logic][]  by Frank Pfenning.
 + [2011 course on type theory and Coq][]  at Radboud University, NL.
