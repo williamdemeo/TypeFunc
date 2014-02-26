@@ -2,7 +2,8 @@
 % arara: bibtex
 % arara: pdflatex
 % arara: pdflatex
-\documentclass[12pt]{article}
+%\documentclass[11pt]{article}
+\documentclass{article}
 
 \usepackage{lmodern}
 \usepackage{microtype}
@@ -12,8 +13,8 @@
 \usepackage[
 top    = 3cm,
 bottom = 3cm,
-left   = 4.00cm,
-right  = 4.00cm]{geometry}
+left   = 4cm,
+right  = 4cm]{geometry}
 %\usepackage[letterpaper]{geometry}
 % \usepackage{fullpage}
 
@@ -23,25 +24,13 @@ right  = 4.00cm]{geometry}
 \usepackage{tikz-cd}
 
 \metadata{IPL Notes}{Feb 28, 2014}
-
-
 \begin{document}
+This note summarizes the rules of inference for \ac{IPL} as I understand them.
+This is based on the lectures given by Professor Robert Harper in September
+2013 at CMU. Notes for Harper's lectures were transcribed by his students and
+this summary is a highly abridged and edited version of the students' notes. 
 
-%% \title{Rules of Inference in IPL}
-%% %\author{}
-%% \date{February 21 and 28, 2014}
-
-%\maketitle
-
-\section{Introduction}
-
-This is a summary of the rules of inference for intuitionistic propositional
-logic as I understand them.  This is based on the lectures given by Professor
-Robert Harper in September 2013, at CMU. Notes for Harper's lectures were transcribed
-by his students and this summary is a highly abridged and edited version of the
-students' notes. 
-
-As advanced by Per Martin-L\"{o}f, a modern presentation of \acf{IPL}
+As advanced by Per Martin-L\"{o}f, a modern presentation of \ac{IPL}
 distinguishes the notions of \vocab{judgment} and \vocab{proposition}. A
 judgment is something that may be known, whereas a proposition is something that
 sensibly may be the subject of a judgment. For instance, the statement ``Every
@@ -54,59 +43,55 @@ Thus, in \ac{IPL}, the two most basic judgments are $A \prop$ and $A \true$:
 \begin{alignat*}{2}
   A \prop &&\quad& \text{$A$ is a well-formed proposition} \\
   A \true &&& \text{\begin{tabular}[t]{@{}l@{}}
-                Proposition $A$ is intuitionistically true, \\
-                i.e., has a proof.
+                Proposition $A$ is intuitionistically true, i.e., has a proof.
               \end{tabular}}
 \end{alignat*}
-The inference rules for the $\prop$ judgment are called formation rules.
+The inference rules for the $\prop$ judgment are called \vocab{formation rules}.
 The inference rules for the $\true$ judgment are divided into classes:
 \vocab{introduction rules} and \vocab{elimination rules}. 
 
-Following Martin-L\"{o}f, the meaning of a proposition $A$ is given by the
-introduction rules for the judgment $A \true$. The elimination rules are dual
-and  describe what may be deduced from a proof of $A \true$. 
+The meaning of a proposition $A$ is given by the introduction rules for the
+judgment $A \true$. The elimination rules are dual and  describe what may be
+deduced from a proof of $A \true$.  The principle of \vocab{internal coherence},
+also known as \emph{Gentzen's principle of inversion}, is that the introduction
+and elimination rules for a proposition $A$ fit together properly.  The
+elimination rules should be strong enough to deduce all information that was
+used to introduce $A$ (\vocab{local completeness}), but not so strong as to
+deduce information that might not have been used to introduce $A$ (\vocab{local
+  soundness}). 
 
-The principle of \vocab{internal coherence}, also known as Gentzen's principle
-of inversion, is that the introduction and elimination rules for a proposition
-$A$ fit together properly.  The elimination rules should be strong enough to
-deduce all information that was used to introduce $A$ (\vocab{local
-  completeness}), but not so strong as to deduce information that might not have
-been used to introduce $A$ (\vocab{local soundness}).  In a later lecture, we
-will discuss internal coherence more precisely, but we can already give an
-informal treatment. 
+\medskip 
 
-\newpage
+\hrule
 
-\section{The negative fragment of IPL}
-
-\paragraph{Conjunction.}
-%\subsection{Conjunction}
+\begin{center}
+CONJUNCTION
+\end{center}
 \begin{itemize}
-\item[Formation:] 
+\item[(formation)] 
 If $A$ and $B$ are well-formed propositions, then so is
 their \emph{conjunction}, which we write as $A \conj B$.
-
 \begin{equation*}
   \infer[{\conj}\mathsf{F}]{A \conj B \prop}{
     A \prop & B \prop}
 \end{equation*}
 
-\item[Introduction:]
+\item[(introduction)]
 %\paragraph{Introduction.}
 To give meaning to conjunction, we must say how
 to introduce the judgment $A \conj B \true$.
 A verification of $A \conj B$ requires a proof of $A$ and
 a proof of $B$.
-
 \begin{equation*}
   \infer[{\conj}\mathsf{I}]{A \conj B \true}{
     A \true & B \true}
 \end{equation*}
 
-\item[Elimination:]
+\item[(elimination)]
 %\paragraph{Elimination.}
 Because every proof of $A \conj B$ comes from a pair of proofs, one of $A$ and
-one of $B$, we are justified in deducing $A \true$ and $B \true$ from a proof of $A \conj B$:
+one of $B$, we are justified in deducing $A \true$ and $B \true$ from a proof of
+$A \conj B$: 
 \begin{mathpar}
   \infer[{\conj}\mathsf{E}_1]{A \true}{
     A \conj B \true}
@@ -114,115 +99,120 @@ one of $B$, we are justified in deducing $A \true$ and $B \true$ from a proof of
   \infer[{\conj}\mathsf{E}_2]{B \true}{
     A \conj B \true}
 \end{mathpar}
-
 \end{itemize}
 
-\subsection{Truth}
-\paragraph{Formation.} 
-Another proposition is \vocab{truth}, which we denote $\truth$.  It is 
-the \emph{trivially true} proposition, and its formation rule serves as
-immediate evidence for the judgment that $\truth$ is indeed a
+\medskip 
+
+\hrule
+%\newpage
+\begin{center}
+TRUTH
+ \end{center}
+%We denote by $\truth$ the \emph{trivially true} proposition. 
+\begin{itemize}
+\item[(formation)]
+The formation rule serves as immediate evidence for the judgment that $\truth$ is a
 well-formed proposition.
 \begin{equation*}
   \infer[{\truth}\mathsf{F}]{\truth \prop}{
     }
 \end{equation*}
 
-\paragraph{Introduction.}
-To give meaning to truth we say how to introduce the judgment that $\truth$ is true.
+\item[(introduction)]
 Since $\truth$ is a trivially true proposition, its introduction rule makes the
 judgment $\truth \true$ immediately evident.
+
 \begin{equation*}
   \infer[{\truth}\mathsf{I}]{\truth \true}{
     }
 \end{equation*}
 
-\paragraph{Elimination.}
+\item[(elimination)]
 Since $\truth$ is trivially true, an elimination rule should not increase
 our knowledge---we put in no information when we introduced $\truth \true$, so,
-by the principle of conservation of proof, we should get no information out. For
-this reason, there is no elimination rule for $\truth$.
+by the principle of conservation of proof, we should get no information out. Thus,
+there is no elimination rule for $\truth$.
+\end{itemize}
 
-\subsection{Entailment}
-\emph{Entailment} is a judgment. It is written as 
+%% \medskip 
+
+%% \hrule
+\newpage
+
+\begin{center}
+ENTAILMENT
+ \end{center}
+\emph{Entailment} is a judgment and is written as 
 \begin{equation*}
   A_1 \true, \dotsc, A_n \true \entails A \true
 \end{equation*}
-and expresses the judgment that $A \true$ follows from $A_1 \true, \dotsc, A_n \true$.
+This expresses the judgment that $A \true$ follows from 
+$A_1 \true, \dotsc, A_n \true$. 
 One can view $A_1 \true, \dotsc, A_n \true$ as being assumptions from which
 the conclusion $A \true$ may be deduced. 
-
-%% The metavariable $\ctx$ is typically
-%% used to stand for such a context of assumptions. 
-
-%% We should note that, thus far, the inference rules have been presented in a
-%% \vocab{local form} in which the context of assumptions was left implicit. 
-%% It would also be possible to make this context explicit.
-%% For example, the introduction rule for conjunction could be written in context as
-%% \begin{mathpar}
-%%   \infer[{\conj}I]{\ctx \entails A \conj B \true}{
-%%     \ctx \entails A \true &
-%%     \ctx \entails B \true}
-%% \end{mathpar}
-
 We assume that the entailment judgment satisfies several \emph{structural
   properties}: reflexivity, transitivity, weakening, contraction, and
 permutation. 
-
-\paragraph{Reflexivity.}
-(An assumption is enough to conclude the same judgment.)
+\begin{itemize}
+\item[Reflexivity:] An assumption is enough to conclude the same judgment.
 \begin{equation*}
   \infer[\text{\textsf{R}}]{A \true \entails A \true}{
     }
 \end{equation*}
 
-
-\paragraph{Transitivity.}
-(If you prove $A \true$, then you are justified in using it in a proof.)
+\item[Transitivity:]
+If you prove $A \true$, then you are justified in using it in a proof.
 \begin{equation*}
   \infer[\text{\textsf{T}}]{C \true}{
     A \true &
     A \true \entails C \true}
 \end{equation*}
 
-
-Reflexivity and transitivity are undeniable since assumptions should be strong enough
+Reflexivity and transitivity are undeniable since without them it would be
+unclear what is meant by an \emph{assumption}.  An assumption should be strong enough
 to prove conclusions (reflexivity), and only as strong as the proofs they stand for
 (transitivity). 
 The remaining structural properties---weakening, contraction, and
 permutation---could be denied.  Logics that deny any of these properties are
 called \emph{substructural logics}. 
 
-\paragraph{Weakening.}
+\item[Weakening:]
 We can add assumptions to a proof without invalidating that proof.
 \begin{equation*}
   \infer[\text{\textsf{W}}]{B \true \entails A \true}{
     A \true}
 \end{equation*}
 
-\paragraph{Contraction.}
+\item[Contraction:]
 The number of copies of an assumption does not matter.
 \begin{equation*}
   \infer[\text{\textsf{C}}]{A \true \entails C \true}{
     A \true, A \true \entails C \true}
 \end{equation*}
 
-\paragraph{Permutation.}
+\item[Permutation:]
 aka ``exchange;'' the order of assumptions does not matter.
 \begin{equation*}
   \infer[\text{\textsf{P}}]{\pi(\ctx) \entails C \true}{
     \ctx \entails C \true}
 \end{equation*}
+\end{itemize}
 
-\subsection{Implication}
 
-\paragraph{Formation.} 
+\medskip 
+
+\hrule
+
+\begin{center}
+IMPLICATION
+\end{center}
+\begin{itemize}
+\item[(formation)] 
 \begin{equation*}
   \infer[{\imp}F]{A \imp B \prop}{
     A \prop & B \prop}
 \end{equation*}
-
-\paragraph{Introduction.}
+\item[(introduction)]
 \begin{equation*}
   \infer[{\imp}I]{A \imp B \true}{
     A \true \entails B \true}
@@ -233,25 +223,29 @@ judgments.
 %% (As an aside for those familiar with category theory, the relationship between
 %% entailment and implication is analogous to the relationship between a mapping
 %% and a collection of mappings internalized as an object in some category.) 
-
-\paragraph{Elimination.}
+\item[(elimination)]
 \begin{equation*}
   \infer[{\imp}E]{B \true}{
     A \imp B \true & A \true} \,.
 \end{equation*}
 This rule is sometimes referred to as \latin{modus ponens}.
+\end{itemize}
 
+%% \medskip
 
-\section{The positive fragment of \ac{IPL}}
-
-\subsection{Disjunction}
-\paragraph{Formation.} 
+%% \hrule
+\newpage
+\begin{center}
+DISJUNCTION
+\end{center}
+\begin{itemize}
+\item[(formation)]
 \begin{equation*}
   \infer[{\disj}F]{A \disj B \prop}{
     A \prop & B \prop}
 \end{equation*}
 
-\paragraph{Introduction.}
+\item[(introduction)]
 \begin{mathpar}
   \infer[{\disj}I_1]{A \disj B \true}{
     A \true}
@@ -260,15 +254,22 @@ This rule is sometimes referred to as \latin{modus ponens}.
     B \true}
 \end{mathpar}
 
-\paragraph{Elimination.}
+\item[(elimination)]
 \begin{equation*}
   \infer[{\disj}E]{C \true}{
     A \disj B \true &
     A \true \entails C \true & B \true \entails C \true}
 \end{equation*}
+\end{itemize}
 
-\subsection{Falsehood}\label{sec:falsehood}
-\paragraph{Formation.} 
+\medskip 
+
+\hrule
+\begin{center}
+FALSEHOOD
+\end{center}
+\begin{itemize}
+\item[(formation)]
 The unit of disjunction is falsehood, the proposition that is trivially never
 true, which we write as $\falsehood$.  Its formation rule is immediate evidence
 that $\falsehood$ is a well-formed proposition. 
@@ -277,10 +278,10 @@ that $\falsehood$ is a well-formed proposition.
     }
 \end{equation*}
 
-\paragraph{Introduction.}
+\item[(introduction)]
 Because $\falsehood$ should never be true, it has no introduction rule.
 
-\paragraph{Elimination.}
+\item[(elimination)]
 \begin{equation*}
   \infer[{\falsehood}E]{C \true}{
     \falsehood \true}
@@ -288,158 +289,7 @@ Because $\falsehood$ should never be true, it has no introduction rule.
 The elimination rule captures \latin{ex falso quodlibet}: from a proof of $\falsehood \true$, we may deduce that \emph{any} proposition $C$ is true because there is ultimately no way to introduce $\falsehood \true$.
 Once again, the rules cohere.
 The elimination rule is very strong, but remains justified due to the absence of any introduction rule for falsehood.
-
-
-\section{Order-theoretic formulation of \acs{IPL}}\label{sec:ipl_order}
-
-It is also possible to give an order-theoretic formulation of \ac{IPL} because
-entailment is a preorder (reflexive and transitive). We want $A \leq B$ to hold
-exactly when $A \true \entails B \true$.  We can therefore devise the
-order-theoretic formulation with these soundness and completeness goals in
-mind. 
-
-\subsection{Conjunction as meet}\label{sec:conjunction-as-meet}
-
-The elimination rules for conjunction (along with reflexivity of entailment) ensure that $A \conj B \true \entails A \true$ and $A \conj B \true \entails B \true$.
-To ensure completeness of the order-theoretic formulation, we include the rules
-\begin{mathpar}
-  \infer{A \conj B \leq A}{
-    }
-  \and
-  \infer{A \conj B \leq B}{
-    } \,,
-\end{mathpar}
-which say that $A \conj B$ is a lower bound of $A$ and $B$.
-
-The introduction rule for conjunction ensures that $C \true \entails A \conj B \true$ if both $C \true \entails A \true$ and $C \true \entails B \true$.
-Order-theoretically, this is expressed as the rule
-\begin{equation*}
-  \infer{C \leq A \conj B}{
-    C \leq A & C \leq B} \,,
-\end{equation*}
-which says that $A \conj B$ is as large as any lower bound of $A$ and $B$.
-Taken together these rules show that $A \conj B$ is the greatest lower bound, or meet, of $A$ and $B$.
-
-Graphically, these order-theoretic rules can be represented with a commuting \vocab{product diagram}, where arrows point from smaller to larger elements:
-\begin{equation*}
-  \begin{tikzcd}
-    {} &[-4ex] C \ar[bend right]{ddl}\ar[bend left]{ddr}\dar[dashed] &[-4ex] {} \\
-    {} & A \conj B \dlar\drar & {} \\
-    A & {} & B
-  \end{tikzcd}
-\end{equation*}
-
-\subsection{Truth as greatest element}\label{sec:truth-as-greatest}
-
-The introduction rule for $\truth$ ensures that $C \true \entails \truth \true$.
-Order-theoretically, we have 
-\begin{equation*}
-  \infer{C \leq \truth}{
-    } \,,
-\end{equation*}
-which says that $\truth$ is the greatest, or final, element.
-
-In the proof-theoretic formulation of \ac{IPL}, we saw that truth $\truth$ is the nullary conjunction.
-We should expect this analogy to hold in the order-theoretic formulation of \ac{IPL} as well, and it does---the greatest element is indeed the greatest lower bound of the empty set.
-
-\subsection{Disjunction as join}\label{sec:disjunction-as-join}
-
-The introduction rules for disjunction (along with reflexivity of entailment) ensure that $A \true \entails A \disj B \true$ and $B \true \entails A \disj B \true$.
-To ensure completeness of the order-theoretic formulation, we include the rules
-\begin{mathpar}
-  \infer{A \leq A \disj B}{
-    }
-  \and
-  \infer{B \leq A \disj B}{
-    } \,,
-\end{mathpar}
-which say that $A \disj B$ is an upper bound of $A$ and $B$.
-
-The elimination rule for disjunction (along with reflexivity of entailment) ensures that $A \disj B \true \entails C \true$ if both $A \true \entails C \true$ and $B \true \entails C \true$.
-Order-theoretically, we have the corresponding rule
-\begin{equation*}
-  \infer{A \disj B \leq C}{
-    A \leq C & B \leq C} \,,
-\end{equation*}
-which says that $A \disj B$ is as small as any upper bound of $A$ and $B$.
-Taken together these rules show that $A \disj B$ is the least upper bound, or join, of $A$ and $B$.
-
-Graphically, this is captured by a commuting \vocab{coproduct diagram}:
-\begin{equation*}
-  \begin{tikzcd}
-    A \drar\ar[bend right]{ddr} &[-4ex] {} &[-4ex] B \dlar\ar[bend left]{ddl}\\
-    {} & A \disj B \dar[dashed] & {} \\
-    {} & C & {}
-  \end{tikzcd}
-\end{equation*}
-
-\subsection{Falsehood as least element}\label{sec:falsehood-as-least}
-
-The elimination rule for falsehood (along with reflexivity of entailment) ensures that $\falsehood \true \entails C \true$.
-The order-theoretic counterpart is the rule
-\begin{equation*}
-  \infer{\falsehood \leq C}{
-    } \,,
-\end{equation*}
-which says that $\falsehood$ is the least, or initial, element.
-
-Once again, because we saw that falsehood is the nullary disjunction in the proof-theoretic formulation, we should expect this analogy to carry over to the order-theoretic formulation.
-Indeed, the least element is the least upper bound of the empty set.
-
-\subsection{Order-theoretic \ac{IPL} as lattice}\label{subsec:lattice}
-
-As seen thus far, the order-theoretic formulation of \ac{IPL} gives rise to a \vocab{lattice} as it establishes a
-preorder with finite meets and joins.  The definition of a lattice assumed in this course may
-deviate from the one typically found in the literature, which usually considers a lattice to be
-a partial order with finite meets and joins.  In this course, we deliberately ignore the
-property of antisymmetry.  If we were to impose the property of antisymmetry on the order
-defined by entailment, then we would need to introduce equivalence classes of propositions,
-which requires associativity.  As we will see later in this course, the axiom of univalence
-provides an elegant way of dealing with equivalence of propositions.
-
-\subsection{Implication as exponential}\label{sec:impl-as-expon}
-
-The elimination rule for implication (along with reflexivity of entailment) ensures that $A \true, A \imp B \true \entails B \true$.
-For the order-theoretic formulation to be complete, we include the rule 
-\begin{equation*}
-  \infer{A \conj (A \imp B) \leq B}{
-    }
-\end{equation*}
-% which say that $A \conj B$ is a lower bound of $A$ and $B$.
-
-The introduction rule for implication ensures that $C \true \entails A \imp B \true$ if $A \true, C \true \entails B \true$.
-Once again, so that the order-theoretic formulation is complete, we have
-\begin{equation*}
-  \infer{C \leq A \imp B}{
-    A \conj C \leq B} \,,
-\end{equation*}
-Taken together, these rules show that $A \imp B$ is the exponential of $A$ and $B$.
-
-% The \vocab{exponential diagram} is:
-% \begin{equation*}
-%   \begin{tikzcd}
-%     C \dar[dashed] \\
-%     A \imp B
-%   \end{tikzcd}
-%   \begin{tikzcd}
-%     A \conj (A \imp B) \\
-%   \end{tikzcd}
-% \end{equation*}
-
-As we have seen previously, the order-theoretic formulation of \ac{IPL} gives
-rise to a lattice.  Now we have just seen that it also supports exponentials.
-As a result, the order-theoretic formulation of \ac{IPL} gives rise to a
-\vocab{Heyting algebra}.  A Heyting algebra is a lattice with exponentials.  As
-we will see later in this course, the notion of a Heyting algebra is fundamental
-in proving completeness of \ac{IPL}.  The proof also relies on the notion of a
-\vocab{complement} in a lattice.  The complement $\overline{A}$ of $A$ in a
-lattice is such that
-\begin{enumerate}
-\item $\top\leq \overline{A}\vee A$;
-\item $\overline{A}\wedge A \leq\bot$.
-\end{enumerate}
-It follows that a complement, if present, is a suitable notion of negation, but
-negation, defined via the exponential, is not necessarily a complement.
+\end{itemize}
 
 
 
