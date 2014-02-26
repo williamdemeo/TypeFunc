@@ -182,14 +182,12 @@ We can add assumptions to a proof without invalidating that proof.
   \infer[\text{\textsf{W}}]{B \true \entails A \true}{
     A \true}
 \end{equation*}
-
 \item[Contraction:]
 The number of copies of an assumption does not matter.
 \begin{equation*}
   \infer[\text{\textsf{C}}]{A \true \entails C \true}{
     A \true, A \true \entails C \true}
 \end{equation*}
-
 \item[Permutation:]
 aka ``exchange;'' the order of assumptions does not matter.
 \begin{equation*}
@@ -209,12 +207,12 @@ IMPLICATION
 \begin{itemize}
 \item[(formation)] 
 \begin{equation*}
-  \infer[{\imp}F]{A \imp B \prop}{
+  \infer[{\imp}\mathsf{F}]{A \imp B \prop}{
     A \prop & B \prop}
 \end{equation*}
 \item[(introduction)]
 \begin{equation*}
-  \infer[{\imp}I]{A \imp B \true}{
+  \infer[{\imp}\mathsf{I}]{A \imp B \true}{
     A \true \entails B \true}
 \end{equation*}
 In this way, implication internalizes the entailment judgment as a proposition,
@@ -225,7 +223,7 @@ judgments.
 %% and a collection of mappings internalized as an object in some category.) 
 \item[(elimination)]
 \begin{equation*}
-  \infer[{\imp}E]{B \true}{
+  \infer[{\imp}\mathsf{E}]{B \true}{
     A \imp B \true & A \true} \,.
 \end{equation*}
 This rule is sometimes referred to as \latin{modus ponens}.
@@ -241,22 +239,20 @@ DISJUNCTION
 \begin{itemize}
 \item[(formation)]
 \begin{equation*}
-  \infer[{\disj}F]{A \disj B \prop}{
+  \infer[{\disj}\mathsf{F}]{A \disj B \prop}{
     A \prop & B \prop}
 \end{equation*}
-
 \item[(introduction)]
 \begin{mathpar}
-  \infer[{\disj}I_1]{A \disj B \true}{
+  \infer[{\disj}\mathsf{I_1}]{A \disj B \true}{
     A \true}
   \and
-  \infer[{\disj}I_2]{A \disj B \true}{
+  \infer[{\disj}\mathsf{I_2}]{A \disj B \true}{
     B \true}
 \end{mathpar}
-
 \item[(elimination)]
 \begin{equation*}
-  \infer[{\disj}E]{C \true}{
+  \infer[{\disj}\mathsf{E}]{C \true}{
     A \disj B \true &
     A \true \entails C \true & B \true \entails C \true}
 \end{equation*}
@@ -274,16 +270,14 @@ The unit of disjunction is falsehood, the proposition that is trivially never
 true, which we write as $\falsehood$.  Its formation rule is immediate evidence
 that $\falsehood$ is a well-formed proposition. 
 \begin{equation*}
-  \infer[{\falsehood}F]{\falsehood \prop}{
+  \infer[{\falsehood}\mathsf{F}]{\falsehood \prop}{
     }
 \end{equation*}
-
 \item[(introduction)]
 Because $\falsehood$ should never be true, it has no introduction rule.
-
 \item[(elimination)]
 \begin{equation*}
-  \infer[{\falsehood}E]{C \true}{
+  \infer[{\falsehood}\mathsf{E}]{C \true}{
     \falsehood \true}
 \end{equation*}
 The elimination rule captures \latin{ex falso quodlibet}: from a proof of $\falsehood \true$, we may deduce that \emph{any} proposition $C$ is true because there is ultimately no way to introduce $\falsehood \true$.
@@ -291,7 +285,17 @@ Once again, the rules cohere.
 The elimination rule is very strong, but remains justified due to the absence of any introduction rule for falsehood.
 \end{itemize}
 
+\medskip 
 
+\hrule
+\begin{center}
+NEGATION
+\end{center}
+\begin{itemize}
+\item[(formation)]
+\item[(introduction)]
+\item[(elimination)]
+\end{itemize}
 
 \nocite{Pfenning2009a, Pfenning2009b}
 \bibliographystyle{plain}
