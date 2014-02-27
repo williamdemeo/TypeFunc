@@ -1,0 +1,304 @@
+% arara: pdflatex
+% arara: bibtex
+% arara: pdflatex
+% arara: pdflatex
+%\documentclass[11pt]{article}
+\documentclass{article}
+
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% Package for customizing page layout
+%\usepackage[letterpaper]{geometry}
+\usepackage[
+top    = 3cm,
+bottom = 3cm,
+left   = 4cm,
+right  = 4cm]{geometry}
+%\usepackage[letterpaper]{geometry}
+% \usepackage{fullpage}
+
+\input{macros}
+
+\usepackage{proof-dashed}
+\usepackage{tikz-cd}
+
+\metadata{IPL Notes}{Feb 28, 2014}
+\begin{document}
+This note summarizes the rules of inference for \ac{IPL} as I understand them.
+This is based on the lectures given by Professor Robert Harper in September
+2013 at CMU. Notes for Harper's lectures were transcribed by his students and
+this summary is a highly abridged and edited version of the students' notes. 
+
+As advanced by Per Martin-L\"{o}f, a modern presentation of \ac{IPL}
+distinguishes the notions of \vocab{judgment} and \vocab{proposition}. A
+judgment is something that may be known, whereas a proposition is something that
+sensibly may be the subject of a judgment. For instance, the statement ``Every
+natural number larger than $1$ is either prime or can be uniquely factored into
+a product of primes\@.'' is a proposition because it sensibly may be subject to
+judgment. That the statement is in fact true is a judgment.
+Only with a proof, however, is it evident that the judgment indeed holds.
+
+Thus, in \ac{IPL}, the two most basic judgments are $A \prop$ and $A \true$:
+\begin{alignat*}{2}
+  A \prop &&\quad& \text{$A$ is a well-formed proposition} \\
+  A \true &&& \text{\begin{tabular}[t]{@{}l@{}}
+                Proposition $A$ is intuitionistically true, i.e., has a proof.
+              \end{tabular}}
+\end{alignat*}
+The inference rules for the $\prop$ judgment are called \vocab{formation rules}.
+The inference rules for the $\true$ judgment are divided into classes:
+\vocab{introduction rules} and \vocab{elimination rules}. 
+
+The meaning of a proposition $A$ is given by the introduction rules for the
+judgment $A \true$. The elimination rules are dual and  describe what may be
+deduced from a proof of $A \true$.  The principle of \vocab{internal coherence},
+also known as \emph{Gentzen's principle of inversion}, is that the introduction
+and elimination rules for a proposition $A$ fit together properly.  The
+elimination rules should be strong enough to deduce all information that was
+used to introduce $A$ (\vocab{local completeness}), but not so strong as to
+deduce information that might not have been used to introduce $A$ (\vocab{local
+  soundness}). 
+
+\medskip 
+
+\hrule
+
+\begin{center}
+CONJUNCTION
+\end{center}
+\begin{itemize}
+\item[(formation)] 
+If $A$ and $B$ are well-formed propositions, then so is
+their \emph{conjunction}, which we write as $A \conj B$.
+\begin{equation*}
+  \infer[{\conj}\mathsf{F}]{A \conj B \prop}{
+    A \prop & B \prop}
+\end{equation*}
+
+\item[(introduction)]
+%\paragraph{Introduction.}
+To give meaning to conjunction, we must say how
+to introduce the judgment $A \conj B \true$.
+A verification of $A \conj B$ requires a proof of $A$ and
+a proof of $B$.
+\begin{equation*}
+  \infer[{\conj}\mathsf{I}]{A \conj B \true}{
+    A \true & B \true}
+\end{equation*}
+
+\item[(elimination)]
+%\paragraph{Elimination.}
+Because every proof of $A \conj B$ comes from a pair of proofs, one of $A$ and
+one of $B$, we are justified in deducing $A \true$ and $B \true$ from a proof of
+$A \conj B$: 
+\begin{mathpar}
+  \infer[{\conj}\mathsf{E}_1]{A \true}{
+    A \conj B \true}
+  \and
+  \infer[{\conj}\mathsf{E}_2]{B \true}{
+    A \conj B \true}
+\end{mathpar}
+\end{itemize}
+
+\medskip 
+
+\hrule
+%\newpage
+\begin{center}
+TRUTH
+ \end{center}
+%We denote by $\truth$ the \emph{trivially true} proposition. 
+\begin{itemize}
+\item[(formation)]
+The formation rule serves as immediate evidence for the judgment that $\truth$ is a
+well-formed proposition.
+\begin{equation*}
+  \infer[{\truth}\mathsf{F}]{\truth \prop}{
+    }
+\end{equation*}
+
+\item[(introduction)]
+Since $\truth$ is a trivially true proposition, its introduction rule makes the
+judgment $\truth \true$ immediately evident.
+
+\begin{equation*}
+  \infer[{\truth}\mathsf{I}]{\truth \true}{
+    }
+\end{equation*}
+
+\item[(elimination)]
+Since $\truth$ is trivially true, an elimination rule should not increase
+our knowledge---we put in no information when we introduced $\truth \true$, so,
+by the principle of conservation of proof, we should get no information out. Thus,
+there is no elimination rule for $\truth$.
+\end{itemize}
+
+%% \medskip 
+
+%% \hrule
+\newpage
+
+\begin{center}
+ENTAILMENT
+ \end{center}
+\emph{Entailment} is a judgment and is written as 
+\begin{equation*}
+  A_1 \true, \dotsc, A_n \true \entails A \true
+\end{equation*}
+This expresses the judgment that $A \true$ follows from 
+$A_1 \true, \dotsc, A_n \true$. 
+One can view $A_1 \true, \dotsc, A_n \true$ as being assumptions from which
+the conclusion $A \true$ may be deduced. 
+We assume that the entailment judgment satisfies several \emph{structural
+  properties}: reflexivity, transitivity, weakening, contraction, and
+permutation. 
+\begin{itemize}
+\item[Reflexivity:] An assumption is enough to conclude the same judgment.
+\begin{equation*}
+  \infer[\text{\textsf{R}}]{A \true \entails A \true}{
+    }
+\end{equation*}
+
+\item[Transitivity:]
+If you prove $A \true$, then you are justified in using it in a proof.
+\begin{equation*}
+  \infer[\text{\textsf{T}}]{C \true}{
+    A \true &
+    A \true \entails C \true}
+\end{equation*}
+
+Reflexivity and transitivity are undeniable since without them it would be
+unclear what is meant by an \emph{assumption}.  An assumption should be strong enough
+to prove conclusions (reflexivity), and only as strong as the proofs they stand for
+(transitivity). 
+The remaining structural properties---weakening, contraction, and
+permutation---could be denied.  Logics that deny any of these properties are
+called \emph{substructural logics}. 
+
+\item[Weakening:]
+We can add assumptions to a proof without invalidating that proof.
+\begin{equation*}
+  \infer[\text{\textsf{W}}]{B \true \entails A \true}{
+    A \true}
+\end{equation*}
+\item[Contraction:]
+The number of copies of an assumption does not matter.
+\begin{equation*}
+  \infer[\text{\textsf{C}}]{A \true \entails C \true}{
+    A \true, A \true \entails C \true}
+\end{equation*}
+\item[Permutation:]
+aka ``exchange;'' the order of assumptions does not matter.
+\begin{equation*}
+  \infer[\text{\textsf{P}}]{\pi(\ctx) \entails C \true}{
+    \ctx \entails C \true}
+\end{equation*}
+\end{itemize}
+
+
+\medskip 
+
+\hrule
+
+\begin{center}
+IMPLICATION
+\end{center}
+\begin{itemize}
+\item[(formation)] 
+\begin{equation*}
+  \infer[{\imp}\mathsf{F}]{A \imp B \prop}{
+    A \prop & B \prop}
+\end{equation*}
+\item[(introduction)]
+\begin{equation*}
+  \infer[{\imp}\mathsf{I}]{A \imp B \true}{
+    A \true \entails B \true}
+\end{equation*}
+In this way, implication internalizes the entailment judgment as a proposition,
+while we nonetheless maintain the distinction between propositions and
+judgments.
+%% (As an aside for those familiar with category theory, the relationship between
+%% entailment and implication is analogous to the relationship between a mapping
+%% and a collection of mappings internalized as an object in some category.) 
+\item[(elimination)]
+\begin{equation*}
+  \infer[{\imp}\mathsf{E}]{B \true}{
+    A \imp B \true & A \true} \,.
+\end{equation*}
+This rule is sometimes referred to as \latin{modus ponens}.
+\end{itemize}
+
+%% \medskip
+
+%% \hrule
+\newpage
+\begin{center}
+DISJUNCTION
+\end{center}
+\begin{itemize}
+\item[(formation)]
+\begin{equation*}
+  \infer[{\disj}\mathsf{F}]{A \disj B \prop}{
+    A \prop & B \prop}
+\end{equation*}
+\item[(introduction)]
+\begin{mathpar}
+  \infer[{\disj}\mathsf{I_1}]{A \disj B \true}{
+    A \true}
+  \and
+  \infer[{\disj}\mathsf{I_2}]{A \disj B \true}{
+    B \true}
+\end{mathpar}
+\item[(elimination)]
+\begin{equation*}
+  \infer[{\disj}\mathsf{E}]{C \true}{
+    A \disj B \true &
+    A \true \entails C \true & B \true \entails C \true}
+\end{equation*}
+\end{itemize}
+
+\medskip 
+
+\hrule
+\begin{center}
+FALSEHOOD
+\end{center}
+\begin{itemize}
+\item[(formation)]
+The unit of disjunction is falsehood, the proposition that is trivially never
+true, which we write as $\falsehood$.  Its formation rule is immediate evidence
+that $\falsehood$ is a well-formed proposition. 
+\begin{equation*}
+  \infer[{\falsehood}\mathsf{F}]{\falsehood \prop}{
+    }
+\end{equation*}
+\item[(introduction)]
+Because $\falsehood$ should never be true, it has no introduction rule.
+\item[(elimination)]
+\begin{equation*}
+  \infer[{\falsehood}\mathsf{E}]{C \true}{
+    \falsehood \true}
+\end{equation*}
+The elimination rule captures \latin{ex falso quodlibet}: from a proof of $\falsehood \true$, we may deduce that \emph{any} proposition $C$ is true because there is ultimately no way to introduce $\falsehood \true$.
+Once again, the rules cohere.
+The elimination rule is very strong, but remains justified due to the absence of any introduction rule for falsehood.
+\end{itemize}
+
+\medskip 
+
+\hrule
+\begin{center}
+NEGATION
+\end{center}
+\begin{itemize}
+\item[(formation)]
+\item[(introduction)]
+\item[(elimination)]
+\end{itemize}
+
+\nocite{Pfenning2009a, Pfenning2009b}
+\bibliographystyle{plain}
+\bibliography{hott_references}
+
+\end{document}
