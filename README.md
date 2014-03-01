@@ -11,7 +11,7 @@ Books and Papers
 + [Programming in Martin-L&ouml;f’s Type Theory](An Introduction.”http://www.cse.chalmers.se/research/group/logic/book/),
   Nordstr&ouml;m, Petersson, and Smith.  
 + [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen and Urzyczyn.  
-+ [Category Theory][], Steve Awodey.  
++ [Category Theory][], Steve Awodey ([YouTube Lecture](http://youtu.be/ZKmodCApZwk))  
 + [Software Foundations][], Pierce, et al.  
 + [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
 
@@ -23,7 +23,7 @@ Courses
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun) by Martin Odersky.
 + [2013 Oregon Programming Languages Summer School][] on types, logic, and verification.  
 + [2012 course on topology for functional programming][] by Martin Escardo.  
-+ [2012 Oregon Programming Languages Summer School][] on logic, languages, compilation, and verification.
++ [2012 Oregon Programming Languages Summer School][] on logic, languages, compilation, and verification. ([YouTube videos](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
 + [2012 CMU graduate course on linear logic][] by Frank Pfenning.
 + [2011 course on type theory and Coq][] at Radboud University, NL.
 + [2010 CMU course on classical and intuitionistic modal logic][] by Frank Pfenning and André Platzer.
