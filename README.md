@@ -5,7 +5,7 @@ theory, functional programming, and connections between topology and computing.
 
 Books and Papers
 ----------------
-+ [Intuitionistic type theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures. 
++ [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures. 
 + [The HoTT Book][], a textbook on informal homotopy type theory.   
 + [Type Theory and Functional Programming](https://www.cs.kent.ac.uk/people/staff/sjt/TTFP/), Simon Thompson.  
 + [Programming in Martin-L&ouml;f’s Type Theory](An Introduction.”http://www.cse.chalmers.se/research/group/logic/book/),
@@ -35,11 +35,9 @@ Programming
     - [Learn you an agda](https://github.com/williamdemeo/learn-you-an-agda), a fork of Liam O'Connor's book/tutorial (with a few corrections).
     - [Interactive Theorem Proving for Agda Users](http://www.cs.swan.ac.uk/~csetzer/lectures/intertheo/07/interactiveTheoremProvingForAgdaUsers.html) -- Swansea University.  
     - [A YouTube tutorial](http://www.youtube.com/watch?v=SQama_q9qtQ&feature=share) that uses the Level module.
-    - [The Agda Wiki](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage),
-      its [list of tutorials](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Othertutorials),
-      and [documentation](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Documentation).  
+    - [The Agda Wiki](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage)
 + [Coq][]  
-    - [Software Fondations][] book by Pierce, et al.  
+    - [Software Foundations][] book by Pierce, et al.  
     - [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/cpdt.pdf) book by Adam Chlipala.  
     - [Software Foundations in Coq][], tips from OPLSS.  
     - [2011 Course on Type Theory and Coq][], at Radboud University, NL.
@@ -49,7 +47,7 @@ Programming
 
 Miscellaneous
 -------------
-+ [github.com/HoTT][] -- the HoTT book's GitHub repo.  Clone it to get the very latest edition.  
++ [github.com/HoTT][], GitHub repo for the HoTT book. (Clone this to get the very latest edition.)
 + [homotopytypetheory.org][]  
 + [types-forum][] and [types-announce][] mailing lists.  
 + [types project][]
