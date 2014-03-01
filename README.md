@@ -3,46 +3,56 @@ TypeFunc
 This repository collects some links and resources for learning about type
 theory, functional programming, and connections between topology and computing.
 
-Courses
--------
-+ [2014 Oregon Programming Languages Summer School][]  on types, logic, semantics, and verification.  
-+ [2014 Midlands Workshop in Foundations of CS][]  at University of Nottingham, UK.
-+ [2013 CMU graduate seminar on HoTT][]  by Robert Harper with [recorded lectures][].  
-+ [2013 Oregon Programming Languages Summer School][]  on types, logic, and verification.  
-+ [2012 course on topology for functional programming][]  by Martin Escardo.  
-+ [2012 Oregon Programming Languages Summer School][]  on logic, languages, compilation, and verification.
-+ [2012 CMU graduate course on linear logic][]  by Frank Pfenning.
-+ [2011 course on type theory and Coq][]  at Radboud University, NL.
-+ [2010 CMU course on classical and intuitionistic modal logic][]  by Frank Pfenning and André Platzer.
-
 Books and Papers
 ----------------
-+ [The HoTT Book][] -- textbook on informal homotopy type theory (HoTT);  
-  see also [homotopytypetheory.org][] and [github.com/HoTT][].   
-+ [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
++ [Intuitionistic type theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf) Per Martin-L&ouml;f's Padova lectures. 
++ [The HoTT Book][], a textbook on informal homotopy type theory.   
++ [Type Theory and Functional Programming](https://www.cs.kent.ac.uk/people/staff/sjt/TTFP/), Simon Thompson.  
++ [Programming in Martin-L&ouml;f’s Type Theory](An Introduction.”http://www.cse.chalmers.se/research/group/logic/book/),
+  Nordstr&ouml;m, Petersson, and Smith.  
++ [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen and Urzyczyn.  
 + [Category Theory][], Steve Awodey.  
-+ [Software Fondations][], Pierce, et al. (topics: logic, computer-assisted
-theorem proving, Coq, functional programming, operational semantics, Hoare
-logic, and static type systems).
++ [Software Fondations][], Pierce, et al. (topics: logic, computer-assisted theorem proving, Coq, functional programming, operational semantics, Hoare logic, and static type systems).  
++ [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
+
+Courses
+-------
++ [2014 Oregon Programming Languages Summer School][] on types, logic, semantics, and verification.  
++ [2014 Midlands Workshop in Foundations of CS][] at University of Nottingham, UK.
++ [2013 CMU graduate seminar on HoTT][] by Robert Harper with [recorded lectures][].  
++ [2013 Functional programming principles in Scala][] by Martin Odersky.
++ [2013 Oregon Programming Languages Summer School][] on types, logic, and verification.  
++ [2012 course on topology for functional programming][] by Martin Escardo.  
++ [2012 Oregon Programming Languages Summer School][] on logic, languages, compilation, and verification.
++ [2012 CMU graduate course on linear logic][] by Frank Pfenning.
++ [2011 course on type theory and Coq][] at Radboud University, NL.
++ [2010 CMU course on classical and intuitionistic modal logic][] by Frank Pfenning and André Platzer.
 
 Programming
 -----------
-+ [Scala][]  
-    - [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
 + [Agda][]  
-    - [Learn you an agda](https://github.com/williamdemeo/learn-you-an-agda) -- fork of Liam O'Connor's repo with fixed links.  
-    - [Interactive Theorem Proving for Agda Users][] -- Swansea University, UK.    
+    - [A nice introductory tutorial](http://www.stephendiehl.com/posts/agda.html), by Stephen Diehl.
+    - [Learn you an agda](https://github.com/williamdemeo/learn-you-an-agda), a fork of Liam O'Connor's book/tutorial (with a few corrections).
+    - [Interactive Theorem Proving for Agda Users](http://www.cs.swan.ac.uk/~csetzer/lectures/intertheo/07/interactiveTheoremProvingForAgdaUsers.html) -- Swansea University.  
+    - [A YouTube tutorial](http://www.youtube.com/watch?v=SQama_q9qtQ&feature=share) that uses the Level module.
+    - [The Agda Wiki](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage),
+      its [list of tutorials](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Othertutorials),
+      and [documentation](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Documentation).  
 + [Coq][]  
     - [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/cpdt.pdf) (book)  
     - [Software Fondations][] (book)  
     - [Software Foundations in Coq][] -- tips from OPLSS  
     - [2011 Course on Type Theory and Coq][]  
-    - [How to use Coq with Proof General](http://youtu.be/l6zqLJQCnzo) (YouTube)  
-    - [Nine short YouTube tutorials](http://www.youtube.com/watch?v=COe0VTNF2EA&list=PLDD40A96C2ED54E99&feature=share) (YouTube), by Andrej Bauer.
+    - [YouTube: introductory Coq tutorials](http://www.youtube.com/watch?v=COe0VTNF2EA&list=PLDD40A96C2ED54E99&feature=share), by Andrej Bauer.  
+    - [YouTube: How to use Coq with Proof General](http://youtu.be/l6zqLJQCnzo)
++ [Scala][]  
+    - [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
 
 Miscellaneous
 -------------
-+ [types-forum][] and [types-announce][] mailing lists.
++ [github.com/HoTT][] -- the HoTT book's GitHub repo.  Clone it to get the very latest edition.  
++ [homotopytypetheory.org][]  
++ [types-forum][] and [types-announce][] mailing lists.  
 + [types project][]
 
 
