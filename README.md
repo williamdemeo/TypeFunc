@@ -60,7 +60,7 @@ Miscellaneous
 [types-announce]: http://lists.seas.upenn.edu/mailman/listinfo/types-announce
 [Experimental library of univalent formalization of mathematics]: http://arxiv.org/abs/1401.0053
 [Software Foundations in Coq]: http://web.cecs.pdx.edu/~apt/coq_hints.html
-[Software Fondations]: http://www.cis.upenn.edu/~bcpierce/sf/
+[Software Foundations]: http://www.cis.upenn.edu/~bcpierce/sf/
 [2012 CMU graduate course on linear logic]: http://www.cs.cmu.edu/~fp/courses/15816-s12/
 [2010 CMU course on classical and intuitionistic modal logic]: http://www.cs.cmu.edu/~fp/courses/15816-s10/index.html
 [types project]: http://www.cse.chalmers.se/research/group/logic/Types/index.html
