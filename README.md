@@ -12,6 +12,7 @@ Books and Papers
   Nordstr&ouml;m, Petersson, and Smith.  
 + [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen and Urzyczyn.  
 + [Category Theory][], Steve Awodey ([YouTube](http://youtu.be/ZKmodCApZwk))  
++ [Topological domain theory](http://homepages.inf.ed.ac.uk/als/Research/topological-domain-theory.html), Alex Simpson, et al.
 + [Software Foundations][], Pierce, et al.  
 + [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
 
