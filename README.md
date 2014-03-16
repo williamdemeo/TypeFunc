@@ -15,6 +15,8 @@ Books and Papers
 + [Topological domain theory](http://homepages.inf.ed.ac.uk/als/Research/topological-domain-theory.html), Alex Simpson, et al.
 + [Software Foundations][], Pierce, et al.  
 + [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
++ [Haskell School of Music](http://haskell.cs.yale.edu/wp-content/uploads/2014/02/HSoM1.pdf)
+  from the [Yale Haskel Group](http://haskell.cs.yale.edu/).
 
 Courses
 -------
