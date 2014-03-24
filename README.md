@@ -13,31 +13,32 @@ Books and Papers
 + [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen and Urzyczyn.  
 + [Category Theory][], Steve Awodey ([YouTube](http://youtu.be/ZKmodCApZwk))  
 + [Topological domain theory](http://homepages.inf.ed.ac.uk/als/Research/topological-domain-theory.html), Alex Simpson, et al.
-+ [Software Foundations][], Pierce, et al.  
++ [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
 + [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
 
 Courses
 -------
 + [2014 Oregon Programming Languages Summer School][] on types, logic, semantics, and verification.  
-+ [2014 Midlands Workshop in Foundations of CS][] at University of Nottingham, UK.
-+ [2013 CMU graduate seminar on HoTT][] by Robert Harper with [recorded lectures][].  
-+ [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun) by Martin Odersky.
++ [2014 Midlands Workshop in Foundations of CS][], University of Nottingham, UK.  
++ [2013 CMU graduate seminar on HoTT][], Robert Harper, with [recorded lectures][].  
++ [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
 + [2013 Oregon Programming Languages Summer School][] on types, logic, and verification.  
-+ [2012 course on topology for functional programming][] by Martin Escardo.  
++ [2012 course on topology for functional programming][], Martin Escardo.  
 + [2012 Oregon Programming Languages Summer School][] on logic, languages, compilation, and verification. ([YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
-+ [2012 CMU graduate course on linear logic][] by Frank Pfenning.
-+ [2011 course on type theory and Coq][] at Radboud University, NL.
-+ [2010 CMU course on classical and intuitionistic modal logic][] by Frank Pfenning and André Platzer.
++ [2012 CMU course on linear logic](http://www.cs.cmu.edu/~fp/courses/15816-s12/), Frank Pfenning.  
++ [2011 course on type theory and Coq][], Radboud University, NL.  
++ [2010 CMU course on modal logic](http://www.cs.cmu.edu/~fp/courses/15816-s10/), Frank Pfenning and André Platzer.  
++ [2009 CMU course on constructive logic](http://www.cs.cmu.edu/~fp/courses/15317-f09/index.html), Frank Pfenning and Ron Garcia.
 
 Programming
 -----------
 + [Agda][]  
     - [Learn you an agda](https://github.com/williamdemeo/learn-you-an-agda), a fork of Liam O'Connor's book/tutorial (with a few corrections).
-    - [A nice introductory tutorial](http://www.stephendiehl.com/posts/agda.html) by Stephen Diehl.
+    - [A nice introductory tutorial](http://www.stephendiehl.com/posts/agda.html), Stephen Diehl.
     - [A YouTube tutorial](http://www.youtube.com/watch?v=SQama_q9qtQ&feature=share) that uses the Level module.
     - [The Agda Wiki](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage)
 + [Coq][]  
-    - [Software Foundations][] book by Pierce, et al.  
+    - [Software Foundations book](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
     - [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/cpdt.pdf) book by Adam Chlipala.  
     - [Software Foundations in Coq][], tips from OPLSS.  
     - [2011 Course on Type Theory and Coq][], at Radboud University, NL.
@@ -58,9 +59,6 @@ Miscellaneous
 [types-announce]: http://lists.seas.upenn.edu/mailman/listinfo/types-announce
 [Experimental library of univalent formalization of mathematics]: http://arxiv.org/abs/1401.0053
 [Software Foundations in Coq]: http://web.cecs.pdx.edu/~apt/coq_hints.html
-[Software Foundations]: http://www.cis.upenn.edu/~bcpierce/sf/
-[2012 CMU graduate course on linear logic]: http://www.cs.cmu.edu/~fp/courses/15816-s12/
-[2010 CMU course on classical and intuitionistic modal logic]: http://www.cs.cmu.edu/~fp/courses/15816-s10/index.html
 [types project]: http://www.cse.chalmers.se/research/group/logic/Types/index.html
 [Scala]: http://www.scala-lang.org/
 [Agda]: http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage
