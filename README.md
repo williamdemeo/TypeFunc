@@ -20,7 +20,7 @@ Courses
 -------
 + [2014 Midlands Workshop in Foundations of CS][], University of Nottingham, UK.  
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
-+ [2012 short course on topology for functional programming][], Martin Escardo.  
++ [2012 short course on topology for functional programming](http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/), Martin Escardo.  
 + [2011 course on type theory and Coq][], Radboud University, NL.  
 + **CMU courses**
     - [2013 grad seminar on HoTT](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper, with [recorded lectures][].  
@@ -70,7 +70,6 @@ Miscellaneous
 [2011 Course on Type Theory and Coq]: http://www.cs.ru.nl/~freek/courses/tt-2011/
 [Short course on type theory and programming]: http://www.cse.chalmers.se/~bengt/course/typetheory-oneweek.html
 [2013 course "Functional programming principles in Scala"]: https://www.coursera.org/course/progfun
-[2012 course on topology for functional programming]: http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/
 [2008 course "Introduction to Type Theory"]: http://www.cs.ru.nl/~herman/Uruguay2008SummerSchool.html
 [Notes from CMU HoTT course]: https://github.com/favonia/hott-notes
 [notes directory]: https://github.com/williamdemeo/TypeFunc/tree/master/notes
