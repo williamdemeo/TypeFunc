@@ -18,17 +18,19 @@ Books and Papers
 
 Courses
 -------
-+ [2014 Oregon Programming Languages Summer School][] on types, logic, semantics, and verification.  
 + [2014 Midlands Workshop in Foundations of CS][], University of Nottingham, UK.  
-+ [2013 CMU graduate seminar on HoTT][], Robert Harper, with [recorded lectures][].  
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
-+ [2013 Oregon Programming Languages Summer School][] on types, logic, and verification.  
 + [2012 course on topology for functional programming][], Martin Escardo.  
-+ [2012 Oregon Programming Languages Summer School][] on logic, languages, compilation, and verification. ([YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
-+ [2012 CMU course on linear logic](http://www.cs.cmu.edu/~fp/courses/15816-s12/), Frank Pfenning.  
 + [2011 course on type theory and Coq][], Radboud University, NL.  
-+ [2010 CMU course on modal logic](http://www.cs.cmu.edu/~fp/courses/15816-s10/), Frank Pfenning and André Platzer.  
-+ [2009 CMU course on constructive logic](http://www.cs.cmu.edu/~fp/courses/15317-f09/index.html), Frank Pfenning and Ron Garcia.
++ **CMU courses**
+    - [2013 grad seminar on HoTT](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper, with [recorded lectures][].  
+    - [2012 grad course on linear logic](http://www.cs.cmu.edu/~fp/courses/15816-s12/), Frank Pfenning.  
+    - [2010 grad course on modal logic](http://www.cs.cmu.edu/~fp/courses/15816-s10/), Frank Pfenning and André Platzer.  
+    - [2009 undergrad course on constructive logic](http://www.cs.cmu.edu/~fp/courses/15317-f09/index.html), Frank Pfenning and Ron Garcia.
++ **Oregon Programming Languages Summer School**
+    - [2014: types, logic, semantics, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer14/index.html)  
+    - [2013: types, logic, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer13/)  
+    - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
 
 Programming
 -----------
@@ -64,14 +66,8 @@ Miscellaneous
 [Agda]: http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage
 [Coq]: http://coq.inria.fr/
 [The HoTT Book]: http://homotopytypetheory.org/book/
-[2013 CMU graduate seminar on HoTT]: http://www.cs.cmu.edu/~rwh/courses/hott/
 [recorded lectures]: http://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID="07756bb0-b872-4a4a-95b1-b77ad206dab3"
 [2011 Course on Type Theory and Coq]: http://www.cs.ru.nl/~freek/courses/tt-2011/
-[2014 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer14/index.html
-[2013 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer13/
-[2012 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer12/
-[2011 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer11/
-[2010 Oregon Programming Languages Summer School]: http://www.cs.uoregon.edu/research/summerschool/summer10/
 [Short course on type theory and programming]: http://www.cse.chalmers.se/~bengt/course/typetheory-oneweek.html
 [2013 course "Functional programming principles in Scala"]: https://www.coursera.org/course/progfun
 [2012 course on topology for functional programming]: http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/
