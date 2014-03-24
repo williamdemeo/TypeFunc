@@ -20,7 +20,7 @@ Courses
 -------
 + [2014 Midlands Workshop in Foundations of CS][], University of Nottingham, UK.  
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
-+ [2012 course on topology for functional programming][], Martin Escardo.  
++ [2012 short course on topology for functional programming][], Martin Escardo.  
 + [2011 course on type theory and Coq][], Radboud University, NL.  
 + **CMU courses**
     - [2013 grad seminar on HoTT](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper, with [recorded lectures][].  
