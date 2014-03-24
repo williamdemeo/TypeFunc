@@ -11,7 +11,7 @@ Books and Papers
 + [Programming in Martin-L&ouml;f’s Type Theory](An Introduction.”http://www.cse.chalmers.se/research/group/logic/book/),
   Nordstr&ouml;m, Petersson, and Smith.  
 + [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen and Urzyczyn.  
-+ [Category Theory][], Steve Awodey ([YouTube](http://youtu.be/ZKmodCApZwk))  
++ [Category Theory][], Steve Awodey ([Lectures@YouTube](http://youtu.be/ZKmodCApZwk))  
 + [Topological domain theory](http://homepages.inf.ed.ac.uk/als/Research/topological-domain-theory.html), Alex Simpson, et al.
 + [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
 + [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
@@ -30,7 +30,7 @@ Courses
 + **Oregon Programming Languages Summer School**
     - [2014: types, logic, semantics, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer14/index.html)  
     - [2013: types, logic, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer13/)  
-    - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
+    - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([Lectures@YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
 
 Programming
 -----------
