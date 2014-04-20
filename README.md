@@ -18,7 +18,7 @@ Books and Papers
 
 Courses
 -------
-+ [2014 Midlands Graduate School in Foundations of CS][], University of Nottingham, UK.  
++ [2014 Midlands Graduate School in Foundations of CS](http://www.cs.nott.ac.uk/~txa/mgs.2014/), University of Nottingham, UK.  
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
 + [2012 short course on topology for functional programming](http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/), Martin Escardo.  
 + [2011 course on type theory and Coq][], Radboud University, NL.  
@@ -55,8 +55,6 @@ Miscellaneous
 + [types-forum][] and [types-announce][] mailing lists.  
 + [types project][]
 
-
-[2014 Midlands Workshop in Foundations of CS]: http://www.cs.nott.ac.uk/~txa/mgs.2014/
 [types-forum]: http://lists.seas.upenn.edu/mailman/listinfo/types-list
 [types-announce]: http://lists.seas.upenn.edu/mailman/listinfo/types-announce
 [Experimental library of univalent formalization of mathematics]: http://arxiv.org/abs/1401.0053
