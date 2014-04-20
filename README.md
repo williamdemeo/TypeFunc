@@ -8,7 +8,7 @@ Books and Papers
 + [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures. 
 + [The HoTT Book][], a textbook on informal homotopy type theory.   
 + [Type Theory and Functional Programming](https://www.cs.kent.ac.uk/people/staff/sjt/TTFP/), Simon Thompson.  
-+ [Programming in Martin-L&ouml;f’s Type Theory](An Introduction.”http://www.cse.chalmers.se/research/group/logic/book/),
++ [Programming in Martin-L&ouml;f’s Type Theory](http://www.cse.chalmers.se/research/group/logic/book/),
   Nordstr&ouml;m, Petersson, and Smith.  
 + [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen and Urzyczyn.  
 + [Category Theory][], Steve Awodey ([Lectures@YouTube](http://youtu.be/ZKmodCApZwk))  
@@ -18,7 +18,7 @@ Books and Papers
 
 Courses
 -------
-+ [2014 Midlands Workshop in Foundations of CS][], University of Nottingham, UK.  
++ [2014 Midlands Graduate School in Foundations of CS][], University of Nottingham, UK.  
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
 + [2012 short course on topology for functional programming](http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/), Martin Escardo.  
 + [2011 course on type theory and Coq][], Radboud University, NL.  
