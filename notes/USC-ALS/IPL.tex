@@ -27,8 +27,9 @@ right  = 4cm]{geometry}
 \begin{document}
 This note summarizes the rules of inference for \ac{IPL} as I understand them.
 This is based on the lectures given by Professor Robert Harper in September
-2013 at CMU. Notes for Harper's lectures were transcribed by his students and
-this summary is a highly abridged and edited version of the students' notes. 
+2013 at CMU~\cite{Harper2012}. 
+Notes for Harper's lectures were transcribed by his students and
+this summary is based on the recorded lectures and the notes. 
 
 As advanced by Per Martin-L\"{o}f, a modern presentation of \ac{IPL}
 distinguishes the notions of \vocab{judgment} and \vocab{proposition}. A
@@ -288,17 +289,43 @@ The elimination rule is very strong, but remains justified due to the absence of
 \medskip 
 
 \hrule
-\begin{center}
-NEGATION
-\end{center}
-\begin{itemize}
-\item[(formation)]
-\item[(introduction)]
-\item[(elimination)]
-\end{itemize}
+%% \begin{center}
+%% NEGATION
+%% \end{center}
+%% \begin{itemize}
+%% \item[(formation)]
+%% \item[(introduction)]
+%% \item[(elimination)]
+%% \end{itemize}
 
-\nocite{Pfenning2009a, Pfenning2009b}
-\bibliographystyle{plain}
-\bibliography{hott_references}
+%% \nocite{Pfenning2009a, Pfenning2009b}
+\begin{thebibliography}{1}
+
+
+\bibitem{Harper2012}
+Robert Harper.
+\newblock Carnegie Mellon University course: 15-819 Homotopy Type Theory.
+\newblock
+  \url{http://www.cs.cmu.edu/~rwh/courses/hott/},
+  Fall 2012.
+
+\bibitem{Pfenning2009b}
+Frank Pfenning.
+\newblock Lecture notes on harmony.
+\newblock
+  \url{http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/03-harmony.pdf},
+  September 2009.
+
+\bibitem{Pfenning2009a}
+Frank Pfenning.
+\newblock Lecture notes on natural deduction.
+\newblock
+  \url{http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.pdf},
+  August 2009.
+
+\end{thebibliography}
+
+%% \bibliographystyle{plain}
+%% \bibliography{hott_references}
 
 \end{document}

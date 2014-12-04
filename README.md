@@ -35,10 +35,10 @@ Courses
 Programming
 -----------
 + [Agda][]  
-    - [Learn you an agda](https://github.com/williamdemeo/learn-you-an-agda), a fork of Liam O'Connor's book/tutorial (with a few corrections).
-    - [A nice introductory tutorial](http://www.stephendiehl.com/posts/agda.html), Stephen Diehl.
-    - [A YouTube tutorial](http://www.youtube.com/watch?v=SQama_q9qtQ&feature=share) that uses the Level module.
     - [The Agda Wiki](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage)
+    - [Dependent Types at Work](http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf) A nice, gentle introductory tutorial by Ana Bove and Peter Dybjer.
+    - [Learn you an agda](https://github.com/williamdemeo/learn-you-an-agda), a fork of Liam O'Connor's book/tutorial (with a few corrections).
+
 + [Coq][]  
     - [Software Foundations book](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
     - [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/cpdt.pdf) book by Adam Chlipala.  
