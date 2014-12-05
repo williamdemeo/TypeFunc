@@ -12,6 +12,7 @@ data Bool : Set where
 
 -- Set cannot be a member of the type Set.
 -- If we added Set : Set the system would become inconsistent.
+-- (The symbol ¬ is produced by typing \not.)
 
 ¬ : Bool → Bool
 ¬ true = false
@@ -27,6 +28,8 @@ data Bool : Set where
 -- For example if ¬ lacked the last line defining ¬ false, Agda would reject it.
 -- All programs in Agda must be total.
 
+-- The binary function for equivalence can be defined by pattern matching on both arguments.
+-- Note the ≅ symbol is produced by typing \cong.
 _≅_ : Bool → Bool → Bool
 true ≅ true = true
 true ≅ false = false
@@ -56,7 +59,6 @@ data ℕ : Set where
 -- a natural number is either zero or the successor of another natural number.
 -- In constructive type theory, one usually refers to them as inductive types or
 -- inductively defined types.
-
 pred : ℕ → ℕ
 pred zero = zero
 pred (succ n) = n
@@ -65,11 +67,35 @@ _+_ : ℕ → ℕ → ℕ
 zero + n = n
 succ m + n = succ (m + n)
 
--- NB: in the tutorial, it is claimed that we can leave out the parens in 
--- the expression (n * m).  However, for me this fails to parse.
 _*_ : ℕ → ℕ → ℕ
 zero * n = zero
-succ n * m = (n * m) + m
+succ m * n = (m * n) + m
+
+-- NB: in the tutorial, it is claimed that we can leave out the parens in 
+-- the expression (n * m).  However, for me this fails to parse.
+
+-- Exercise 1: Write the cut-off subtraction function---the function 
+-- on natural numbers, which returns 0 if the second argument is greater 
+-- than or equal to the first. Also write some more numerical functions 
+-- like < or ≤.
+
+-- cut-off subtraction binary function
+_c-_ : ℕ → ℕ → ℕ
+zero c- _ = zero
+succ m c- zero = succ m
+succ m c- succ n = m c- n
+
+-- less than binary function
+_<_ : ℕ → ℕ → Bool
+_ < zero = false
+zero < succ n = true
+succ n < succ m = n < m
+
+-- less or equal binary function
+_leq_ : ℕ → ℕ → Bool
+zero leq _ = true
+succ n leq zero = false
+succ n leq succ m = n leq m
 
 
 -- Lambda abstraction is either written 
