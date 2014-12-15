@@ -1,6 +1,6 @@
 ## OPLSS Agda resources
 
-This directoryu contains some of the Agda resources used in courses held at the Oregon Programming
+This directory contains some of the Agda resources used in courses held at the Oregon Programming
 Languages Summer School is 2013 (Licata and Voysey) and 2014 (Norell).
 
 + **2014** Ulf Norell gave a tutorial on programming with dependent types in Agda.  
