@@ -37,7 +37,7 @@ Programming
 + [Agda][]  
     - [The Agda Wiki](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage)
     - [Dependent Types at Work](http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf) A nice, gentle introductory tutorial by Ana Bove and Peter Dybjer.
-    - [Learn you an agda](https://github.com/williamdemeo/learn-you-an-agda), a fork of Liam O'Connor's book/tutorial (with a few corrections).
+    - [Learn you an agda](http://williamdemeo.github.io/2014/02/27/learn-you-an-agda/), a modified version of [Liam O'Connor's introductory tutorial](http://learnyouanagda.liamoc.net/).
 
 + [Coq][]  
     - [Software Foundations book](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
