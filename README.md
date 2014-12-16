@@ -48,6 +48,15 @@ Programming
 + [Scala][]  
     - [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
 
++ [Haskell][]  
+	- [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/) a
+      beginner's guide that's free to read online.  
+	- [Stephen Diehl](http://www.stephendiehl.com/posts.html) has some nice
+      posts covering things like monads in Haskell.   
+	- [School of Haskell](https://www.fpcomplete.com/school) at fpcomplete.com,
+      a commercial site that seems to allow free creation and sharing of online projects;
+      offers many resources for learning Haskell.  
+	
 Miscellaneous
 -------------
 + [github.com/HoTT][], GitHub repo for the HoTT book. (Clone this to get the very latest edition.)
