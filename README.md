@@ -48,14 +48,15 @@ Programming
 + [Scala][]  
     - [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
 
-+ [Haskell][]  
++ [Haskell](https://hackage.haskell.org/)  
 	- [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/) a
       beginner's guide that's free to read online.  
 	- [Stephen Diehl](http://www.stephendiehl.com/posts.html) has some nice
       posts covering things like monads in Haskell.   
 	- [School of Haskell](https://www.fpcomplete.com/school) at fpcomplete.com,
       a commercial site that seems to allow free creation and sharing of online projects;
-      offers many resources for learning Haskell.  
+      offers many resources for learning Haskell.
+	- [A monad for infinite search in finite time](http://math.andrej.com/2008/11/21/a-haskell-monad-for-infinite-search-in-finite-time/) by Martin Escardo.
 	
 Miscellaneous
 -------------
