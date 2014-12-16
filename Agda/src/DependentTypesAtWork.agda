@@ -163,4 +163,5 @@ S : (A B C : Set) → (A → B → C) → (A → B) → A → C
 S A B C f g x = f x (g x)
 
 
+-- SECTION 2.4: Implicit Arguments
 
