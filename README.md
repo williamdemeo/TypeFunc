@@ -46,7 +46,7 @@ Programming
     - [2011 Course on Type Theory and Coq][], at Radboud University, NL.
     - [YouTube: introductory Coq tutorials](http://www.youtube.com/watch?v=COe0VTNF2EA&list=PLDD40A96C2ED54E99&feature=share), by Andrej Bauer.  
 + [Scala][]  
-    - [2013 course "Functional programming principles in Scala"][] -- Coursera course by Martin Odersky.
+    - [2013 course "Functional programming principles in Scala"][], by Martin Odersky.
 
 + [Haskell](https://hackage.haskell.org/)  
 	- [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/) a
@@ -56,7 +56,7 @@ Programming
 	- [School of Haskell](https://www.fpcomplete.com/school) at fpcomplete.com,
       a commercial site that seems to allow free creation and sharing of online projects;
       offers many resources for learning Haskell.
-	- [A monad for infinite search in finite time](http://math.andrej.com/2008/11/21/a-haskell-monad-for-infinite-search-in-finite-time/) by Martin Escardo.
+	- [A monad for infinite search in finite time](http://math.andrej.com/2008/11/21/a-haskell-monad-for-infinite-search-in-finite-time/), by Martin Escardo.
 	
 Miscellaneous
 -------------
