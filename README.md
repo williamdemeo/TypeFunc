@@ -48,7 +48,7 @@ Programming
 + [Scala][]  
     - [2013 course "Functional programming principles in Scala"][], by Martin Odersky.
 
-+ [Haskell](https://hackage.haskell.org/)  
++ [Haskell](http://www.haskell.org/)  
 	- [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/) a
       beginner's guide that's free to read online.  
 	- [Stephen Diehl](http://www.stephendiehl.com/posts.html) has some nice
