@@ -44,9 +44,10 @@ Programming
     - [Software Foundations book](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
     - [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/cpdt.pdf) book by Adam Chlipala.  
     - [Software Foundations in Coq][], tips from OPLSS.  
-    - [2011 Course on Type Theory and Coq][], at Radboud University, NL.
-    - [YouTube: introductory Coq tutorials](http://www.youtube.com/watch?v=COe0VTNF2EA&list=PLDD40A96C2ED54E99&feature=share), by Andrej Bauer.  
-	- [Videos for Intro to Computational Logic](https://www.ps.uni-saarland.de/courses/cl/videos.php)
+    - [2011 Course on Type Theory and Coq][], at Radboud University, NL.  
+    - [YouTube: introductory Coq tutorials](https://www.youtube.com/playlist?list=PL5FJyaC2WsVlcWB4we3sPe6t09Vviu3Hn), by Andrej Bauer.  
+	- [YouTube: intro to computational logic](https://www.youtube.com/playlist?list=PL5FJyaC2WsVnmxmaOixx3EWx3888BToGJ), from Saarland U. ([downloadable](https://www.ps.uni-saarland.de/courses/cl/videos.php))
+	
 + [Scala][]  
     - [2013 course "Functional programming principles in Scala"][], by Martin Odersky.
 
