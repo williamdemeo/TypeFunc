@@ -18,6 +18,7 @@ Books and Papers
 
 Courses
 -------
++ [Introduction to Computational Logic](https://courses.ps.uni-saarland.de/icl_15/), Saarland University.  
 + [2014 Midlands Graduate School in Foundations of CS](http://www.cs.nott.ac.uk/~txa/mgs.2014/), University of Nottingham, UK.  
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
 + [2012 short course on topology for functional programming](http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/), Martin Escardo.  
@@ -45,6 +46,7 @@ Programming
     - [Software Foundations in Coq][], tips from OPLSS.  
     - [2011 Course on Type Theory and Coq][], at Radboud University, NL.
     - [YouTube: introductory Coq tutorials](http://www.youtube.com/watch?v=COe0VTNF2EA&list=PLDD40A96C2ED54E99&feature=share), by Andrej Bauer.  
+	- [Videos for Intro to Computational Logic](https://www.ps.uni-saarland.de/courses/cl/videos.php)
 + [Scala][]  
     - [2013 course "Functional programming principles in Scala"][], by Martin Odersky.
 
