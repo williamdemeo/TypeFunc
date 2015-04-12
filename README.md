@@ -19,6 +19,7 @@ Books and Papers
 Courses
 -------
 + [2015 Introduction to Computational Logic](https://courses.ps.uni-saarland.de/icl_15/), Saarland University.  
++ [2014 Software Foundations (CIS 500)](http://www.seas.upenn.edu/~cis500/current/index.html), Stephanie Weirich, U Penn.  
 + [2014 Midlands Graduate School in Foundations of CS](http://www.cs.nott.ac.uk/~txa/mgs.2014/), University of Nottingham, UK.  
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
 + [2012 short course on topology for functional programming](http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/), Martin Escardo.  
