@@ -24,6 +24,7 @@ Courses
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
 + [2012 short course on topology for functional programming](http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/), Martin Escardo.  
 + [2011 course on type theory and Coq][], Radboud University, NL.  
++ [2011 course on verifying algorithms in Coq](http://www.di.ens.fr/~zappa/teaching/coq/ecole11/), CEA-EDF-INRIA, FR.  
 + **CMU courses**
     - [2013 grad seminar on HoTT](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper, with [recorded lectures][].  
     - [2012 grad course on linear logic](http://www.cs.cmu.edu/~fp/courses/15816-s12/), Frank Pfenning.  
