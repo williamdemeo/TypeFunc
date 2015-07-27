@@ -21,9 +21,12 @@ Courses
 + [2015 Introduction to Computational Logic](https://courses.ps.uni-saarland.de/icl_15/), Saarland University.  
 + [2014 Software Foundations (CIS 500)](http://www.seas.upenn.edu/~cis500/current/index.html), Stephanie Weirich, U Penn.  
 + [2014 Midlands Graduate School in Foundations of CS](http://www.cs.nott.ac.uk/~txa/mgs.2014/), University of Nottingham, UK.  
++ [2015 Introduction to Computational Logic](https://courses.ps.uni-saarland.de/icl_15/), Gert Smolka and Tobias Tebbi.  
++ [2014 Programs and Proofs: Mechanizing Mathematics with Dependent Types](http://ilyasergey.net/pnp-2014/), Ilya Sergey.   
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
 + [2012 short course on topology for functional programming](http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/), Martin Escardo.  
-+ [2011 course on type theory and Coq][], Radboud University, NL.  
++ [2011 Introduction to Formal Reasoning](http://www.cs.nott.ac.uk/~txa/g52ifr/) Thorsten Altenkirch.  
++ [2011 course on type theory and Coq](http://www.cs.ru.nl/~freek/courses/tt-2011/), Radboud University, NL.  
 + [2011 course on verifying algorithms in Coq](http://www.di.ens.fr/~zappa/teaching/coq/ecole11/), CEA-EDF-INRIA, FR.  
 + **CMU courses**
     - [2013 grad seminar on HoTT](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper, with [recorded lectures][].  
@@ -31,6 +34,7 @@ Courses
     - [2010 grad course on modal logic](http://www.cs.cmu.edu/~fp/courses/15816-s10/), Frank Pfenning and André Platzer.  
     - [2009 undergrad course on constructive logic](http://www.cs.cmu.edu/~fp/courses/15317-f09/index.html), Frank Pfenning and Ron Garcia.
 + **Oregon Programming Languages Summer School**
+    - [2015: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer15/index.php)  
     - [2014: types, logic, semantics, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer14/index.html)  
     - [2013: types, logic, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer13/)  
     - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([Lectures@YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
@@ -44,9 +48,10 @@ Programming
 
 + [Coq][]  
     - [Software Foundations book](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
+    + [Short course: mechanizing math with dependent types (using SSReflect)](http://ilyasergey.net/pnp-2014/), Ilya Sergey.   
+    - [2011 course on type theory and Coq](http://www.cs.ru.nl/~freek/courses/tt-2011/), Radboud University, NL.  
+    - [Software Foundations in Coq](http://web.cecs.pdx.edu/~apt/coq_hints.html), tips from OPLSS.  
     - [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/cpdt.pdf) book by Adam Chlipala.  
-    - [Software Foundations in Coq][], tips from OPLSS.  
-    - [2011 Course on Type Theory and Coq][], at Radboud University, NL.  
     - [YouTube: introductory Coq tutorials](https://www.youtube.com/playlist?list=PL5FJyaC2WsVlcWB4we3sPe6t09Vviu3Hn), by Andrej Bauer.  
 	- [YouTube: intro to computational logic](https://www.youtube.com/playlist?list=PL5FJyaC2WsVnmxmaOixx3EWx3888BToGJ), from Saarland U. ([downloadable](https://www.ps.uni-saarland.de/courses/cl/videos.php))
 	
@@ -75,7 +80,7 @@ Miscellaneous
 [types-forum]: http://lists.seas.upenn.edu/mailman/listinfo/types-list
 [types-announce]: http://lists.seas.upenn.edu/mailman/listinfo/types-announce
 [Experimental library of univalent formalization of mathematics]: http://arxiv.org/abs/1401.0053
-[Software Foundations in Coq]: http://web.cecs.pdx.edu/~apt/coq_hints.html
+[Software Foundations in Coq]: 
 [types project]: http://www.cse.chalmers.se/research/group/logic/Types/index.html
 [Scala]: http://www.scala-lang.org/
 [Agda]: http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage
