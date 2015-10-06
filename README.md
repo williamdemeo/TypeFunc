@@ -55,6 +55,8 @@ Programming
     - [YouTube: introductory Coq tutorials](https://www.youtube.com/playlist?list=PL5FJyaC2WsVlcWB4we3sPe6t09Vviu3Hn), by Andrej Bauer.  
 	- [YouTube: intro to computational logic](https://www.youtube.com/playlist?list=PL5FJyaC2WsVnmxmaOixx3EWx3888BToGJ), from Saarland U. ([downloadable](https://www.ps.uni-saarland.de/courses/cl/videos.php))
 	
++ [NuPRL](http://www.nuprl.org/)
+
 + [Scala][]  
     - [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
 	- [Principles of Reactive Programming](https://www.coursera.org/course/reactive), Odersky, Meijer, Kuhn.  
