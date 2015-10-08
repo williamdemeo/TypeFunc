@@ -3,18 +3,25 @@ TypeFunc
 This repository collects some links and resources for learning about type
 theory, functional programming, and connections between topology and computing.
 
-Books and Papers
-----------------
-+ [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures. 
-+ [The HoTT Book][], a textbook on informal homotopy type theory.   
+## Books and Papers
+
+### Basics/Background
++ [Foundations for Programming Languages](http://www.amazon.com/dp/0262133210/), John Mitchell  
++ [Categories for Types](http://www.amazon.com/Categories-Types-Cambridge-Mathematical-Textbooks/dp/0521457017/), Roy Crole.  
 + [Type Theory and Functional Programming](https://www.cs.kent.ac.uk/people/staff/sjt/TTFP/), Simon Thompson.  
++ [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
++ [Category Theory][], Steve Awodey ([Lectures@YouTube](http://youtu.be/ZKmodCApZwk))  
+
+### More Advanced
++ [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures. 
++ [Notions of Computability at Higher Type](http://homepages.inf.ed.ac.uk/jrl/Research/notions1.pdf), John Longley.  
++ [The HoTT Book][], a textbook on informal homotopy type theory.   
 + [Programming in Martin-L&ouml;f’s Type Theory](http://www.cse.chalmers.se/research/group/logic/book/),
   Nordstr&ouml;m, Petersson, and Smith.  
 + [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen and Urzyczyn.  
-+ [Category Theory][], Steve Awodey ([Lectures@YouTube](http://youtu.be/ZKmodCApZwk))  
 + [Topological domain theory](http://homepages.inf.ed.ac.uk/als/Research/topological-domain-theory.html), Alex Simpson, et al.
-+ [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
 + [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
+
 
 Courses
 -------
