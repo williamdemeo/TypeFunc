@@ -6,14 +6,15 @@ theory, functional programming, and connections between topology and computing.
 ## Books and Papers
 
 #### Basics/Background  
-+ [Foundations for Programming Languages](http://www.amazon.com/dp/0262133210/), John Mitchell  
++ [Foundations for Programming Languages](http://www.amazon.com/dp/0262133210/), John Mitchell.  
 + [Categories for Types](http://www.amazon.com/Categories-Types-Cambridge-Mathematical-Textbooks/dp/0521457017/), Roy Crole.  
 + [Type Theory and Functional Programming](https://www.cs.kent.ac.uk/people/staff/sjt/TTFP/), Simon Thompson.  
 + [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
-+ [Category Theory][], Steve Awodey ([Lectures@YouTube](http://youtu.be/ZKmodCApZwk))  
++ [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures.  
++ [Two Lectures on Contructive Type Theory](https://www.cs.uoregon.edu/research/summerschool/summer15/notes/OPLSS-Short-2015-2.pdf), Robert Constable.  
+<!-- + [Category Theory][], Steve Awodey ([Lectures@YouTube](http://youtu.be/ZKmodCApZwk)).  -->
 
 #### More Advanced  
-+ [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures. 
 + [Notions of Computability at Higher Type](http://homepages.inf.ed.ac.uk/jrl/Research/notions1.pdf), John Longley.  
 + [The HoTT Book][], a textbook on informal homotopy type theory.   
 + [Programming in Martin-L&ouml;f’s Type Theory](http://www.cse.chalmers.se/research/group/logic/book/),
@@ -31,6 +32,7 @@ Courses
 + [2015 Introduction to Computational Logic](https://courses.ps.uni-saarland.de/icl_15/), Gert Smolka and Tobias Tebbi.  
 + [2014 Programs and Proofs: Mechanizing Mathematics with Dependent Types](http://ilyasergey.net/pnp-2014/), Ilya Sergey.   
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
++ [2012: OPLSS course on Category Theory](http://youtu.be/ZKmodCApZwk), Steve Awodey ([Category Theory textbook](http://carlossicoli.free.fr/A/Awodey_S.-Category_theory-Oxford_University_Press,_USA(2010).pdf)).  
 + [2012 short course on topology for functional programming](http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/), Martin Escardo.  
 + [2011 Introduction to Formal Reasoning](http://www.cs.nott.ac.uk/~txa/g52ifr/) Thorsten Altenkirch.  
 + [2011 course on type theory and Coq](http://www.cs.ru.nl/~freek/courses/tt-2011/), Radboud University, NL.  
@@ -45,6 +47,8 @@ Courses
     - [2014: types, logic, semantics, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer14/index.html)  
     - [2013: types, logic, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer13/)  
     - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([Lectures@YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
+
+
 
 Programming
 -----------
