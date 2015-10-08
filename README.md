@@ -12,7 +12,6 @@ theory, functional programming, and connections between topology and computing.
 + [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
 + [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures.  
 + [Two Lectures on Contructive Type Theory](https://www.cs.uoregon.edu/research/summerschool/summer15/notes/OPLSS-Short-2015-2.pdf), Robert Constable.  
-<!-- + [Category Theory][], Steve Awodey ([Lectures@YouTube](http://youtu.be/ZKmodCApZwk)).  -->
 
 #### More Advanced  
 + [Notions of Computability at Higher Type](http://homepages.inf.ed.ac.uk/jrl/Research/notions1.pdf), John Longley.  
