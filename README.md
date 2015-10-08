@@ -3,6 +3,8 @@ TypeFunc
 This repository collects some links and resources for learning about type
 theory, functional programming, and connections between topology and computing.
 
+------------------------------------------------------
+
 ## Books and Papers
 
 #### Basics/Background  
@@ -22,6 +24,7 @@ theory, functional programming, and connections between topology and computing.
 + [Topological domain theory](http://homepages.inf.ed.ac.uk/als/Research/topological-domain-theory.html), Alex Simpson, et al.
 + [Experimental library of univalent formalization of mathematics][], Vladimir Voevodsky.
 
+----------------------------------------------------------
 
 Courses
 -------
@@ -48,6 +51,7 @@ Courses
     - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([Lectures@YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
 
 
+------------------------------------------------------
 
 Programming
 -----------
@@ -82,6 +86,8 @@ Programming
       offers many resources for learning Haskell.
 	- [A monad for infinite search in finite time](http://math.andrej.com/2008/11/21/a-haskell-monad-for-infinite-search-in-finite-time/), by Martin Escardo.
 	
+------------------------------------------------------
+
 Miscellaneous
 -------------
 + [github.com/HoTT][], GitHub repo for the HoTT book. (Clone this to get the very latest edition.)
