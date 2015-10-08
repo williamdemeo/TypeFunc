@@ -98,7 +98,6 @@ Miscellaneous
 [types-forum]: http://lists.seas.upenn.edu/mailman/listinfo/types-list
 [types-announce]: http://lists.seas.upenn.edu/mailman/listinfo/types-announce
 [Experimental library of univalent formalization of mathematics]: http://arxiv.org/abs/1401.0053
-[Software Foundations in Coq]: 
 [types project]: http://www.cse.chalmers.se/research/group/logic/Types/index.html
 [Scala]: http://www.scala-lang.org/
 [Agda]: http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage
