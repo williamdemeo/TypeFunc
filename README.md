@@ -1,7 +1,7 @@
 TypeFunc
 ========
 This repository collects some links and resources for learning about type
-theory, functional programming, and connections between topology and computing.
+theory, functional programming, and related subjects.
 
 ------------------------------------------------------
 
