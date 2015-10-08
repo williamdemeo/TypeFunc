@@ -34,7 +34,7 @@ Courses
 + [2015 Introduction to Computational Logic](https://courses.ps.uni-saarland.de/icl_15/), Gert Smolka and Tobias Tebbi.  
 + [2014 Programs and Proofs: Mechanizing Mathematics with Dependent Types](http://ilyasergey.net/pnp-2014/), Ilya Sergey.   
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
-+ [2012 short course on category theory](http://youtu.be/ZKmodCApZwk), Steve Awodey ([Category Theory textbook](http://carlossicoli.free.fr/A/Awodey_S.-Category_theory-Oxford_University_Press,_USA(2010).pdf)).  
++ [2012 short course on category theory](http://youtu.be/ZKmodCApZwk), Steve Awodey ([textbook](http://carlossicoli.free.fr/A/Awodey_S.-Category_theory-Oxford_University_Press,_USA(2010).pdf)).  
 + [2012 short course on topology for functional programming](http://www.cs.bham.ac.uk/~mhe/.talks/EWSCS2012/), Martin Escardo.  
 + [2011 Introduction to Formal Reasoning](http://www.cs.nott.ac.uk/~txa/g52ifr/) Thorsten Altenkirch.  
 + [2011 course on type theory and Coq](http://www.cs.ru.nl/~freek/courses/tt-2011/), Radboud University, NL.  
