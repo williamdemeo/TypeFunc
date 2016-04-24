@@ -37,12 +37,10 @@ theory, functional programming, and related subjects.
 
 Courses
 -------
-+ [2015 Introduction to Computational Logic](https://courses.ps.uni-saarland.de/icl_15/), Saarland University.  
-+ [2014 Software Foundations (CIS 500)](http://www.seas.upenn.edu/~cis500/current/index.html), Stephanie Weirich, U Penn.  
-+ [2014 Midlands Graduate School in Foundations of CS](http://www.cs.nott.ac.uk/~txa/mgs.2014/), University of Nottingham, UK.  
-+ [2014 Semantics of proofs and certified mathematics](https://ihp2014.pps.univ-paris-diderot.fr/doku.php), Institute Henri Poincare, Fr.  
 + [2015 Introduction to Computational Logic](https://courses.ps.uni-saarland.de/icl_15/), Gert Smolka and Tobias Tebbi.  
++ [2014 Semantics of proofs and certified mathematics](https://ihp2014.pps.univ-paris-diderot.fr/doku.php), Institute Henri Poincare, Fr.  
 + [2014 Coalgebra](http://www.cs.ru.nl/is/education/courses/2014/coalgebra/), Sam Staton and Alexandra Silva.  
++ [2014 Software Foundations](http://www.seas.upenn.edu/~cis500/current/index.html), Stephanie Weirich.  
 + [2014 Programs and Proofs: mechanizing math with dependent types](http://ilyasergey.net/pnp-2014/), Ilya Sergey.   
 + [2013 Dependently typed metaprogramming](http://www.cl.cam.ac.uk/~ok259/agda-course-13/), Connor McBride.  
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
@@ -51,16 +49,21 @@ Courses
 + [2011 Introduction to Formal Reasoning](http://www.cs.nott.ac.uk/~txa/g52ifr/) Thorsten Altenkirch.  
 + [2011 course on type theory and Coq](http://www.cs.ru.nl/~freek/courses/tt-2011/), Radboud University, NL.  
 + [2011 course on verifying algorithms in Coq](http://www.di.ens.fr/~zappa/teaching/coq/ecole11/), CEA-EDF-INRIA, FR.  
++ **Midlands Graduate Schools** on foundations of computer science
+  - [2016: Birmingham](http://www.cs.bham.ac.uk/~pbl/mgs2016/)  
+  - [2015: Sheffield](http://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs2015/mgs.html)  
+  - [2014: Nottingham](http://www.cs.nott.ac.uk/~txa/mgs.2014/)  
 + **CMU courses**
-    - [2013 grad seminar on HoTT](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper, with [recorded lectures][].  
-    - [2012 grad course on linear logic](http://www.cs.cmu.edu/~fp/courses/15816-s12/), Frank Pfenning.  
-    - [2010 grad course on modal logic](http://www.cs.cmu.edu/~fp/courses/15816-s10/), Frank Pfenning and André Platzer.  
-    - [2009 undergrad course on constructive logic](http://www.cs.cmu.edu/~fp/courses/15317-f09/index.html), Frank Pfenning and Ron Garcia.
+  - [2013 grad seminar on HoTT](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper, with [recorded lectures][].  
+  - [2012 grad course on linear logic](http://www.cs.cmu.edu/~fp/courses/15816-s12/), Frank Pfenning.  
+  - [2010 grad course on modal logic](http://www.cs.cmu.edu/~fp/courses/15816-s10/), Frank Pfenning and André Platzer.  
+  - [2009 undergrad course on constructive logic](http://www.cs.cmu.edu/~fp/courses/15317-f09/index.html), Frank Pfenning and Ron Garcia.  
 + **Oregon Programming Languages Summer School**
-    - [2015: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer15/index.php)  
-    - [2014: types, logic, semantics, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer14/index.html)  
-    - [2013: types, logic, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer13/)  
-    - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([Lectures@YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
+  - [2016: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer16/)  
+  - [2015: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer15/index.php)  
+  - [2014: types, logic, semantics, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer14/index.html)  
+  - [2013: types, logic, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer13/)  
+  - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([Lectures@YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
 + [2010 Categorical Logic](http://www.cl.cam.ac.uk/teaching/0910/L20/),  Samuel Staton.
 
 ------------------------------------------------------
