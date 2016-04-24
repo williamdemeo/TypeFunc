@@ -42,6 +42,7 @@ Courses
 + [2014 Midlands Graduate School in Foundations of CS](http://www.cs.nott.ac.uk/~txa/mgs.2014/), University of Nottingham, UK.  
 + [2014 Semantics of proofs and certified mathematics](https://ihp2014.pps.univ-paris-diderot.fr/doku.php), Institute Henri Poincare, Fr.  
 + [2015 Introduction to Computational Logic](https://courses.ps.uni-saarland.de/icl_15/), Gert Smolka and Tobias Tebbi.  
++ [2014 Coalgebra](http://www.cs.ru.nl/is/education/courses/2014/coalgebra/), Sam Staton and Alexandra Silva.  
 + [2014 Programs and Proofs: mechanizing math with dependent types](http://ilyasergey.net/pnp-2014/), Ilya Sergey.   
 + [2013 Dependently typed metaprogramming](http://www.cl.cam.ac.uk/~ok259/agda-course-13/), Connor McBride.  
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
@@ -60,7 +61,7 @@ Courses
     - [2014: types, logic, semantics, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer14/index.html)  
     - [2013: types, logic, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer13/)  
     - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([Lectures@YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
-+ [Categorical Logic](http://www.cl.cam.ac.uk/teaching/0910/L20/),  Samuel Staton, 2010.
++ [2010 Categorical Logic](http://www.cl.cam.ac.uk/teaching/0910/L20/),  Samuel Staton.
 
 ------------------------------------------------------
 
