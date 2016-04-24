@@ -49,7 +49,7 @@ Courses
 + [2011 Introduction to Formal Reasoning](http://www.cs.nott.ac.uk/~txa/g52ifr/) Thorsten Altenkirch.  
 + [2011 course on type theory and Coq](http://www.cs.ru.nl/~freek/courses/tt-2011/), Radboud University, NL.  
 + [2011 course on verifying algorithms in Coq](http://www.di.ens.fr/~zappa/teaching/coq/ecole11/), CEA-EDF-INRIA, FR.  
-+ **Midlands Graduate Schools** on foundations of computer science
++ **Midlands Graduate School** on foundations of computer science
   - [2016: Birmingham](http://www.cs.bham.ac.uk/~pbl/mgs2016/)  
   - [2015: Sheffield](http://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs2015/mgs.html)  
   - [2014: Nottingham](http://www.cs.nott.ac.uk/~txa/mgs.2014/)  
