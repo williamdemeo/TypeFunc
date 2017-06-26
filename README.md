@@ -63,6 +63,7 @@ theory, functional programming, and related subjects.
 + [2011 Introduction to Formal Reasoning](http://www.cs.nott.ac.uk/~txa/g52ifr/) Thorsten Altenkirch.  
 + [2011 course on type theory and Coq](http://www.cs.ru.nl/~freek/courses/tt-2011/), Radboud University, NL.  
 + [2011 course on verifying algorithms in Coq](http://www.di.ens.fr/~zappa/teaching/coq/ecole11/), CEA-EDF-INRIA, FR.  
++ [2010 Categorical Logic](http://www.cl.cam.ac.uk/teaching/0910/L20/),  Samuel Staton.  
 + **Oregon Programming Languages Summer School**
   - [2017: a spectrum of types.](https://www.cs.uoregon.edu/research/summerschool/summer17/)  
   - [2016: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer16/)  
@@ -80,7 +81,6 @@ theory, functional programming, and related subjects.
   - [2012 grad course on linear logic](http://www.cs.cmu.edu/~fp/courses/15816-s12/), Frank Pfenning.  
   - [2010 grad course on modal logic](http://www.cs.cmu.edu/~fp/courses/15816-s10/), Frank Pfenning and André Platzer.  
   - [2009 undergrad course on constructive logic](http://www.cs.cmu.edu/~fp/courses/15317-f09/index.html), Frank Pfenning and Ron Garcia.  
-+ [2010 Categorical Logic](http://www.cl.cam.ac.uk/teaching/0910/L20/),  Samuel Staton.
 
 ------------------------------------------------------
 
@@ -127,8 +127,21 @@ theory, functional programming, and related subjects.
 
 ------------------------------------------------------
 
+## Some Related GitHub Repositories  
++ [agda/agda](https://github.com/agda/agda)  
++ [atom/atom](https://github.com/atom/atom)  
++ [coq/coq](https://github.com/coq/coq)  
++ [idris-lang/Idris-dev](https://github.com/idris-lang/Idris-dev)  
++ [scala/scala](https://github.com/scala/scala)  
++ [HoTT/book](https://github.com/HoTT/book) for the HoTT book (clone it to get the latest edition)  
++ [edwinb/TypeDD-Samples](https://github.com/edwinb/TypeDD-Samples) to accompany the book "TDD in Idris"  
++ [fpinscala/fpinscala](https://github.com/fpinscala/fpinscala) to accompany the book "FP in Scala"  
++ [spark-in-action/first-edition](https://github.com/spark-in-action/first-edition) to accompany the book "Spark in Action"  
++ [databricks/learning-spark](https://github.com/databricks/learning-spark) to accompany the book "Learning Spark"  
++ [java8/Java8InAction](https://github.com/java8/Java8InAction) to accompany the book "Java 8 in Action"  
+
+
 ## Miscellaneous
-+ [github.com/HoTT][], GitHub repo for the HoTT book. (Clone this to get the very latest edition.)
 + [homotopytypetheory.org][]  
 + [Francois Dorais' blog posts](http://logic.dorais.org/archives/1448) about doing math in HoTT.
 + [types-forum][] and [types-announce][] mailing lists.  
