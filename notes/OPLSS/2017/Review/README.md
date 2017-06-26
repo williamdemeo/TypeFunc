@@ -1,0 +1,1103 @@
+OPLSS program
+⟨2017-06-23 Fri⟩
+
+Welcome from Zena M. Ariola
+
+First year for review.
+
+**U of O people**  
+Zach  
+Anna
+
+**Review**  
+  Dr. Paul Downen  
+  University of Oregon
+
+## Day 1:  STLC (simply typed lambda calculus)
+
+### Plan  
+1. lambda calculus  
+2. Products and Sums
+3. Operational Semantics
+
+### Untyped Lambda Calculus  
+   only has 3 things  
+   M, N, P ∈ Term ::= x | λx.M | M N  
+   surprisingly tricky to get right  
+
+   x, y, z ∈ Variable ::= ...  
+   might write λx.M as Lam(x.M)  
+   might write M N as  ap(M;N)  
+
+### Bound variables
+  BV(x) = {}  
+  BV(λx.M) = BV(M) ∪ {x}  
+  BV(M N) = B(M) ∪ BV(N)  
+
+### Free variables
+  FV(x) = {x}  
+  FV(λx.M) = FV(M) - {x}  
+  FV(M N) = FV(M) ∪ FV(N)  
+
+### Substitution (capture avoiding substitution)
+    M[N/x]  replace occurrences of x with N
+    x[N/x] = N                              (variable)
+    y[N/x] = y  (x ≠ y)                     (variable)
+    (λx.M)[N/x] = λx.M                      (abstraction)
+    (λy.M)[N/x] = λy.(M[N/x]) if y ∉ FV(N)  (abstraction)
+    (λy.M)[N/x] = (need renaming) if y ∈ FV(N) (abstraction)
+    (M P)[N/x] = (M[N/x]) (P[N/x])          (application)
+
+Substitution is a partial function, because of the need for renaming.
+
+If we do multiple substitutions, order matters.
+(There is a commutation relation.)
+
+#### Let in terms of lambda
+Let x = M in N := (λx.N) M  
+syntactic sugar
+
+#### Renaming
+α, β, γ are equivalence relations
+
+##### α law (what functions are)
+  λx.M =<sub>α</sub> λy.(M[y/x]),  y ∉ FV(M)    
+We work with terms up to α-equivalence.    
+decidable   
+about renaming
+
+##### β law (what functions do)
+(λx.M) N =<sub>β</sub> M[N/x]    
+the computational engine    
+undecidable  
+
+##### η law (extensionality)
+  M =<sub>η</sub> λx. Mx, x ∉ FV(M)  
+  extensionality is sometimes the same as "function extensionality"  
+  η rule used for reasoning, not for computation  
+  left and right sides would have different syntax trees  
+  A compiler should respect η.  
+  A compiler could use η for optimization.  
+  decidable
+
+#### function extensionality
+If for all inputs P, M P = N P then M = N.   
+In the λ-calculus, function extensionality is equivalent to the η law.   
+In other calculi, maybe not equivalent.   
+(Function extensionality is usually stronger when they are different.) 
+
+#### Böhm separability
+Thms about untyped lambda calculus.   
+Alpha, beta, gamma give the "largest equivalence relation" that doesn't break.   
+ 
+#### Simple thms
+  M =<sub>β</sub> N implies M[P/x] =<sub>β</sub> N[P/x]   (substitution respects beta)   
+### Compatibility rules
+you can apply alpha, beta, gamma in any setting
+## Types
+types are contracts
+
+X, Y, Z ∈ TypeVariable ::= ...  
+A, B, C ∈ Type ::= X | A → B  
+
+Judgment:  Γ ⊢ M : A     (a 3-place thing)  (⊢ is produced by \vdash)
+
+**Example:**  Γ = x₁ : A₁, x₂ : A₂, x₃ : A₃, ..., xₙ : Aₙ
+
+Shadowing convention:  Γ, x : A, x : B, Γ' = Γ, x : B, Γ'   (rightmost thing wins)
+
+Exchange:  Γ, x : A, y : B, Γ' = Γ, y : B, x : A, Γ'   (x ≠ y)
+
+Inference rules:   (things with long horizontal lines)
+
+    ———————————————————— (Var)
+    Γ, x : A  ⊢  x : A
+
+    Γ, x : A  ⊢  M : B
+    ————————————————————– (→ I)   (function introduction)
+    Γ ⊢ λx.M : A → B
+
+    Γ ⊢ M : A → B   Γ ⊢ N : A
+    ————————————————————–———— (→ E) (function elimination)
+       Γ ⊢ M N : B
+
+This is type inference.  
+It's a bit different from type checking.
+(In type checking we know the goal.)
+
+We have already baked in the idea that terms have unique types.
+
+**Theorem:**
+     If Γ, x : A ⊢ M : B and Γ ⊢ N : A
+     then Γ ⊢ M[N/x] : B.
+     
+## Products and Sums
+The λ-calulus had 3 parts:
+1. syntax
+2. laws (alpha, beta, eta)
+3. type derivations (static semantics)
+
+
+### Syntax
+    x, y, z ∈ Variable ::= ...  
+
+    M, N, P ∈ Term ::= x | λx.M | M N | ⟨M,N⟩ 
+                       | fst M | snd M  
+                       | inl M | inr M 
+                       | (case M of inl x ⇒ N 
+                                  | inr y ⇒ P)  
+
+    A, B, C ∈ Type ::= X | A → B | A × B | A + B
+
+We added six terms and we added two types.
+
+Could have "fst" in the grammar instead of "fst M",
+but that would require polymorphism in the language.
+
+Alternative to (case M of inl x ⇒ N | inr y ⇒ P)
+is  case(M; x.N; y.P)
+
+"case" is a new binding construct (binding x and y)
+
+### Substitution
+⟨M,P⟩[N/x] = ⟨M[N/x],P[N/x]⟩
+
+### Laws
+
+#### α law
+no alpha law for products  
+
+case M of inl x ⇒ N | inr y ⇒ P    
+=<sub>α</sub> case M of inl x' ⇒ (N[x'/x]) | inr y' ⇒ (P[y'/y])
+
+#### β law
+ fst ⟨M,N⟩ =<sub>β</sub> M  
+ snd ⟨M,N⟩ =<sub>β</sub> N
+
+    case inl M of inl x ⇒ N 
+                | inr y ⇒ P     =β=     N[M/x]
+
+
+    case inr M of inl x ⇒ N 
+                | inr y ⇒ P    =β=     P[M/y]
+                
+#### η law
+
+M : A × B  =<sub>η</sub> ⟨fst M, snd M⟩      (if M typecheks at A × B ....)
+
+M : A → B =<sub>η</sub> λx. Mx
+
+M : A + B  =<sub>η</sub> case M of inl x ⇒ inl x | inr y ⇒ inr y
+
+### Typing rules
+
+    Γ ⊢ M : A   Γ ⊢ N : B
+    ————————————————————– (×I)   (product introduction)
+    Γ ⊢ ⟨M,N⟩ : A × B
+
+    Γ ⊢ M : A × B
+    ————————————– (×E₁)          (product elimination 1)
+    Γ ⊢ fst M : A
+
+    Γ ⊢ M : A × B
+    ————————————– (×E₂)          (product elimination 2)
+    Γ ⊢ snd M : B
+
+    Γ ⊢ M : A
+    ————————–———————– (+I₁)      (sum introduction 1)
+    Γ ⊢ inl M : A + B
+
+    Γ ⊢ M : B
+    ————————–———————– (+I₂)      (sum introduction 2)
+    Γ ⊢ inr M : A + B
+                                 (sum elimination)
+    Γ ⊢ M : A + B   Γ,x:A ⊢ N : C   Γ,y:B ⊢ P : C 
+    ————————————————————————————————————————————– (+E)    
+    Γ ⊢ case M of inl x ⇒ N | inr y ⇒ P : C
+
+With sums, we lose unique typing.  
+We could save it by annotating.
+
+### Example
+swap : A+B → B+A  
+swap = λx. case x of inl y ⇒ inr y | inr z ⇒ inl z
+
+Type derivation tree:  (writing from bottom up)
+
+                            ———————————————–(Var)      ————————————————–(Var)
+                            x:A+B, y:A ⊢ y:A           x:A+B, z:B ⊢ z:B
+    ————————————–(Var)  ——————————————————————–(+I₂)  ——————————————————————–(+I₁)
+    x:A+B ⊢ x:A+B       x:A+B, y:A ⊢ inr y :B+A       x:A+B, z:B ⊢ inl z :B+A
+    ———————————————————————————————————————————————————————————–————————–(+E)
+    x:A+B ⊢ case x of inl y ⇒ inr y | inr z ⇒ inl z : B+A
+    ————————————————————————————————————————————————————————–(→I)
+    ⊢ λx. case x of inl y ⇒ inr y | inr z ⇒ inl z : A+B → B+A
+
+Some discussion of "weakening" took place.
+
+**Weakening:**
+
+    Γ ⊢ M:A
+    ————————–———— weakening
+    x:B, Γ ⊢ M:A
+
+We did not include weakening in our system, but we could prove it as a theorem.
+
+**Contraction:**
+
+    Γ, x:A, y:A ⊢ M:B
+    ————————————————–– contraction
+    Γ, x:A ⊢ M[x/y]:B
+
+Check that it works:
+
+    (λx. case x of inl y ⇒ inr y 
+                 | inr z ⇒ inl z) (inr w)
+      =ᵦ  case inr w of inl y ⇒ inr y 
+                      | inr z ⇒ inl z
+      =ᵦ  inl w
+
+## Operational Semantics
+
+   Curry style:  define an untyped evaluator.
+
+   Church style:  program doesn't even have a meaning until it's been typed.
+
+   We will follow Curry style here.
+
+   Small-step semantics
+
+    M ↦ N
+    M ↦* N     Kleane closure
+
+    M ↦ N
+    ————––     —————–
+    M ↦* N     M ↦* M
+
+    M ↦* N   N ↦* P
+    ——————————————–
+        M ↦* P
+
+### Axioms
+    (λx.M) N ↦ M[N/x]
+    fst ⟨M,N⟩ ↦ M
+    snd ⟨M,N⟩ ↦ N
+    case inl M of inl y ⇒ N | inr z ⇒ P ↦ N[M/y]
+    case inr M of inl y ⇒ N | inr z ⇒ P ↦ P[M/z]
+
+### Inference rules
+    M ↦ M'
+    —————–—–—–
+    M N ↦ M' N
+
+    M ↦ M'
+    —————–—–—–———–
+    fst M ↦ fst M'
+
+    M ↦ M'
+    —————–—–—–———–
+    snd M ↦ snd M'
+
+    M ↦ M'
+    —————–—–—–———–———————————————————————————————
+    case M of inl y ⇒ N 
+            | inr z ⇒ P  ↦ case M' of inl y ⇒ N 
+                                    | inr z ⇒ P
+
+### Evaluation context
+term with a hole in it
+
+    E ∈ EvalCtxt ::= □ | E M | fst E | snd E 
+                     | (case E of inl x ⇒ M | inr y ⇒ N)
+
+evaluation context tells where evaluation happens
+
+(\square is □)
+
+    M ↦ M'
+    ———————————–
+    E[M] ↦ E[M']
+
+    E[M] is a Term
+
+    □ [M] = M
+    (E N)[M] = E[M] N
+    (fst E)[M] = fst (E[M])
+    (snd E)[M] = snd (E[M])
+    (case E of inl x ⇒ N 
+             | inr y ⇒ P)[M] = case E[M] of inl x ⇒ N 
+                                          | inr y ⇒ P
+
+Continuations are related to evaluation contexts.
+
+#### Scott's examples
+     (□ N)[M] = □[M] M = M N            (M fills the hole)
+     (fst □)[M] = fst (□[M]) = fst M    (M fills the hole)
+     (case □ of inl x ⇒ N 
+              | inr y ⇒ P)[M] = case M of inl x ⇒ N 
+                                        | inr y ⇒ P
+
+     (fst (snd □))[M] = fst ((snd □)[M]) = fst (snd M)
+
+### Example
+    case fst ⟨inr 1, inl 5⟩ of inl x ⇒ x*2 | inr y ⇒ y+3
+    = (case □ of ...)[fst ⟨inr 1, inl 5⟩]
+    ↦ case inr 1 of inl x ⇒ x*2 | inr y ⇒ y+3
+    ↦ 1 + 3
+
+### Unique Decomposition
+**Theorem:**
+For every term M, either
+1. there exists an evaluation context E and term N
+   such that M = E[N] and N ↦ N', or
+2. M is a result/value   
+   (i.e., an introduction form λx.M', ⟨M₁,M₂⟩, inl M', inr M')
+3. M is stuck (M not ↦)
+ 
+### Call by value
+We did call by name.  
+We would set everything up differently for call by value.  
+EvalCtxt would be defined differently, for example.  
+
+Call-by-name:  
+(λx. x∗x) (2+2) ↦ (2+2) ∗ (2+2)
+
+Call-by-value:  
+(λx. x∗x) (2+2) ↦ (λx. x∗x) 4 ↦ 4∗4
+
+Call-by-name is dual to call-by-value. (There is a paper on this.)
+
+Call-by-need is where you memoize results, so you don't evaluate twice.
+
+
+### Big-step operational semantics
+M ⇓ N        
+We'll do call-by-name.
+
+(⇓ is \Downarrow)
+    
+#### Axioms
+     x ⇓ x
+     λx.M ⇓ λx.M
+     ⟨M,N⟩ ⇓ ⟨M,N⟩
+     inl M ⇓ inl M
+     inr M ⇓ inr M
+#### Inference rules
+
+     M ⇓ λx.M'   M'[N/x] ⇓ P
+     ——————————————————————–
+     M N ⇓ P
+
+     M ⇓ ⟨M₁,M₂⟩   M₁ ⇓ P
+     ————————————————————
+     fst M ⇓ P
+
+     M ⇓ ⟨M₁,M₂⟩   M₂ ⇓ P
+     ————————————————————
+     snd M ⇓ P
+
+     M ⇓ inl M'   N₁[M'/x] ⇓ P
+     ——————————————————————————————————————–
+     case M of inl x ⇒ N₁ | inr y ⇒ N₂ ⇓ P
+
+     M ⇓ inr M'   N₂[M'/x] ⇓ P
+     ——————————————————————————————————————–
+     case M of inl x ⇒ N₁ | inr y ⇒ N₂ ⇓ P
+#### Example
+
+    ——————————————————————————————–
+    ⟨inr 1, inl 5⟩ ⇓ ⟨inr 1, inl 5⟩
+    —————–——————————————————–—————–
+    fst ⟨inl1, inr 5⟩ ⇓ inr 1                 1+3 ⇓ 4
+    —————————————————————————————————————————————————————————–
+    case fst ⟨inr 1, inl 5⟩ of inl x ⇒ x*2 | inr y ⇒ y+3 ⇓ 4
+## Type Safety
+   progress and preservation are syntactic theorems
+
+   V, W ∈ Value ::= λx.M | ⟨M,N⟩ | inl M | inr M
+
+   Definition:  N is *stuck* when N is not a value and cannot advance.
+
+   Theorem (Type Safety):  If ⊢ M : A is derivable and M ↦* N
+                           then N is not stuck.
+
+   Proof is based on Progess and Preservation lemmas.
+
+   The simply typed lambda calculus is normalizing
+   (all programs terminate), but the type safety theorem
+   applies also to languages that do not terminate.
+
+### Example of structural induction
+
+From yesterday:
+
+    M ↦* N   N ↦* P
+    ——————————————–
+    M ↦* P
+
+Definition of ⤇:  
+
+    M ↦ N   N ⤇ P
+    ——————————————–
+    M ⤇ P
+
+    —————–
+    M ⤇ M
+
+Double arrow ⤇ associates to the right.
+
+**Lemma:**  M ↦* P implies that either M ↦ N ↦* P or M = P.  
+*Proof:*  By induction on M ↦* P
+
+        —————– refl
+        M ↦* M
+
+	M ↦ N
+	—————– ⇒ —————————— refl
+	M ↦* N    M ↦ N ↦* N
+
+	M ↦* N   N ↦* P
+	——————————————–
+	M ↦* P
+
+	(more stuff)
+
+
+**Theorem:**  M ↦* P iff M ⤇ P  
+*Proof:*  M ↦* P imples M ⤇ P by induction on the inference rules for M ↦* P.
+
+Suppose 
+
+    M ↦* N   N ↦*P
+    —————————————–
+    M ↦* P
+
+    M₁ ↦ M₂    M₂ ↦ M₃
+    ———————–   ———————–
+    M₁ ↦* M₂   M₂ ↦* M₃    M₃ ↦ M₄
+    ———————————————————    ———————–
+    M₁ ↦* M₃               M₃ ↦* M₄
+    ———————————————————————————————
+    M₁ ↦* M₄
+
+implies  
+(something here)
+
+    M₁ ↦ M₂              M₂ ⤇ M₄
+    ———————————————————————————————
+    M₁ ⤇ M₄
+
+This is rule induction.
+
+### Canonical Forms
+
+**Lemma:**
+1.  ⊢ V : A → B imples V = λx.M
+2.  ⊢ V : A × B  imples V = ⟨M,N⟩
+3.  ⊢ V : A + B  imples either V = inl M or V = inr M
+
+### Progress
+**Theorem** (Progress):
+If ⊢ M : A is derivable then either M is a value or there exists 
+an N such that M ↦ N.
+
+(If M is derivable them M is not stuck.)
+
+No environment because we want to rule out (x 5).
+Progress is for closed terms only.
+
+*Proof:*  By induction on the derivation of ⊢ M : A.
+There are 9 typing rules we have to check   
+(Var, →I, →E, ×I, ×E₁, ×E₂, +I₁, +I₂, +E).  
+
+__Case Var:__ impossible.  
+
+What about function introduction?  In this case, M is a value.  
+All the introduction rules imply that M is a value.  
+
+__Case →E:__  Need induction hypothesis and evaluation context.  
+
+__Case ×E:__  Again need induction hypothesis and evaluation context.  
+
+    ⊢ M : A × B
+    ———————————(×E₁)
+    ⊢ fst M : A
+
+by IH:  either M is a value or M ↦ M'  
+If M is a value, then M = ⟨M₁,M₂⟩  
+fst M = fst ⟨M₁,M₂⟩ ↦ M₁, so we can take a step.  
+If M ↦ M', fst □ is an evaluation context, so we can take step.  
+
+    M ↦ M'
+    ———————–—————–
+    fst M ↦ fst M'
+
+__Case +E:__
+
+    ⊢ M : A + B   x:A ⊢ N : C   y:B ⊢ P : C 
+    ———————————————————————————————————————(+E)
+    ⊢ case M of inl x ⇒ N | inr y ⇒ P : C
+
+by IH:  either M is a value or M ↦ M'  
+If M is a value, then either M = inl M', or M = inr M'.
+
+### Preservation
+**Theorem** (Preservation):
+If Γ ⊢ M : A is derivable and M ↦ N then Γ ⊢ N : A is derivable.
+
+**Lemma** (Typed Substitution):
+If Γ,x:A ⊢ M : B and Γ ⊢ N : A then Γ ⊢ M[N/x] : B.
+
+*Proof:*  By induction on Γ,x:A ⊢ M : B.
+
+__Case ×I:__
+
+    Γ,x:A ⊢ M₁ : B₁   Γ,x:A ⊢ M₂ : B₂
+    ————————————————————–———————————–(×I)
+    Γ,x:A ⊢ ⟨M₁,M₂⟩ : B₁ × B₂
+
+by IH: 
+
+    Γ ⊢ M₁[N/x] : B₁
+    Γ ⊢ M₂[N/x] : B₂
+
+    ⟨M₁,M₂⟩[N/x] = ⟨M₁[N/x],M₂[N/x]⟩
+
+There are many other cases...
+
+*Proof of main theorem:*  By induction on the derivation of Γ ⊢ M : A,
+confirming that each evaluation step maintains type.  
+The Var and introduction rules are not at the bottom of the derivation because they don't step.  
+We need to look at the four elimination rules.  
+
+__Case →E:__
+
+    Γ ⊢ M : A → B   Γ ⊢ N : A
+    —————————————————————–————(→E)
+    Γ ⊢ M N : B
+
+What could M be?  
+
+*Subcase 1:* If M = λx.M', then M N = (λx.M') N ↦ M'[N/x]  
+
+**GOAL:**  Derive Γ ⊢ M'[N/x] : B
+
+    Γ, x : A  ⊢  M' : B
+    ———————————————————(→I)
+    Γ ⊢ λx.M' : A → B
+
+By the Typed Substitution Lemma, we know Γ ⊢ M'[N/x] : B
+because Γ,x:A ⊢ M' : B and Γ ⊢ N : A, and we achieve the goal.
+
+*Subcase 2:*
+
+    M ↦ M'
+    —————–—–—–
+    M N ↦ M' N
+
+__Case ×E:__
+
+    Γ ⊢ M : A × B
+    ————————————– (×E₁)
+    Γ ⊢ fst M : A
+
+*Subcase 1:*  M = ⟨M₁,M₂⟩
+
+    Γ ⊢ M₁ : A   Γ ⊢ M₂ : B
+    ————————————————————–——(×I)
+    Γ ⊢ ⟨M₁,M₂⟩ : A × B
+
+    fst M = fst ⟨M₁,M₂⟩ ↦ M₁
+
+We have shown that Γ ⊢ M₁ : A is derivable.
+
+*Subcase 2:*
+
+    M ↦ M'
+    —————–—–—–———–
+    fst M ↦ fst M'
+
+__Case +E:__
+
+    Γ ⊢ M : A + B   Γ,x:A ⊢ N : C   Γ,y:B ⊢ P : C 
+    ————————————————————————————————————————————–(+E)
+    Γ ⊢ case M of inl x ⇒ N | inr y ⇒ P : C
+
+*Subcase 1:*  M = inl M'
+
+    Γ ⊢ M' : A
+    ————————–——————–—–(+I₁)
+    Γ ⊢ inl M' : A + B
+
+    case M of inl x ⇒ N | inr y ⇒ P
+    = case inl M' of inl x ⇒ N | inr y ⇒ P
+      ↦ N[M'/x]
+
+**GOAL:** Γ ⊢ N[M'/x] : C
+
+Use the Typed Substitution Lemma
+because Γ ⊢ M' : A and Γ,x:A ⊢ N : C.
+
+*Subcase 2:*  M = inr M'
+
+*Subcase 3:*
+
+    M ↦ M'
+    —————–—–—–———–————————————————————————————
+    case M of inl y ⇒ N 
+            | inr z ⇒ P ↦ case M' of inl y ⇒ N 
+                                   | inr z ⇒ P
+
+by IH:  Γ ⊢ M' : A + B
+
+### Termination
+**Theorem** (Termination):
+For all terms M, where ⊢ M : A, there is a value V such that M ↦* V.
+
+**Lemma:** ⊢ M : A then there is no infinite reduction sequence.
+*Proof:*  Induction on M.
+
+Case M = λx.M'
+
+(λx.M') N ↦ M'[N/x]
+
+**Problem:**  term on the right need not be structural smaller,
+so we can't use the induction hypothesis.
+
+Need a different method...
+
+...Logical Relations, Reducibility Candidate, Tait's Method.
+
+## Recursion
+
+### Primitive Recursion
+a type of recursion on numbers that's guaranteed to terminate
+
+We will look at System T (G&ouml;del)
+
+    A,B,C ∈ Type ::= X | A → B | Bool | Nat
+
+    M, N, P ∈ Term ::= x | λx.M | M N
+                      | True | False
+                      | if M then N else P
+                      | Z | S M
+                      | (rec M of Z ⇒ N | S x with y ⇒ P)
+
+Binding tree:  rec(M; N; x,y.P)
+
+    V, W ∈ Value ::= λx.M | True | False | Z | S M
+
+    E ∈ EvalCtxt ::= □ | E M | if E then M else N 
+                    | (rec E of Z ⇒ N | S x with y ⇒ P)
+
+
+#### Rules for Bool
+
+    (β) if True then N else P   =ᵦ  N
+        if False then N else P  =ᵦ  P
+
+    (η) M : Bool =η if M then True else False
+
+
+#### Rules for Nat
+
+    (α) rec M of Z ⇒ N 
+               | S x with y ⇒ P  
+        =α  rec M of Z ⇒ N 
+                   | S x' with y' ⇒ P[x'/x,y'/y]
+
+    (β) rec Z of Z ⇒ N 
+               | S x with y ⇒ P   =ᵦ    N 
+
+        rec S M of Z ⇒ N 
+                 | S x with y ⇒ P 
+         =ᵦ P [M/x, (rec M of Z ⇒ N | S x with y ⇒ P)/y]
+
+    (η) M : Nat =η rec M of Z ⇒ Z | S x with y ⇒ S x
+
+
+#### Introduction and Elimination Rules
+
+     ——————————————–(Bool I₁)
+     Γ ⊢ True : Bool
+
+
+     ——————————————––(Bool I₂)
+     Γ ⊢ False : Bool
+
+     Γ ⊢ M : Bool   Γ ⊢ N : C   Γ ⊢ P : C
+     ——————————————––———————————————————–(Bool E)
+     Γ ⊢ if M then N else P : C
+
+
+     ——————————–(Nat I₁)
+     Γ ⊢ Z : Nat
+
+     Γ ⊢ M : Nat
+     ——————————–—–(Nat I₂)
+     Γ ⊢ S M : Nat
+
+     Γ ⊢ M : Nat   Γ ⊢ N : C   Γ,x:Nat,y:C ⊢ P : C
+     ————————————————————————————————–—————————–—–(Nat E)
+     Γ ⊢ rec M of Z ⇒ N | S x with y ⇒ P : C
+
+#### Examples
+     add : Nat → Nat → Nat
+     add = λx.λy.rec x of Z ⇒ y | S x' with w ⇒ S w
+
+     pred : Nat → Nat
+     pred = λx.rec x of Z ⇒ Z | S x' with y ⇒ x'
+
+     add (S (S Z)) (S (S (S Z)))
+     =ᵦ rec S (S Z) of Z ⇒ S (S (S Z)) | S x' with w ⇒ S w
+     =ᵦ S (rec S Z of Z ⇒ S (S (S Z)) | S x' with w ⇒ S w)
+     =ᵦ S (S (rec Z of Z ⇒ S (S (S Z)) | S x' with w ⇒ S w))
+     =ᵦ S (S (S (S (S Z))))
+
+     mult : Nat → Nat → Nat
+     mult = λx.λy.rec x of Z ⇒ Z | S x' with y ⇒ add y w
+
+     isZero : Nat → Bool
+     isZero = λx.rec x of Z ⇒ True | S x' with y ⇒ False
+### General Recursion
+    Ω = (λx.x x) (λx.x x)
+      ↦ (x x)[λx.x x/x]
+      = (λx.x x) (λx.x x)
+
+Does Ω have a type?  No.
+
+                        (more stuff)
+                        ———————————–
+    ⊢ λx.x x : ? → ?   ⊢ λx.x x : ?
+    ——————————————————————–————————– →E
+    ⊢ (λx.x x) (λx.x x) : ? 
+
+    Y = λf.((λx.f (x x)) (λx.f (x x)))        (Y combinator)
+
+    Y M =ᵦ (λx.M (x x)) (λx.M (x x))
+        =ᵦ M ((λx.M (x x)) (λx.M (x x)))
+        =ᵦ M (Y M)
+
+Y M is a fixed point of M
+
+The Y combinator has no type.
+
+Let    x = M in N := (λx.N) M
+
+    Letrec x = M in N := (λx.N) (Y(λx.M))
+                       =ᵦ (λx.N) ((λx.M)(Y(λx.M)))
+                       =ᵦ (λx.N) M[Y(λx.M)/x]
+                       := Letrec x = M[M/x] in N
+
+(β) Letrec x = M in N =ᵦ N[Letrec x = M in N/x]
+
+Letrec x = M in E[x] ↦ Letrec x = M in E[M]
+
+E ∈ EvalCtxt ::= ... | Letrec x = M in E
+
+
+**Example.**
+
+    Letrec fact = λx. if x == 0 then 1
+                      else x ∗ (fact (x-1))
+
+    in fact 3
+    ↦ (many steps)
+    ↦ Letrec fact = ... in 6
+
+We could have written fact with primitive recursion.
+
+
+#### fix Term
+    M, N, P ∈ Term ::= ... | fix x in M
+
+    (β) fix x in M =β M[fix x in M/x]
+
+    Γ,x:A ⊢ M : A
+    —————————————————–(fix)
+    Γ ⊢ fix x in M : A
+
+
+### Recursive Types
+    A, B, C ∈ Type ::= X | A → B | μX.A | unit | A + B
+
+    M, N, P ∈ Term ::= x | λx.M | M N | fold M | unfold M 
+                     | ... | ()
+
+    Nat = μX.(unit + X)
+
+    μX.A =α μY.(A[Y/X])
+
+    Γ ⊢ M : A[μX.A/X]
+    ————————————————–(μI)
+    Γ ⊢ fold M : μX.A
+
+    Γ ⊢ M : μX.A
+    ————————————–——————————–(μE)
+    Γ ⊢ unfold M : A[μX.A/X]
+
+    Z = fold (inl ())
+
+
+*Proof that Z : Nat:*
+
+    ——————————–(unit I)
+    ⊢ () : unit
+    ——————————————————————————————–(+I₁)
+    ⊢ inl () : unit + μX.(unit + X)
+    ——————————————–———————————————–(μI)
+    ⊢ fold (inl ()) : μX.(unit + X)
+
+S M = fold (inr M)
+
+*Proof that M : Nat implies S M : Nat:*
+
+    Γ ⊢ M : μX.(unit + X)
+    ——————————————————————————————–– +I₂
+    Γ ⊢ inr M : unit + μX.(unit + X)
+    ——————————————–———————————————–– μI
+    Γ ⊢ fold (inr M) : μX.(unit + X)
+
+    ((... → A) → A) → A ≈ μX.(X → A)
+                        ≈ (μX.X → A) → A
+                        ≈ ((μX.X → A) → A) → A
+
+Now Ω has a type.  (Although it has a new definition.)
+
+    ω : (μX.X → A) → A
+    ω = λx.(unfold x) x
+
+    Ω : A
+    Ω = ω (fold ω)
+
+**Exercise:**  Type check ω and Ω by building a type derivation.
+
+*Solution for ω:*
+
+    ————————————————————————–—(Var)
+    x:(μX.X → A) ⊢ x:(μX.X → A)
+    —————————————————————————————————————–(μE)  ———————————————————————————(Var)
+    x:(μX.X → A) ⊢ (unfold x):(μX.X → A) → A    x:(μX.X → A) ⊢ x:(μX.X → A)
+    ——————————————————————————————––————————————–—————————–—————————————————–(→E)
+            x:(μX.X → A) ⊢ (unfold x) x : A
+            ——————————————–——————————————————–(→I)
+            ⊢ λx.(unfold x) x : (μX.X → A) → A
+
+
+Typed Y combinator:
+
+    Y : (A → A) → A
+    Y = λf. (λx.f (unfold x x)) (fold (λx.f (unfold x x)))
+
+**Exercise:**  Show that Y does the right thing.
+
+**Exercise** (for the energetic):  Type check Y by building a type derivation.
+
+## Polymorphism
+### Universal Types
+    System F, Girard and Reynolds
+    (System F is terminating)
+    A, B, C ∈ Type ::= X | A → B | ∀X.A
+    M, N, P ∈ Term ::= x | λx.M | M N | ΛX.M | M A
+    E ∈ EvalCtxt ::= □ | E M | E A
+    V, W ∈ Value ::= λx.M | ΛX.M
+
+    (α) ∀X.A =α ∀Y.(A[Y/X])
+
+    FV(X) = {X}
+    FV(A → B) = FV(A) ∪ FV(B)
+    FV(ΛX.A) = FV(A) - {X}
+
+    Example:
+    map : ∀X.∀Y.(X → Y) → [X] → [Y]
+    map = ΛX.ΛY.λf:X → Y.λxs:[X]. ....
+#### Typing rules
+     We extend the notion of environment Γ.
+
+     x₁:A₁, ...,xₙ:Aₙ,X₁:Type, ...,Xₘ:Type
+
+     Exchange:  Γ,x:A,Y:Type,Γ' = Γ,Y:Type,x:A,Γ' if Y ∉ FV(A)
+
+     Γ,X:Type ⊢ M : A
+     ——————————————–– ∀I
+     Γ ⊢ ΛX.M : ∀X.A
+
+     Γ ⊢ M : ∀X.A   Γ ⊢ B : Type
+     ——————————————––——————————— ∀E
+     Γ ⊢ M B : A[B/X]
+
+     Γ ⊢ A : Type   means for all X ∈ FV(A), (X : Type) ∈ Γ
+
+     Well-formedness rules for types:
+
+
+     ————————————————– TyVar
+     Γ,X:Type ⊢ X:Type
+
+     Γ ⊢ A : Type   Γ ⊢ B : Type
+     ———————————————————————————
+     Γ ⊢ A → B : Type
+
+     Γ,X:Type ⊢ A : Type
+     ———————————————————
+     Γ ⊢ ∀X.A : Type
+#### Dynamic Semantics
+     (α) ΛX.M =α ΛY.(M[Y/X])
+
+     (β) (ΛX.M) A =β M[A/X]
+
+     (η) M =η ΛX.(M X), if X ∉ FV(M) and M : ∀X.A
+
+     Lemma (Substitution):
+       If Γ,X:Type,Γ' ⊢ M : A and Γ ⊢ B : Type are derivable,
+       then Γ,Γ'[B/x] ⊢ M[B/X] : A[B/X] is derivable.
+#### Example
+     id : ∀Y.Y → Y
+     id = ΛY.λx.x            (note x:Y)
+### Existential Types
+    A, B, C ∈ Type ::= X | A → B | ∀X.A | ∃X.A
+    M, N, P ∈ Term ::= x | λx.M | M N | ΛX.M | M A | ⟨B,M⟩ | open M as ⟨X,y⟩ ⇒ N
+#### Typing rules
+
+     Γ ⊢ B : Type   Γ ⊢ M : A[B/X]
+     ———————————————–————————————– ∃I                    (existential introduction)
+     Γ ⊢ ⟨B,M⟩ : ∃X.A
+
+     Γ ⊢ M : ∃X.A   Γ,X:Type,y:A ⊢ N : C
+     ———————————————–————————————–—————— ∃E , X ∉ FV(C)  (existential elimination)
+     Γ ⊢ open M as ⟨X,y⟩ ⇒ N : C
+#### Dynamic Semantics
+     (α) open M as ⟨X,y⟩ ⇒ N =α open M as ⟨Y,x⟩ ⇒ (N[Y/X,x/y])
+
+         With type annotations:
+         open M as ⟨X,y:A⟩ ⇒ N =α open M as ⟨Y,x:A[Y/X]⟩ ⇒ (N[Y/X,x/y])
+
+     (β) open ⟨B,M⟩ as ⟨X,y⟩ ⇒ N =β N[B/X,M/y]
+
+     (η) M =η open M as ⟨X,y⟩ ⇒ ⟨X,y⟩ , if M : ∃X.A
+
+
+                    ——————————————————————– TyVar   ————————————————————————– (Var)
+                    Γ,X:Type,y:A ⊢ X : Type         Γ,X:Type,y:A ⊢ y : A[X/X]
+                    ——————————————————————————–————–——–—————————————————————– ∃I
+     Γ ⊢ M : ∃X.A   Γ,X:Type,y:A ⊢ ⟨X,y⟩ : ∃X.A
+     —————————————————————————————————————————– ∃E
+     Γ ⊢ open M as ⟨X,y⟩ ⇒ ⟨X,y⟩ : ∃X.A
+#### Example
+     IntSet where
+       Set    : Type
+       empty  : Set
+       single : Int → Set
+       union  : Set → Set → Set
+       member : Int → Set → Bool
+
+     IntSet = ∃Z.(Z × (Int → Z) × (Z → Z → Z) × (Int → Z → Bool))
+### Encodings
+#### Untyped encodings
+     Church encodings
+##### Booleans
+      IfThenElse = λx.λt.λe.x t e
+
+      True  = λt.λe.t
+      False = λt.λe.e
+
+      IFThenElse True  M N =β True  M N =β M
+      IFThenElse False M N =β False M N =β N
+
+      And = λx.λy.IfThenElse x y False
+      Or  = λx.λy.IfThenElse x True y
+      Not = λx.IfThenElse x False True
+##### Sums
+      Case = λi.λl.λr.i l r
+      Inl  = λx.λl.λr.l x
+      Inr  = λx.λl.λr.r x
+
+      Case (Inl M) N P =β (Inl M) N P =β N M
+      Case (Inr M) N P =β (Inr M) N P =β P M
+##### Products
+      Pair = λx.λy.λp.p x y
+      Fst  = λx.λy.x
+      Snd  = λx.λy.y
+
+      Pair M N Fst =β Fst M N =β M
+      Pair M N Snd =β Snd M N =β N
+##### Natural numbers
+      Iter = λn.λz.λs.n z s
+      Zero = λz.λs.z
+      Suc  = λn.λz.λs.s (n z s)
+
+      One   = Suc Zero =η λz.λs.s z
+      Two   = Suc One  =η λz.λs.s (s z)
+      Three = Suc Two  =η λz.λs.s (s (s z))
+##### Lists
+      Fold = λl.λn.λc.l n c
+      Nil  = λn.λc.n
+      Cons = λx.λl.λn.λc.c x (l n c)
+#### Typed encodings
+##### Booleans
+      Bool = ∀Z.Z → Z → Z
+
+      IfThenElse : ∀Z.Bool → Z → Z → Z
+      IfThenElse = ΛZ.λx:Bool.λt:Z.λe:Z.x Z t e
+
+      True  : Bool
+      True  = ΛZ.λt:Z.λe:Z.t
+      False : Bool
+      False = ΛZ.λt:Z.λe:Z.e
+##### Sums
+      Sum A B = ∀Z.(A → Z) → (B → Z) → Z
+
+      If we had type functions in our language, we could write
+      Sum = λX.λY.∀Z.(X → Z) → (Y → Z) → Z
+
+      Case : ∀X.∀Y.∀Z.Sum X Y → (X → Z) → (Y → Z) → Z
+      Case = ΛX.ΛY.ΛZ.λi:Sum X Y.λl:X → Z.λr:Y → Z.i Z l r
+
+      Inl  : ∀X.∀Y.X → Sum X Y
+      Inl  = ΛX.ΛY.λx:X.ΛZ.λl:X → Z.λr:Y → Z.l x
+      Inr  : ∀X.∀Y.Y → Sum X Y
+      Inr  = ΛX.ΛY.λy:Y.ΛZ.λl:X → Z.λr:Y → Z.r y
+##### Products
+      Prod A B = ∀Z.(A → B → Z) → Z
+
+      Fst : ∀X.∀Y.X → Y → X
+      Fst = ΛX.ΛY.λx:X.λy:Y.x
+      Snd : ∀X.∀Y.X → Y → Y
+      Snd = ΛX.ΛY.λx:X.λy:Y.y
+
+      Pair : ∀X.∀Y.X → Y → Prod X Y
+      Pair = ΛX.ΛY.λx:X.λy:Y.ΛZ.λp:X → Y → Z.p x y
+##### Natural numbers
+      Nat = ∀Z.Z → (Z → Z) → Z
+
+      Iter : ∀Z.Nat → Z → (Z → Z) → Z
+      Iter = ΛZ.λn:Nat.λz:Z.λs:Z → Z.n Z z s
+
+      Zero : Nat
+      Zero = ΛZ.λz:Z.λs:Z → Z.z
+
+      Suc : Nat → Nat
+      Suc = λn:Nat.ΛZ.λz:Z.λs:Z → Z.s (n Z z s)
+##### Lists
+      List A = ∀Z.Z → (A → Z → Z) → Z
+
+      Fold : ∀X.∀Z.List X → Z → (X → Z → Z) → Z
+      Fold = ΛX.ΛZ.λl:List X.λn:Z.λc:X → Z → Z.l Z n c
+
+      Nil : ∀X.List X
+      Nil = ΛX.ΛZ.λn:Z.λc:X → Z → Z.n
+
+      Cons : ∀X.X → List X → List X
+      Cons = ΛX.λx:X.λl:List X.ΛZ.λn:Z.λc:X → Z → Z.c x (l Z n c)
+##### Encoding existential types
+      We really want type functions, but we don't have them.
+
+      Exist X.A = ∀Z.(∀X.A → Z) → Z
+
+      Pack_X.A : ∀X.A → Exist X.A
+      Pack_X.A = ΛX.λy:A.ΛZ.λf:∀X.A → Z.f X y
+
+      Open_X.A : ∀Z.Exist X.A → (∀X.A → Z) → Z
+      Open_X.A = ΛZ.λp:Exist X.A.λf:∀X.A → Z.p Z f
+
+      Reference: Girard, Proofs and Types
