@@ -1,44 +1,57 @@
-TypeFunc
-========
+# TypeFunc
+
 This repository collects some links and resources for learning about type
 theory, functional programming, and related subjects.
 
-------------------------------------------------------
-
 ## Books and Papers
 
-#### Basics/Background  
+### Basics/Background  
 + [Foundations for Programming Languages](http://www.amazon.com/dp/0262133210/), John Mitchell.  
++ [Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/), Benjamin Pierce.   
++ [Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/pfpl.html), Robert Harper.  
 + [Categories for Types](http://www.amazon.com/Categories-Types-Cambridge-Mathematical-Textbooks/dp/0521457017/), Roy Crole.  
 + [Type Theory and Functional Programming](https://www.cs.kent.ac.uk/people/staff/sjt/TTFP/), Simon Thompson.  
-+ [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
 + [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures.  
 + [Two Lectures on Contructive Type Theory](https://www.cs.uoregon.edu/research/summerschool/summer15/notes/OPLSS-Short-2015-2.pdf), Robert Constable.  
 
-#### More Advanced  
-+ [The HoTT Book][], a textbook on informal homotopy type theory.   
-+ [Programming in Martin-L&ouml;f's Type Theory](http://www.cse.chalmers.se/research/group/logic/book/), Nordstr&ouml;m, Petersson, and Smith.  
-+ [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen and Urzyczyn.  
-+ [Notions of Computability at Higher Type](http://homepages.inf.ed.ac.uk/jrl/Research/notions1.pdf), John Longley.  
-+ [Synthetic Topology of data types and classical spaces](http://www.cs.bham.ac.uk/~mhe/papers/entcs87.pdf), Martin Escardo, 2004.
+### Programming Books  
++ [Type-Driven Development with Idris](https://edwinb.wordpress.com/2017/03/23/type-driven-development-with-idris/), Edwin Brady.  
++ [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala), Paul Chiusano and Rúnar Bjarnason.  
++ [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
++ [Verified Functional Programming in Agda](http://www.amazon.com/Verified-Functional-Programming-Agda-Books/dp/1970001240/), Aaron Stump.  
+
+
+### More Advanced  
++ [Advanced Topics in Types and Programming Languages](https://mitpress.mit.edu/books/advanced-topics-types-and-programming-languages), Pierce (ed), 2005.  
++ [The HoTT Book][], a many-authored textbook on informal type theory, 2013.   
++ [Introduction to Homotopy Type Theory](http://www.cs.nott.ac.uk/~psztxa/ewscs-17/notes.pdf), lecture notes by Thorsten Altenkirch, 2017.  
++ [Programming in Martin-L&ouml;f's Type Theory](http://www.cse.chalmers.se/research/group/logic/book/), Nordstr&ouml;m, Petersson, and Smith, 1990.  
++ [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen and Urzyczyn, 1998.  
++ [Higher-Order Computability](http://www.springer.com/us/book/9783662479919), Longley and Normann, 2015.  
++ [Synthetic Topology of data types and classical spaces](http://www.cs.bham.ac.uk/~mhe/papers/entcs87.pdf), Martin Escardo, 2004.  
 + [Topological domain theory](http://homepages.inf.ed.ac.uk/als/Research/topological-domain-theory.html), Alex Simpson, et al.
 
 ---------------------------------------------------------------
 
 ## Recorded Lectures  
-+ [IHP Semantics of proofs and certified math](https://www.youtube.com/playlist?list=PL9kd4mpdvWcCUOrG5S7KrvOFDhyqnXoUj), Institute Henri Poincare, Fr, 2014.  
++ [Foundations of Math: Univalent Foundations & Set Theory](http://fomus.weebly.com/talks-abstracts--videos.html), ​​​Bielefeld, DE, 2016.  
++ [IHP Semantics of proofs and certified math](https://www.youtube.com/playlist?list=PL9kd4mpdvWcCUOrG5S7KrvOFDhyqnXoUj), Institute Henri Poincare, FR, 2014.  
 + [Homotopy Type Theory graduate seminar](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper, CMU, 2013.  
-+ [IAS Univalent Foundations Program](https://video.ias.edu/taxonomy/term/78), Institute for Advanced Study, 2012--2013.  
-+ [The Five Stages of Accepting Constructive Math](https://video.ias.edu/members/1213/0318-AndrejBauer), Andrej Bauer, IAS, 2013. 
++ [Idris course at ITU](https://edwinb.wordpress.com/2013/03/15/idris-course-at-itu-slides-and-video/), by Edwin Brady, Copenhagen, DK, 2013.  
++ [IAS Univalent Foundations Program](https://video.ias.edu/taxonomy/term/78), 2012--2013.  
++ [The Five Stages of Accepting Constructive Math](https://video.ias.edu/members/1213/0318-AndrejBauer), Andrej Bauer, IAS, 2013.   
 + [Introductory Coq tutorials](https://www.youtube.com/playlist?list=PL5FJyaC2WsVlcWB4we3sPe6t09Vviu3Hn), Andrej Bauer.  
 + [Introduction to computational logic](https://www.youtube.com/playlist?list=PL5FJyaC2WsVnmxmaOixx3EWx3888BToGJ), from Saarland U. ([downloadable](https://www.ps.uni-saarland.de/courses/cl/videos.php))
 
 ----------------------------------------------------------
 
-Courses
--------
+## Courses  
++ [2017 Type Theory](http://www2.tcs.ifi.lmu.de/~abel/eafit2017/index.html), Andreas Abel.  
++ [2017 Mathematical Foundations of Programming](http://www.cs.nott.ac.uk/~pszvc/g54fop/), Venanzio Capretta.  
++ [2017 Coalgebras and Infinite Data Structures](http://www.duplavis.com/venanzio/mgs_coalgebra/index.html), Venanzio Capretta.  
++ [2017 Naïve Type Theory](http://www.cs.nott.ac.uk/~psztxa/mgs-17/) ([YouTube videos](https://www.youtube.com/watch?v=bNG53SA4n48)), Thorsten Altenkirch.  
 + [2015 Introduction to Computational Logic](https://courses.ps.uni-saarland.de/icl_15/), Gert Smolka and Tobias Tebbi.  
-+ [2014 Semantics of proofs and certified mathematics](https://ihp2014.pps.univ-paris-diderot.fr/doku.php), Institute Henri Poincare, Fr.  
++ [2014 Semantics of proofs and certified mathematics](https://ihp2014.pps.univ-paris-diderot.fr/doku.php), Institute Henri Poincare.  
 + [2014 Coalgebra](http://www.cs.ru.nl/is/education/courses/2014/coalgebra/), Sam Staton and Alexandra Silva.  
 + [2014 Software Foundations](http://www.seas.upenn.edu/~cis500/current/index.html), Stephanie Weirich.  
 + [2014 Programs and Proofs: mechanizing math with dependent types](http://ilyasergey.net/pnp-2014/), Ilya Sergey.   
@@ -49,7 +62,15 @@ Courses
 + [2011 Introduction to Formal Reasoning](http://www.cs.nott.ac.uk/~txa/g52ifr/) Thorsten Altenkirch.  
 + [2011 course on type theory and Coq](http://www.cs.ru.nl/~freek/courses/tt-2011/), Radboud University, NL.  
 + [2011 course on verifying algorithms in Coq](http://www.di.ens.fr/~zappa/teaching/coq/ecole11/), CEA-EDF-INRIA, FR.  
++ **Oregon Programming Languages Summer School**
+  - [2017: a spectrum of types.](https://www.cs.uoregon.edu/research/summerschool/summer17/)  
+  - [2016: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer16/)  
+  - [2015: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer15/index.php)  
+  - [2014: types, logic, semantics, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer14/index.html)  
+  - [2013: types, logic, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer13/)  
+  - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([Lectures@YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
 + **Midlands Graduate School** on foundations of computer science
+  - [2017: Leicester](http://www.cs.le.ac.uk/events/mgs2017/)  
   - [2016: Birmingham](http://www.cs.bham.ac.uk/~pbl/mgs2016/)  
   - [2015: Sheffield](http://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs2015/mgs.html)  
   - [2014: Nottingham](http://www.cs.nott.ac.uk/~txa/mgs.2014/)  
@@ -58,18 +79,11 @@ Courses
   - [2012 grad course on linear logic](http://www.cs.cmu.edu/~fp/courses/15816-s12/), Frank Pfenning.  
   - [2010 grad course on modal logic](http://www.cs.cmu.edu/~fp/courses/15816-s10/), Frank Pfenning and André Platzer.  
   - [2009 undergrad course on constructive logic](http://www.cs.cmu.edu/~fp/courses/15317-f09/index.html), Frank Pfenning and Ron Garcia.  
-+ **Oregon Programming Languages Summer School**
-  - [2016: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer16/)  
-  - [2015: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer15/index.php)  
-  - [2014: types, logic, semantics, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer14/index.html)  
-  - [2013: types, logic, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer13/)  
-  - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([Lectures@YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
 + [2010 Categorical Logic](http://www.cl.cam.ac.uk/teaching/0910/L20/),  Samuel Staton.
 
 ------------------------------------------------------
 
-Programming
------------
+## Programming Languages (in alphabetical order)  
 + [Agda][]  
     - [Verified functional programming in Agda](http://www.amazon.com/Verified-Functional-Programming-Agda-Books/dp/1970001240/) (book), Aaron Stump.  
     - [Dependent Types at Work](http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf), introductory tutorial by Ana Bove and Peter Dybjer.  
@@ -90,14 +104,6 @@ Programming
 	- [Type theory and Coq](http://www.cs.ru.nl/~freek/courses/tt-2011/) (course) Radboud University, NL.  
     - [Software Foundations in Coq](http://web.cecs.pdx.edu/~apt/coq_hints.html), tips from OPLSS.  
 	
-+ [NuPRL](http://www.nuprl.org/)
-
-+ [Scala][]
-	- [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala) (book), Paul Chiusano and Rúnar Bjarnason, 2014.  
-    - [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun) (course), Martin Odersky.  
-	- [Principles of Reactive Programming](https://www.coursera.org/course/reactive) (course), Odersky, Meijer, Kuhn.  
-	- [Ninety-Nine Scala Problems](http://aperiodic.net/phil/scala/s-99/), Gold and Hett.  
-
 + [Haskell](http://www.haskell.org/)  
 	- [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/) (book), a beginner's guide that's free to read online.  
 	- [Stephen Diehl](http://www.stephendiehl.com/posts.html) has some nice posts covering things like monads in Haskell.   
@@ -105,10 +111,22 @@ Programming
       offers many resources for learning Haskell.  
 	- [A monad for infinite search in finite time](http://math.andrej.com/2008/11/21/a-haskell-monad-for-infinite-search-in-finite-time/), by Martin Escardo.
 	
++ [Idris](https://www.idris-lang.org/)
+    - [The Idris Tutorial](http://docs.idris-lang.org/en/latest/tutorial/index.html).  
+    - [Type-Driven Development with Idris](https://www.manning.com/books/type-driven-development-with-idris) (book), Edwin Brady.  
+    - [Kats Idris Workshop](http://www.idris-lang.org/documentation/kats-workshop-may-2016/), Dublin, IR, 2016.  
+	- [Idris Course at ITU](https://edwinb.wordpress.com/2013/03/15/idris-course-at-itu-slides-and-video/), Edwin Brady, Copenhagen, DK, 2013.  
+
+
++ [Scala][]
+	- [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala) (book), Paul Chiusano and Rúnar Bjarnason, 2014.  
+    - [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun) (course), Martin Odersky.  
+	- [Principles of Reactive Programming](https://www.coursera.org/course/reactive) (course), Odersky, Meijer, Kuhn.  
+	- [Ninety-Nine Scala Problems](http://aperiodic.net/phil/scala/s-99/), Gold and Hett.  
+
 ------------------------------------------------------
 
-Miscellaneous
--------------
+## Miscellaneous
 + [github.com/HoTT][], GitHub repo for the HoTT book. (Clone this to get the very latest edition.)
 + [homotopytypetheory.org][]  
 + [Francois Dorais' blog posts](http://logic.dorais.org/archives/1448) about doing math in HoTT.
