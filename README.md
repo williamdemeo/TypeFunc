@@ -9,6 +9,7 @@ theory, functional programming, and related subjects.
 + [Foundations for Programming Languages](http://www.amazon.com/dp/0262133210/), John Mitchell.  
 + [Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/), Benjamin Pierce.   
 + [Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/pfpl.html), Robert Harper.  
++ [Proofs and Types](http://www.paultaylor.eu/stable/Proofs+Types.html), Girard, Lafont, Taylor.  
 + [Categories for Types](http://www.amazon.com/Categories-Types-Cambridge-Mathematical-Textbooks/dp/0521457017/), Roy Crole.  
 + [Type Theory and Functional Programming](https://www.cs.kent.ac.uk/people/staff/sjt/TTFP/), Simon Thompson.  
 + [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures.  
@@ -22,12 +23,12 @@ theory, functional programming, and related subjects.
 
 
 ### More Advanced  
-+ [Advanced Topics in Types and Programming Languages](https://mitpress.mit.edu/books/advanced-topics-types-and-programming-languages), Pierce (ed), 2005.  
-+ [The HoTT Book][], a many-authored textbook on informal type theory, 2013.   
-+ [Introduction to Homotopy Type Theory](http://www.cs.nott.ac.uk/~psztxa/ewscs-17/notes.pdf), lecture notes by Thorsten Altenkirch, 2017.  
-+ [Programming in Martin-L&ouml;f's Type Theory](http://www.cse.chalmers.se/research/group/logic/book/), Nordstr&ouml;m, Petersson, and Smith, 1990.  
-+ [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen and Urzyczyn, 1998.  
-+ [Higher-Order Computability](http://www.springer.com/us/book/9783662479919), Longley and Normann, 2015.  
++ [Advanced Topics in Types and Programming Languages](https://mitpress.mit.edu/books/advanced-topics-types-and-programming-languages), Pierce ed., 2005.  
++ [The HoTT Book][], many authors, a textbook on informal type theory, 2013.   
++ [Introduction to Homotopy Type Theory](http://www.cs.nott.ac.uk/~psztxa/ewscs-17/notes.pdf), Thorsten Altenkirch's lecture notes, 2017.  
++ [Programming in Martin-L&ouml;f's Type Theory](http://www.cse.chalmers.se/research/group/logic/book/), Nordstr&ouml;m, Petersson, Smith, 1990.  
++ [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen, Urzyczyn, 1998.  
++ [Higher-Order Computability](http://www.springer.com/us/book/9783662479919), Longley, Normann, 2015.  
 + [Synthetic Topology of data types and classical spaces](http://www.cs.bham.ac.uk/~mhe/papers/entcs87.pdf), Martin Escardo, 2004.  
 + [Topological domain theory](http://homepages.inf.ed.ac.uk/als/Research/topological-domain-theory.html), Alex Simpson, et al.
 
