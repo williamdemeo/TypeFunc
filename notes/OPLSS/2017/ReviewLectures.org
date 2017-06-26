@@ -14,13 +14,13 @@ Anna
 **** Products and Sums
 **** Operational Semantics
 ** Untyped Lambda Calculus
-   only has 3 things
-   M, N, P ∈ Term ::= x | λx.M | M N
-   surprisingly tricky to get right
+   only has 3 things  
+   M, N, P ∈ Term ::= x | λx.M | M N  
+   surprisingly tricky to get right  
 
-   x, y, z ∈ Variable ::= ...
-   might write λx.M as Lam(x.M)
-   might write M N as  ap(M;N)
+   x, y, z ∈ Variable ::= ...  
+   might write λx.M as Lam(x.M)  
+   might write M N as  ap(M;N)  
 *** Bound variables
     BV(x) = {}
     BV(λx.M) = BV(M) ∪ {x}
