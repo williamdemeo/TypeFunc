@@ -119,6 +119,11 @@ theory, functional programming, and related subjects.
 	- [Idris Course at ITU](https://edwinb.wordpress.com/2013/03/15/idris-course-at-itu-slides-and-video/), Edwin Brady, Copenhagen, DK, 2013.  
 
 
++ [Lean](https://leanprover.github.io/)
+  - Software: [github repositories](https://github.com/leanprover)
+  - Tutorials: [Intro to Lean](https://leanprover.github.io/introduction_to_lean), [Theorem Proving in Lean](https://leanprover.github.io/theorem_proving_in_lean), [Programming in Lean](https://leanprover.github.io/programming_in_lean)
+  - Courses: [Logic and Proof](https://github.com/leanprover/logic_and_proof), CMU Undergrad Course.
+
 + [Scala][]
 	- [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala) (book), Paul Chiusano and Rúnar Bjarnason, 2014.  
     - [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun) (course), Martin Odersky.  
