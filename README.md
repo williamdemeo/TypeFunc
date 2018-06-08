@@ -11,6 +11,7 @@ theory, functional programming, and related subjects.
 + [Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/pfpl.html), Robert Harper.  
 + [Proofs and Types](http://www.paultaylor.eu/stable/Proofs+Types.html), Girard, Lafont, Taylor.  
 + [Categories for Types](http://www.amazon.com/Categories-Types-Cambridge-Mathematical-Textbooks/dp/0521457017/), Roy Crole.  
++ [Category Theory in Context](http://www.math.jhu.edu/~eriehl/context.pdf), Emily Riehl.  
 + [Type Theory and Functional Programming](https://www.cs.kent.ac.uk/people/staff/sjt/TTFP/), Simon Thompson.  
 + [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf), Per Martin-L&ouml;f's Padova lectures.  
 + [Two Lectures on Contructive Type Theory](https://www.cs.uoregon.edu/research/summerschool/summer15/notes/OPLSS-Short-2015-2.pdf), Robert Constable.  
@@ -24,11 +25,11 @@ theory, functional programming, and related subjects.
 
 ### More Advanced  
 + [Advanced Topics in Types and Programming Languages](https://mitpress.mit.edu/books/advanced-topics-types-and-programming-languages), Pierce ed., 2005.  
++ [Higher-Order Computability](http://www.springer.com/us/book/9783662479919), Longley, Normann, 2015.  
 + [The HoTT Book][], many authors, a textbook on informal type theory, 2013.   
 + [Introduction to Homotopy Type Theory](http://www.cs.nott.ac.uk/~psztxa/ewscs-17/notes.pdf), Thorsten Altenkirch's lecture notes, 2017.  
 + [Programming in Martin-L&ouml;f's Type Theory](http://www.cse.chalmers.se/research/group/logic/book/), Nordstr&ouml;m, Petersson, Smith, 1990.  
 + [Lectures on the Curry-Howard Isomorphism](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7385), Sørensen, Urzyczyn, 1998.  
-+ [Higher-Order Computability](http://www.springer.com/us/book/9783662479919), Longley, Normann, 2015.  
 + [Synthetic Topology of data types and classical spaces](http://www.cs.bham.ac.uk/~mhe/papers/entcs87.pdf), Martin Escardo, 2004.  
 + [Topological domain theory](http://homepages.inf.ed.ac.uk/als/Research/topological-domain-theory.html), Alex Simpson, et al.
 
@@ -65,6 +66,7 @@ theory, functional programming, and related subjects.
 + [2011 course on verifying algorithms in Coq](http://www.di.ens.fr/~zappa/teaching/coq/ecole11/), CEA-EDF-INRIA, FR.  
 + [2010 Categorical Logic](http://www.cl.cam.ac.uk/teaching/0910/L20/),  Samuel Staton.  
 + **Oregon Programming Languages Summer School**
+  - [2018: parallelism and concurrency](https://www.cs.uoregon.edu/research/summerschool/summer18/index.php)
   - [2017: a spectrum of types.](https://www.cs.uoregon.edu/research/summerschool/summer17/)  
   - [2016: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer16/)  
   - [2015: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer15/index.php)  
