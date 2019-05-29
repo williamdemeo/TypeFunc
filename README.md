@@ -6,7 +6,7 @@ theory, functional programming, and related subjects.
 ## Books and Papers
 
 ### Basics/Background
-+ [Logic and Proof](https://github.com/leanprover/logic_and_proof)
++ [Logic and Proof](https://github.com/leanprover/logic_and_proof), Avigad, Lewis, van Doorn.
 + [Type Theory and Formal Proof: An Introduction](https://www.google.com/search?kgmid=/g/1z2tr7kmy&hl=en-US&kgs=73629010424c16a3&q=Type+Theory+and+Formal+Proof:+An+Introduction&shndl=0&source=sh/x/kp/osrp&entrypoint=sh/x/kp/osrp), Geuvers and Nederpelt.
 + [Foundations for Programming Languages](http://www.amazon.com/dp/0262133210/), John Mitchell.  
 + [Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/), Benjamin Pierce.   
