@@ -5,7 +5,9 @@ theory, functional programming, and related subjects.
 
 ## Books and Papers
 
-### Basics/Background  
+### Basics/Background
++ [Logic and Proof](https://github.com/leanprover/logic_and_proof)
++ [Type Theory and Formal Proof: An Introduction](https://www.google.com/search?kgmid=/g/1z2tr7kmy&hl=en-US&kgs=73629010424c16a3&q=Type+Theory+and+Formal+Proof:+An+Introduction&shndl=0&source=sh/x/kp/osrp&entrypoint=sh/x/kp/osrp), Geuvers and Nederpelt.
 + [Foundations for Programming Languages](http://www.amazon.com/dp/0262133210/), John Mitchell.  
 + [Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/), Benjamin Pierce.   
 + [Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/pfpl.html), Robert Harper.  
@@ -22,8 +24,8 @@ theory, functional programming, and related subjects.
 + [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/), Pierce, et al.  
 + [Verified Functional Programming in Agda](http://www.amazon.com/Verified-Functional-Programming-Agda-Books/dp/1970001240/), Aaron Stump.  
 
-
-### More Advanced  
+### More Advanced
++ [Domain-theoretic Foundations of Functional Programming](https://g.co/kgs/eSXtwn)
 + [Advanced Topics in Types and Programming Languages](https://mitpress.mit.edu/books/advanced-topics-types-and-programming-languages), Pierce ed., 2005.  
 + [Higher-Order Computability](http://www.springer.com/us/book/9783662479919), Longley, Normann, 2015.  
 + [The HoTT Book][], many authors, a textbook on informal type theory, 2013.   
