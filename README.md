@@ -6,7 +6,7 @@ theory, functional programming, and related subjects.
 ## Books and Papers
 
 ### Basics/Background
-+ [Logic and Proof](https://github.com/leanprover/logic_and_proof), Avigad, Lewis, van Doorn.
++ [Logic and Proof](https://leanprover.github.io/logic_and_proof/) ([source](https://github.com/leanprover/logic_and_proof)), Avigad, Lewis, van Doorn.
 + [Type Theory and Formal Proof: An Introduction](https://www.google.com/search?kgmid=/g/1z2tr7kmy&hl=en-US&kgs=73629010424c16a3&q=Type+Theory+and+Formal+Proof:+An+Introduction&shndl=0&source=sh/x/kp/osrp&entrypoint=sh/x/kp/osrp), Geuvers and Nederpelt.
 + [Foundations for Programming Languages](http://www.amazon.com/dp/0262133210/), John Mitchell.  
 + [Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/), Benjamin Pierce.   
@@ -126,7 +126,7 @@ theory, functional programming, and related subjects.
 + [Lean](https://leanprover.github.io/)
   - Software: [github repositories](https://github.com/leanprover)
   - Tutorials: [Intro to Lean](https://leanprover.github.io/introduction_to_lean), [Theorem Proving in Lean](https://leanprover.github.io/theorem_proving_in_lean), [Programming in Lean](https://leanprover.github.io/programming_in_lean)
-  - Courses: [Logic and Proof](https://github.com/leanprover/logic_and_proof), CMU Undergrad Course.
+  - Courses: [Logic and Proof](https://leanprover.github.io/logic_and_proof/) ([source](https://github.com/leanprover/logic_and_proof)), CMU Undergrad Course.
 
 + [Scala][]
 	- [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala) (book), Paul Chiusano and Rúnar Bjarnason, 2014.  
