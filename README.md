@@ -142,7 +142,6 @@ theory, functional programming, and related subjects.
     + [Programming in Lean](https://leanprover.github.io/programming_in_lean)
     + [Logic and Proof](https://leanprover.github.io/logic_and_proof/) ([source](https://github.com/leanprover/logic_and_proof)), CMU Undergrad Course.
     + [ualib.org](https://ualib.gitlab.io/) documentation for the Lean Universal Algebra Library.
-  - [lean-ualib](https://gitlab.com/ualib/lean-ualib) (work in progress; private for now; [request access](mailto:williamdemeo@gmail.com))
   - [Lean zulip chatroom](https://leanprover.zulipchat.com/login/)
   - [Lean zulip archive](https://leanprover-community.github.io/archive/)
 
