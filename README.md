@@ -49,7 +49,9 @@ theory, functional programming, and related subjects.
 
 ----------------------------------------------------------
 
-## Courses  
+## Courses
+
++ [2019 Homotopy (type) theory](https://github.com/andrejbauer/homotopy-type-theory-course), Andrej Bauer and Jaka Smrekar.  
 + [2017 Type Theory](http://www2.tcs.ifi.lmu.de/~abel/eafit2017/index.html), Andreas Abel.  
 + [2017 Mathematical Foundations of Programming](http://www.cs.nott.ac.uk/~pszvc/g54fop/), Venanzio Capretta.  
 + [2017 Coalgebras and Infinite Data Structures](http://www.duplavis.com/venanzio/mgs_coalgebra/index.html), Venanzio Capretta.  
