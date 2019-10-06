@@ -70,6 +70,7 @@ theory, functional programming, and related subjects.
 + [2011 course on verifying algorithms in Coq](http://www.di.ens.fr/~zappa/teaching/coq/ecole11/), CEA-EDF-INRIA, FR.  
 + [2010 Categorical Logic](http://www.cl.cam.ac.uk/teaching/0910/L20/),  Samuel Staton.  
 + **Oregon Programming Languages Summer School**
+  - [2019: probabilistic programming and security](https://www.cs.uoregon.edu/research/summerschool/summer19/)  
   - [2018: parallelism and concurrency](https://www.cs.uoregon.edu/research/summerschool/summer18/index.php)
   - [2017: a spectrum of types.](https://www.cs.uoregon.edu/research/summerschool/summer17/)  
   - [2016: types, logic, semantics, and verification.](https://www.cs.uoregon.edu/research/summerschool/summer16/)  
@@ -78,6 +79,8 @@ theory, functional programming, and related subjects.
   - [2013: types, logic, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer13/)  
   - [2012: logic, languages, compilation, and verification.](http://www.cs.uoregon.edu/research/summerschool/summer12/) ([Lectures@YouTube](http://www.youtube.com/playlist?list=PL8Ky8lYL8-Oh7awp0sqa82o7Ggt4AGhyf))  
 + **Midlands Graduate School** on foundations of computer science
+  - [2019: Birmingham](http://events.cs.bham.ac.uk/mgs2019/)
+  - [2018: Nottingham](http://www.cs.nott.ac.uk/~psznhn/MGS2018/)
   - [2017: Leicester](http://www.cs.le.ac.uk/events/mgs2017/)  
   - [2016: Birmingham](http://www.cs.bham.ac.uk/~pbl/mgs2016/)  
   - [2015: Sheffield](http://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs2015/mgs.html)  
@@ -126,9 +129,22 @@ theory, functional programming, and related subjects.
 
 
 + [Lean](https://leanprover.github.io/)
-  - Software: [github repositories](https://github.com/leanprover)
-  - Tutorials: [Intro to Lean](https://leanprover.github.io/introduction_to_lean), [Theorem Proving in Lean](https://leanprover.github.io/theorem_proving_in_lean), [Programming in Lean](https://leanprover.github.io/programming_in_lean)
-  - Courses: [Logic and Proof](https://leanprover.github.io/logic_and_proof/) ([source](https://github.com/leanprover/logic_and_proof)), CMU Undergrad Course.
+  - [official homepage]((https://leanprover.github.io/))
+  - [official github](https://github.com/leanprover)
+  - [community homepage](https://leanprover-community.github.io/) 
+  - [community github](https://github.com/leanprover-community)
+  - [lean-ualib](https://gitlab.com/ualib/lean-ualib) work in progress (private for now; [request access](mailto:williamdemeo@gmail.com))
+  - **Lean Live!** or, "Blean" (weB lean)
+    + [official](https://leanprover.github.io/live/3.4.1/)
+    + [lean-community](https://leanprover-community.github.io/lean-web-editor/)
+  - **Documentation**
+    + [Intro to Lean](https://leanprover.github.io/introduction_to_lean)
+    + [Theorem Proving in Lean](https://leanprover.github.io/theorem_proving_in_lean)
+    + [Programming in Lean](https://leanprover.github.io/programming_in_lean)
+    + [Logic and Proof](https://leanprover.github.io/logic_and_proof/) ([source](https://github.com/leanprover/logic_and_proof)), CMU Undergrad Course.
+    + [ualib.org](https://ualib.gitlab.io/) documentation for the Lean Universal Algebra Library.
+  - [Lean zulip chatroom](https://leanprover.zulipchat.com/login/)
+  - [Lean zulip archive](https://leanprover-community.github.io/archive/)
 
 + [Scala][]
 	- [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala) (book), Paul Chiusano and Rúnar Bjarnason, 2014.  
