@@ -129,11 +129,10 @@ theory, functional programming, and related subjects.
 
 
 + [Lean](https://leanprover.github.io/)
-  - [official homepage]((https://leanprover.github.io/))
-  - [official github](https://github.com/leanprover)
-  - [community homepage](https://leanprover-community.github.io/) 
-  - [community github](https://github.com/leanprover-community)
-  - [lean-ualib](https://gitlab.com/ualib/lean-ualib) work in progress (private for now; [request access](mailto:williamdemeo@gmail.com))
+  - [Official homepage](https://leanprover.github.io/)
+  - [Official github](https://github.com/leanprover)
+  - [Community homepage](https://leanprover-community.github.io/) 
+  - [Community github](https://github.com/leanprover-community)
   - **Lean Live!** or, "Blean" (weB lean)
     + [official](https://leanprover.github.io/live/3.4.1/)
     + [lean-community](https://leanprover-community.github.io/lean-web-editor/)
@@ -143,6 +142,7 @@ theory, functional programming, and related subjects.
     + [Programming in Lean](https://leanprover.github.io/programming_in_lean)
     + [Logic and Proof](https://leanprover.github.io/logic_and_proof/) ([source](https://github.com/leanprover/logic_and_proof)), CMU Undergrad Course.
     + [ualib.org](https://ualib.gitlab.io/) documentation for the Lean Universal Algebra Library.
+  - [lean-ualib](https://gitlab.com/ualib/lean-ualib) (work in progress; private for now; [request access](mailto:williamdemeo@gmail.com))
   - [Lean zulip chatroom](https://leanprover.zulipchat.com/login/)
   - [Lean zulip archive](https://leanprover-community.github.io/archive/)
 
