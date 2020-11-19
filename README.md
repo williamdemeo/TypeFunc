@@ -12,15 +12,7 @@ Because there are so many (perhaps too many) links to resources on this page, I'
 3. [The HoTT Book][], textbook from the IAS year on univalent foundations, 2013.   
 4. [Scala with Cats](https://underscore.io/books/scala-with-cats/), Noel Welsh and Dave Gurnell, 2020.
 
-The last item in this list is a recent book on Scala which its authors describe as having two main objectives:
-
-1. "to introduce monads, functors, and other functional programming patterns as a way to structure program design, and
-2. to explain how these concepts are implemented in Cats [the author's Scala library]" 
-
-The authors also state that [Scala with Cats](https://underscore.io/books/scala-with-cats/) is "aimed at teaching system architecture and design using the techniques of modern functional programming. This means designing systems as small composable units, expressing constraints and interactions via the type system, and using composition to guide the construction of large systems in a way that maintains the original architectural vision."
-
-What appeals to me about this book is its promotion of program composition and category theory as two powerful organizing principles for software design and development.
-
+What appeals to me about the last item is the book's promotion of program composition and category theory as two powerful organizing principles for software design and development.
 
 ## Books and Papers
 
