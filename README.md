@@ -5,7 +5,7 @@ theory, functional programming, and related subjects.
 
 ## My Current Favorites (new section!)
 
-Because there are so many (perhaps too many) links to resources on this page, I've decided to occasionally "short-list" a few resources that are (at the time of the last update) my current favorites... for whatever that's worth.
+Because there are so many (perhaps too many) links to resources on this page, I've decided to occasionally short-list a few resources that were (at the time of the last commit) my current favorites... for whatever that's worth.
 
 1. [Introduction to Univalent Foundations of Mathematics with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), Martin Escardo, 2019.
 2. [Homotopy Type Theory graduate seminar at CMU](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper, 2013.
