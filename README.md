@@ -3,6 +3,25 @@
 This repository collects some links and resources for learning about type
 theory, functional programming, and related subjects.
 
+## My Current Favorites (new feature!)
+
+This is a new feature!  Since there are so many (perhaps overwhelming number of) links below, I decided to "short-list" a few of my favorite resources, for whatever it's worth.
+
+1. [Introduction to Univalent Foundations of Mathematics with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), Martin Escardo, 2019.
+2. [Homotopy Type Theory graduate seminar at CMU](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper, 2013.
+3. [The HoTT Book][], textbook from the IAS year on univalent foundations, 2013.   
+4. [Scala with Cats](https://underscore.io/books/scala-with-cats/), Noel Welsh and Dave Gurnell, 2020.
+
+The last item in this list is a recent book on Scala which its authors describe as having two main objectives:
+
+1. "to introduce monads, functors, and other functional programming patterns as a way to structure program design, and
+2. to explain how these concepts are implemented in Cats [the author's Scala library]" 
+
+The authors also state that [Scala with Cats](https://underscore.io/books/scala-with-cats/) is "aimed at teaching system architecture and design using the techniques of modern functional programming. This means designing systems as small composable units, expressing constraints and interactions via the type system, and using composition to guide the construction of large systems in a way that maintains the original architectural vision."
+
+What appeals to me about this book is its promotion of program composition and category theory as two powerful organizing principles for software design and development.
+
+
 ## Books and Papers
 
 ### Basics/Background
@@ -51,6 +70,7 @@ theory, functional programming, and related subjects.
 
 ## Courses
 
++ [2019 Introduction to Univalent Foundations of Mathematics with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), Martin Escardo.  
 + [2019 Homotopy (type) theory](https://github.com/andrejbauer/homotopy-type-theory-course), Andrej Bauer and Jaka Smrekar.  
 + [2017 Type Theory](http://www2.tcs.ifi.lmu.de/~abel/eafit2017/index.html), Andreas Abel.  
 + [2017 Mathematical Foundations of Programming](http://www.cs.nott.ac.uk/~pszvc/g54fop/), Venanzio Capretta.  
@@ -61,6 +81,7 @@ theory, functional programming, and related subjects.
 + [2014 Coalgebra](http://www.cs.ru.nl/is/education/courses/2014/coalgebra/), Sam Staton and Alexandra Silva.  
 + [2014 Software Foundations](http://www.seas.upenn.edu/~cis500/current/index.html), Stephanie Weirich.  
 + [2014 Programs and Proofs: mechanizing math with dependent types](http://ilyasergey.net/pnp-2014/), Ilya Sergey.   
++ [2013 Homotopy Type Theory graduate seminar](http://www.cs.cmu.edu/~rwh/courses/hott/), Robert Harper.   
 + [2013 Dependently typed metaprogramming](http://www.cl.cam.ac.uk/~ok259/agda-course-13/), Connor McBride.  
 + [2013 Functional programming principles in Scala](https://www.coursera.org/course/progfun), Martin Odersky.  
 + [2012 short course on category theory](http://youtu.be/ZKmodCApZwk), Steve Awodey ([textbook](http://carlossicoli.free.fr/A/Awodey_S.-Category_theory-Oxford_University_Press,_USA(2010).pdf)).  
