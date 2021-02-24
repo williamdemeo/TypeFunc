@@ -17,8 +17,8 @@ What appeals to me about the last item is the book's promotion of program compos
 ## Books and Papers
 
 ### Basics/Background
-+ [Logic and Proof](https://leanprover.github.io/logic_and_proof/) ([source](https://github.com/leanprover/logic_and_proof)), Avigad, Lewis, van Doorn.
-+ [Type Theory and Formal Proof: An Introduction](https://www.google.com/search?kgmid=/g/1z2tr7kmy&hl=en-US&kgs=73629010424c16a3&q=Type+Theory+and+Formal+Proof:+An+Introduction&shndl=0&source=sh/x/kp/osrp&entrypoint=sh/x/kp/osrp), Geuvers and Nederpelt.
++ [Logic and Proof](https://leanprover.github.io/logic_and_proof/) ([source](https://github.com/leanprover/logic_and_proof)), Avigad, Lewis, van Doorn.  
++ [Type Theory and Formal Proof: An Introduction](https://www.google.com/search?kgmid=/g/1z2tr7kmy&hl=en-US&kgs=73629010424c16a3&q=Type+Theory+and+Formal+Proof:+An+Introduction&shndl=0&source=sh/x/kp/osrp&entrypoint=sh/x/kp/osrp), Geuvers and Nederpelt.  
 + [Foundations for Programming Languages](http://www.amazon.com/dp/0262133210/), John Mitchell.  
 + [Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/), Benjamin Pierce.   
 + [Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/pfpl.html), [Robert Harper](http://www.cs.cmu.edu/~rwh/).  
@@ -62,9 +62,10 @@ What appeals to me about the last item is the book's promotion of program compos
 
 ## Courses
 
++ [2021 Agda Tutorial in Advanced Functional Programming](http://www.cse.chalmers.se/~abela/AFP-2021/html/Everything.html), [Andreas Abel](http://www.cse.chalmers.se/~abela/).  
 + [2019 Introduction to Univalent Foundations of Mathematics with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), [Martín Escardó](https://www.cs.bham.ac.uk/~mhe/).  
 + [2019 Homotopy (type) theory](https://github.com/andrejbauer/homotopy-type-theory-course), [Andrej Bauer](http://www.andrej.com/) and Jaka Smrekar.  
-+ [2017 Type Theory](http://www2.tcs.ifi.lmu.de/~abel/eafit2017/index.html), Andreas Abel.  
++ [2017 Type Theory](http://www2.tcs.ifi.lmu.de/~abel/eafit2017/index.html), [Andreas Abel](http://www.cse.chalmers.se/~abela/).  
 + [2017 Mathematical Foundations of Programming](http://www.cs.nott.ac.uk/~pszvc/g54fop/), [Venanzio Capretta](http://www.duplavis.com/venanzio/index.html).  
 + [2017 Coalgebras and Infinite Data Structures](http://www.duplavis.com/venanzio/mgs_coalgebra/index.html), [Venanzio Capretta](http://www.duplavis.com/venanzio/index.html).  
 + [2017 Naïve Type Theory](http://www.cs.nott.ac.uk/~psztxa/mgs-17/) ([YouTube videos](https://www.youtube.com/watch?v=bNG53SA4n48)), [Thorsten Altenkirch](https://www.nottingham.ac.uk/computerscience/People/thorsten.altenkirch).  
@@ -109,6 +110,8 @@ What appeals to me about the last item is the book's promotion of program compos
 
 ## Programming Languages (in alphabetical order)  
 + [Agda][]  
+    - [Agda Tutorial in Advanced Functional Programming](http://www.cse.chalmers.se/~abela/AFP-2021/html/Everything.html), [Andreas Abel](http://www.cse.chalmers.se/~abela/).  
+    - [Introduction to Univalent Foundations with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), [Martín Escardó](https://www.cs.bham.ac.uk/~mhe/).  
     - [Verified functional programming in Agda](http://www.amazon.com/Verified-Functional-Programming-Agda-Books/dp/1970001240/) (book), Aaron Stump.  
     - [Dependent Types at Work](http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf), introductory tutorial by Ana Bove and Peter Dybjer.  
 	- [Seemingly impossible constructive proofs](http://math.andrej.com/2014/05/08/seemingly-impossible-proofs/), Martin Escardo, 2014.  
