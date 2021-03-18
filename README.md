@@ -7,10 +7,11 @@ theory, functional programming, and related subjects.
 
 Because there are so many (perhaps too many) links to resources on this page, I've decided to occasionally short-list a few resources that were (at the time of the last commit) my current favorites... for whatever that's worth.
 
-1. [Introduction to Univalent Foundations of Mathematics with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), [Martín Escardó](https://www.cs.bham.ac.uk/~mhe/), 2019.
-2. [Homotopy Type Theory graduate seminar at CMU](http://www.cs.cmu.edu/~rwh/courses/hott/), [Robert Harper](http://www.cs.cmu.edu/~rwh/), 2013.
-3. [The HoTT Book][], textbook from the IAS year on univalent foundations, 2013.   
-4. [Scala with Cats](https://underscore.io/books/scala-with-cats/), Noel Welsh and Dave Gurnell, 2020.
+1. [Introduction to Univalent Foundations of Mathematics with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), [Martín Escardó](https://www.cs.bham.ac.uk/~mhe/), 2019.  
+2. [The Agda Universal Algebra Library](https://ualib.gitlab.io), [William DeMeo](https://williamdemeo.gitlab.io), 2021. (shameless plug).  
+3. [Homotopy Type Theory Electronic Seminar Talks](https://www.uwo.ca/math/faculty/kapulkin/seminars/hottest.html).  
+4. [The HoTT Book][], textbook from the IAS year on univalent foundations, 2013.   
+5. [Scala with Cats](https://underscore.io/books/scala-with-cats/), Noel Welsh and Dave Gurnell, 2020.
 
 What appeals to me about the last item is the book's promotion of program composition and category theory as two powerful organizing principles for software design and development.
 
@@ -112,14 +113,15 @@ What appeals to me about the last item is the book's promotion of program compos
 ## Programming Languages (in alphabetical order)  
 + [Agda][]  
   - General Resources  
-    * [Dependent Types at Work](http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf), introductory tutorial by Ana Bove and Peter Dybjer.  
     * [The Agda Wiki](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage)  
-    * [Agda Tutorial in Advanced Functional Programming](http://www.cse.chalmers.se/~abela/AFP-2021/html/Everything.html), [Andreas Abel](http://www.cse.chalmers.se/~abela/).  
+    * [Dependent Types at Work](http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf), introductory tutorial by Ana Bove and Peter Dybjer.  
 	* [Computer aided formal reasoning](http://www.cs.nott.ac.uk/~psztxa/g53cfr/) (course), [Thorsten Altenkirch](https://www.nottingham.ac.uk/computerscience/People/thorsten.altenkirch), 2010.  
+    * [Agda Tutorial in Advanced Functional Programming](http://www.cse.chalmers.se/~abela/AFP-2021/html/Everything.html), [Andreas Abel](http://www.cse.chalmers.se/~abela/), 2021.  
   - Resources with a Mathematics focus  
-    * [Introduction to Univalent Foundations with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), [Martín Escardó](https://www.cs.bham.ac.uk/~mhe/).  
-    * [The Agda Universal Algebra Library](https://ualib.gitlab.io), [William DeMeo](https://williamdemeo.gitlab.io).  
-    * [Seemingly impossible constructive proofs](http://math.andrej.com/2014/05/08/seemingly-impossible-proofs/), Martin Escardo, 2014.  
+    * [Introduction to Univalent Foundations with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), [Martín Escardó](https://www.cs.bham.ac.uk/~mhe/), 2019.  
+    * [The Agda Universal Algebra Library](https://ualib.gitlab.io), [William DeMeo](https://williamdemeo.gitlab.io), 2021.  
+    * [YouTube: Cubical Agda and its extensions](https://youtu.be/9RFt1Q2pHE8), [Andrea Vezzosi](https://saizan.github.io/), 2021.  
+    * [Seemingly impossible constructive proofs](http://math.andrej.com/2014/05/08/seemingly-impossible-proofs/), [Martín Escardó](https://www.cs.bham.ac.uk/~mhe/), 2014.  
   - Resources with a Programming Languages focus  
     * [Programming Language Foundations in Agda](https://plfa.github.io/), Philip Wadler.  
     * [Verified functional programming in Agda](http://www.amazon.com/Verified-Functional-Programming-Agda-Books/dp/1970001240/) (book), Aaron Stump.  
@@ -176,18 +178,21 @@ What appeals to me about the last item is the book's promotion of program compos
 ------------------------------------------------------
 
 ## Some Related GitHub Repositories  
+
+(alphabetical)
+
 + [agda/agda](https://github.com/agda/agda)  
 + [atom/atom](https://github.com/atom/atom)  
 + [coq/coq](https://github.com/coq/coq)  
-+ [idris-lang/Idris-dev](https://github.com/idris-lang/Idris-dev)  
-+ [scala/scala](https://github.com/scala/scala)  
-+ [HoTT/book](https://github.com/HoTT/book) for the HoTT book (clone it to get the latest edition)  
++ [databricks/learning-spark](https://github.com/databricks/learning-spark) to accompany the book "Learning Spark"  
 + [edwinb/TypeDD-Samples](https://github.com/edwinb/TypeDD-Samples) to accompany the book "TDD in Idris"  
 + [fpinscala/fpinscala](https://github.com/fpinscala/fpinscala) to accompany the book "FP in Scala"  
-+ [spark-in-action/first-edition](https://github.com/spark-in-action/first-edition) to accompany the book "Spark in Action"  
-+ [databricks/learning-spark](https://github.com/databricks/learning-spark) to accompany the book "Learning Spark"  
++ [HoTT/book](https://github.com/HoTT/book) for the HoTT book (clone it to get the latest edition)  
++ [idris-lang/Idris-dev](https://github.com/idris-lang/Idris-dev)  
 + [java8/Java8InAction](https://github.com/java8/Java8InAction) to accompany the book "Java 8 in Action"  
-
++ [scala/scala](https://github.com/scala/scala)  
++ [spark-in-action/first-edition](https://github.com/spark-in-action/first-edition) to accompany the book "Spark in Action"  
++ [ualib/ualib.gitlab.io](https://gitlab.com/ualib/ualib.gitlab.io) source code for [The Agda Universal Algebra Library][]
 
 ## Miscellaneous
 + [homotopytypetheory.org][]  
@@ -215,3 +220,4 @@ What appeals to me about the last item is the book's promotion of program compos
 [github.com/HoTT]: https://github.com/HoTT/book
 [homotopytypetheory.org]: http://homotopytypetheory.org/
 [Category Theory]: http://carlossicoli.free.fr/A/Awodey_S.-Category_theory-Oxford_University_Press,_USA(2010).pdf
+[The Agda Universal Algebra Library]: https://ualib.gitlab.io
