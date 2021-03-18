@@ -23,6 +23,7 @@ What appeals to me about the last item is the book's promotion of program compos
 + [Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/), Benjamin Pierce.   
 + [Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/pfpl.html), [Robert Harper](http://www.cs.cmu.edu/~rwh/).  
 + [Proofs and Types](http://www.paultaylor.eu/stable/Proofs+Types.html), Girard, Lafont, Taylor.  
++ [Computational Category Theory](http://www.cs.man.ac.uk/~david/categories/book/book.pdf), Rydeheard and Burstall.  
 + [Categories for Types](http://www.amazon.com/Categories-Types-Cambridge-Mathematical-Textbooks/dp/0521457017/), Roy Crole.  
 + [Category Theory in Context](http://www.math.jhu.edu/~eriehl/context.pdf), Emily Riehl.  
 + [Type Theory and Functional Programming](https://www.cs.kent.ac.uk/people/staff/sjt/TTFP/), Simon Thompson.  
@@ -110,16 +111,20 @@ What appeals to me about the last item is the book's promotion of program compos
 
 ## Programming Languages (in alphabetical order)  
 + [Agda][]  
-    - [Agda Tutorial in Advanced Functional Programming](http://www.cse.chalmers.se/~abela/AFP-2021/html/Everything.html), [Andreas Abel](http://www.cse.chalmers.se/~abela/).  
-    - [Introduction to Univalent Foundations with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), [Martín Escardó](https://www.cs.bham.ac.uk/~mhe/).  
-    - [Verified functional programming in Agda](http://www.amazon.com/Verified-Functional-Programming-Agda-Books/dp/1970001240/) (book), Aaron Stump.  
-    - [Dependent Types at Work](http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf), introductory tutorial by Ana Bove and Peter Dybjer.  
-	- [Seemingly impossible constructive proofs](http://math.andrej.com/2014/05/08/seemingly-impossible-proofs/), Martin Escardo, 2014.  
-	- [Dependently typed metaprogramming](http://www.cl.cam.ac.uk/~ok259/agda-course-13/) (course), [Conor McBride](http://strictlypositive.org/), 2013.  
-	- [Computer aided formal reasoning](http://www.cs.nott.ac.uk/~psztxa/g53cfr/) (course), [Thorsten Altenkirch](https://www.nottingham.ac.uk/computerscience/People/thorsten.altenkirch), 2010.  
-	- [Learn you an agda](http://williamdemeo.github.io/2014/02/27/learn-you-an-agda/), a modified version of [Liam O'Connor's introductory tutorial](http://learnyouanagda.liamoc.net/). 
-    - [The Agda Wiki](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage)  
-	
+  - General Resources  
+    * [Dependent Types at Work](http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf), introductory tutorial by Ana Bove and Peter Dybjer.  
+    * [The Agda Wiki](http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.HomePage)  
+    * [Agda Tutorial in Advanced Functional Programming](http://www.cse.chalmers.se/~abela/AFP-2021/html/Everything.html), [Andreas Abel](http://www.cse.chalmers.se/~abela/).  
+	* [Computer aided formal reasoning](http://www.cs.nott.ac.uk/~psztxa/g53cfr/) (course), [Thorsten Altenkirch](https://www.nottingham.ac.uk/computerscience/People/thorsten.altenkirch), 2010.  
+  - Resources with a Mathematics focus  
+    * [Introduction to Univalent Foundations with Agda](https://www.cs.bham.ac.uk/~mhe/HoTT-UF-in-Agda-Lecture-Notes/HoTT-UF-Agda.html), [Martín Escardó](https://www.cs.bham.ac.uk/~mhe/).  
+    * [The Agda Universal Algebra Library](https://ualib.gitlab.io), [William DeMeo](https://williamdemeo.gitlab.io).  
+    * [Seemingly impossible constructive proofs](http://math.andrej.com/2014/05/08/seemingly-impossible-proofs/), Martin Escardo, 2014.  
+  - Resources with a Programming Languages focus  
+    * [Programming Language Foundations in Agda](https://plfa.github.io/), Philip Wadler.  
+    * [Verified functional programming in Agda](http://www.amazon.com/Verified-Functional-Programming-Agda-Books/dp/1970001240/) (book), Aaron Stump.  
+	* [Dependently typed metaprogramming](http://www.cl.cam.ac.uk/~ok259/agda-course-13/) (course), [Conor McBride](http://strictlypositive.org/), 2013.  
+
 + [Coq][]  
     - [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/) (book), Pierce, et al.  
     - [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/cpdt.pdf) (book), Adam Chlipala.  
